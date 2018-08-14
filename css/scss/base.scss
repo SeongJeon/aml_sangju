@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+// mixin
+@mixin background($path,$repeat) {background:url("../images/"+$path) $repeat;}
+
+// color
+$color1 : #3d3d3d;
+$color2 : #555;
+
+// font
+$font1: 'NanumGothic-Regular','NanumGothic-Regular', '맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font2: 'NanumGothic-ExtraBold','NanumGothic-Regular','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font3: 'NanumGothic-Bold','NanumGothic-Regular','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font4: 'Nanum Square R','NanumGothic-Regular','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font5: 'Nanum Square B','NanumGothic-Regular','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font6: '맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font-ios: Helvetica Neue, "Apple SD Gothic Neo";

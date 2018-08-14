@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+
+
+/* RESET */
+html {background:#fff}
+html,body {font-family: 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', verdana, sans-serif}
+b, span, strong, input, a, button{font-size:inherit;font-family:inherit;color:inherit;  line-height:inherit;}
+article, aside, dialog, footer, header, section, footer, nav, figure, hgroup, details, summary, figure, figcaption {display: block;}
+cite{display:inline}
+html, body {height:100%;}
+html{-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
+body {margin:0px; background-attachment: fixed;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+img{border:0;max-width:100%}
+label, input, textarea, select{vertical-align:middle}
+ol, ul{list-style:none;}
+table{border-collapse:collapse;table-layout:fixed;}
+fieldset{border:none}
+hr, legend{position:absolute;left:-1000%;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden;}
+caption{font-size:0;height:0;opacity:0}
+button{margin:0;padding:0;border:none; background:none; cursor:pointer; display:inline-block;}
+body {min-width:1024px;box-sizing:border-box}
+ol, ul {margin:0; padding:0;}
+p {margin:0;}
+
+/* LAYOUT */
+#worksheet-wrap {position:relative; width:100%; height:100vh;}
+#worksheet-header {position:fixed; left:0; top:0; width:250px; height:100vh; border-right:1px solid #e6e6e6;}
+#worksheet-header .logo {margin:50px 20px; text-align:center;}
+#worksheet-header .logo img {max-width:100%;}
+#worksheet-gnb {margin:15px;}
+#worksheet-gnb li + li {margin-top:5px;}
+#worksheet-gnb a {display:block; padding:15px; border:1px solid #e5e5e5; text-align:center; font-size:12px; color:#666; border-radius: 3px;transition:0.5s ease;}
+#worksheet-gnb .on a {background:#f0f0f0; font-weight:bold;}
+#worksheet-gnb a:hover {background:#f0f0f0; }
+
+#worksheet-gnb-admin {margin:30px 15px;}
+#worksheet-gnb-admin li + li {margin-top:5px;}
+#worksheet-gnb-admin a {display:block; padding:15px; border:1px solid #e5e5e5; text-align:center; font-size:12px; color:#666; border-radius: 3px;transition:0.5s ease;}
+#worksheet-gnb-admin .on a {background:#f0f0f0; font-weight:bold;}
+#worksheet-gnb-admin a:hover {background:#f0f0f0; }
+
+#worksheet-content {padding:50px 80px 100px 320px;}
+
+/* CODE CSS */
+.wrap-code .tit {font-size:30px; margin:0; color:#333;}
+.wrap-code .code-box .tit-area {position:relative; margin:0; padding:12px 15px 15px; border-bottom:1px solid #e5e5e5;}
+.wrap-code .code-box .subtit {margin:0;}
+.wrap-code .code-box .date {position:absolute; right:15px; top:15px; margin:0; color:#666;}
+.wrap-code .code-box {border:1px solid #e5e5e5; font-size:12px; border-radius:5px; margin-top:60px;}
+.wrap-code .code-box + .code-box {margin-top:30px;}
+.wrap-code .code-box .code-view {padding:30px 15px;}
+.wrap-code .code-html {border-radius:5px; margin:15px; padding:10px 15px; background:#f0f0f0;}
+
+/* WORKSHEET CSS */
+.worksheet {font-size:12px;}
+.worksheet .top-area {position:relative; font-size:12px;}
+.worksheet .top-area .desc p {margin:0; color:#999;}
+.worksheet .top-area .desc p:before {display:inline-block; content:"-"; margin-right:5px;}
+.worksheet .top-area .desc p em {font-weight: bold; font-style: normal; color:#666;}
+.worksheet .top-area .count {margin-top:50px;}
+.worksheet .top-area .count:after {display:block; clear:both; content:""}
+.worksheet .top-area .count p {float:left; color:#999; margin-right:5px;}
+.worksheet .top-area .count p + p:before {display:inline-block; content:"|"; margin-right:5px;}
+.worksheet .top-area .count a {color:#666;}
+.worksheet .top-area .folderg {position:absolute; right:0; bottom:0;}
+.worksheet .top-area .folderg ul {margin:0;}
+.worksheet .top-area .folderg ul:after {display:block; clear:both; content:""}
+.worksheet .top-area .folderg ul li {float:left;}
+
+.worksheet .work-table {margin-top:20px; width:100%; border-top:3px solid #e0e0e0;border-bottom:1px solid #e0e0e0; border-left:1px solid #e0e0e0;border-right:1px solid #e0e0e0;}
+.worksheet .work-table thead tr > * {padding:0 5px; border-left:1px solid #e0e0e0; height:40px;}
+.worksheet .work-table tbody tr > * {padding:0 5px; border-top:1px solid #f0f0f0;border-left:1px solid #e0e0e0; height:40px;}
+.worksheet .work-table tbody tr.first > * {border-top-color:#e0e0e0;}
+.worksheet .work-table th {height:40px; background:#f5f5f5;}
+.worksheet .work-table td {color:#333;}
+.worksheet .work-table tr.before td {color:#999;}
+.worksheet .work-table tr.complete td {color:#333;}
+.worksheet .work-table tr.visited td {color:#e0e0e0;}
+.worksheet .work-table tr:hover td {background:#f7f7f7;}
+.worksheet .work-table a {display:block; text-align:center; }
+.worksheet .work-table td:nth-last-of-type(3),
+.worksheet .work-table td:nth-last-of-type(2) {text-align:center;}
+.hidden {position:absolute; overflow:hidden; top:0; left:0; width:1px; height:1px; text-indent:-99999em;}

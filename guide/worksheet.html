@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>상주 농기계임대사업</title>
+	<link href="common.css" rel="stylesheet" type="text/css">
+	<script src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div id="worksheet-wrap">
+
+		<div id="worksheet-header">
+			<h1 class="logo"><img src="logo.png" alt="상주 농기계임대사업"></h1>
+
+			<ul id="worksheet-gnb" class="work-gnb">
+				<li class="on"><a href="front.html">Front Worksheet</a></li>
+				<li><a href="code1.html">Title</a></li>
+				<li><a href="code2.html">Ui</a></li>
+				<li><a href="code3.html">Form</a></li>
+				<li><a href="code4.html">Button</a></li>
+			</ul>
+		</div>
+
+		<div id="worksheet-content"> </div>
+	</div>
+</body>
+</html>
+<script>
+	// default
+	var lnk = $(".work-gnb .on a").attr("href"), spd=300;
+	$("#worksheet-content").load(lnk);
+
+	// gnb click
+	$(".work-gnb li").on("click", function(){
+		if($(this).hasClass("on")) return false;
+
+		lnk = $(this).find("a").attr("href");
+		$(".work-gnb li").removeClass("on");
+		$(this).addClass("on");
+		$("#worksheet-content").fadeOut(spd, function(){
+			$(this).load(lnk, function(){$(	this).fadeIn(spd);});
+		});
+		return false;
+	})
+
+</script>
+
+

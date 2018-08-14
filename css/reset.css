@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* FONTS */
+@font-face { font-family: "NanumGothic-Regular"; font-weight: normal; src: url("../fonts/NanumGothic-Regular.eot"); src: url("../fonts/NanumGothic-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumGothic-Regular.woff") format("woff"), url("../fonts/NanumGothic-Regular.ttf") format("truetype"); }
+@font-face { font-family: "NanumGothic-ExtraBold"; font-weight: normal; src: url("../fonts/NanumGothic-ExtraBold.eot"); src: url("../fonts/NanumGothic-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumGothic-ExtraBold.woff") format("woff"), url("../fonts/NanumGothic-ExtraBold.ttf") format("truetype"); }
+@font-face { font-family: "NanumGothic-Bold"; font-weight: normal; src: url("../fonts/NanumGothic-Bold.eot"); src: url("../fonts/NanumGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumGothic-Bold.woff") format("woff"), url("../fonts/NanumGothic-Bold.ttf") format("truetype"); }
+@font-face { font-family: 'Nanum Square R'; font-style: normal; src: url("../fonts/NanumSquareR.eot"); src: local("Nanum Square Regular"), local("NanumSquareR"), url("../fonts/NanumSquareR.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareR.woff2") format("woff2"), url("../fonts/NanumSquareR.woff") format("woff"), url("../fonts/NanumSquareR.ttf") format("truetype"); }
+@font-face { font-family: 'Nanum Square B'; font-style: bold; src: url("../fonts/NanumSquareB.eot"); src: local("Nanum Square Bold"), local("NanumSquareB"), url("../fonts/NanumSquareB.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareB.woff2") format("woff2"), url("../fonts/NanumSquareB.woff") format("woff"), url("../fonts/NanumSquareB.ttf") format("truetype"); }
+html { font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #222; -webkit-text-size-adjust: none; font-size: 15px; letter-spacing: -0.25px; -webkit-overflow-scrolling: touch; }
+
+html body.ios { font-family: Helvetica Neue, "Apple SD Gothic Neo"; }
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, span, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
+
+address { font-stretch: normal; }
+
+b, span, strong, input, a, button { font-size: inherit; font-family: inherit; color: inherit; line-height: inherit; }
+
+article, aside, dialog, footer, header, section, footer, nav, figure, hgroup, details, summary, figure, figcaption { display: block; }
+
+cite { display: inline; }
+
+html, body { height: 100%; }
+
+html { -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; }
+
+body { overflow-y: scroll; margin: 0px; background-attachment: fixed; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+img { border: 0; max-width: 100%; }
+
+label, input, textarea, select { vertical-align: middle; border: 0; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #b0b0b0; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: #b0b0b0; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #b0b0b0; }
+input:-moz-placeholder, textarea:-moz-placeholder { color: #b0b0b0; }
+
+label, input, textarea { -webkit-appearance: none; -webkit-border-radius: 0; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; table-layout: fixed; width: 100%; }
+
+fieldset { border: none; }
+
+hr, legend { position: absolute; left: -1000%; width: 1px; height: 1px; font-size: 0; line-height: 0; overflow: hidden; }
+
+caption { font-size: 0; height: 0; opacity: 0; }
+
+button { margin: 0; padding: 0; border: none; background: none; cursor: pointer; display: inline-block; }
+
+em, address { font-style: normal; }
+
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+select::-ms-expand { display: none; }
+
+/* COMMON */
+#skipnavi a { display: block; position: absolute; top: 0px; left: -102px; width: 100px; height: 40px; padding: 0; border: 1px solid #dcdcdc; color: #555; font-size: 15px; background: #fff; text-align: center; line-height: 40px; font-weight: 700; z-index: 10000; transition: all 0.3s ease; }
+
+#skipnavi a:focus { top: 0; left: 0; }
+
+.hidden { position: absolute; overflow: hidden; top: 0; left: 0; width: 1px; height: 1px; text-indent: -99999em; }
+
+#wrap { min-width: 320px; }
+
+/* MEDIA */
+@media (min-width: 601px) { html { font-size: 15px; } }
+@media (max-width: 600px) { html { font-size: 13px; } }
+@media (max-width: 430px) { html { font-size: 11px; } }
+@media (max-width: 375px) { html { font-size: 10px; } }

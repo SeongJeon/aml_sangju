@@ -1,0 +1,75 @@
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<div class="wrap-code">
+		<div class="code-area">
+			<h2 class="tit">BUTTON</h2>
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">BUTTON h:35px</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<a href="#" class="btn-type1"><span>도서 상세검색</span></a>
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">SUBMIT BUTTON h:45px</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<a href="#" class="btn-type2"><span>버튼</span></a>
+<a href="#" class="btn-type2 blue"><span>버튼</span></a>
+<a href="#" class="btn-type2 gray"><span>버튼</span></a>
+<a href="#" class="btn-type2 navy"><span>버튼</span></a>
+<a href="#" class="btn-type2 green"><span>버튼</span></a>
+
+<!-- 아래 폼은 페이지 하단 submit 영역입니다 -->
+<div class="btn-submit-group">
+	<a href="#" class="btn-type2"><span>버튼</span></a>
+	<a href="#" class="btn-type2 blue"><span>버튼</span></a>
+	<a href="#" class="btn-type2 navy"><span>버튼</span></a>
+	<button type="button" class="btn-type2 gray"><span>버튼</span></a>
+</div>
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">TABLE IN BUTTON h:05px</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<a href="#" class="btn-type3"><span>우편번호 검색</span></a>
+
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+		</div>
+</div>
+<script>
+$(".code-box").each(function(){
+	$(this).find(".code-view").after("<div class='code-html'></div>");
+	var $copy = $(this).find(".code-view").clone().html().replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g,"&quot;").replace(/\n/g,"<br />").replace(/\t/g,"&nbsp;&nbsp;&nbsp;&nbsp;");
+
+	$(this).find(".code-html").html($copy);
+});
+</script>

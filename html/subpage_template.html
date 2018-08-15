@@ -41,7 +41,7 @@
 								<h2>도서관 소개 <span class="small">Introduce Library</span></h2>
 							</div>
 							<ul class="menu">
-								<li><h3> <a href="#">메뉴1</a> </h3></li>
+								<li class="current"><h3> <a href="#">메뉴1</a> </h3></li>
 								<li><h3> <a href="#">메뉴2 <span class="hidden">현재 선택 메뉴</span></a> </h3></li>
 								<li><h3> <a href="#">메뉴3</a> </h3></li>
 								<li class="more on"><!-- 소메뉴있을 시 more 클래스 추가 / 초기 열어두고 싶을땐 on 클래스 추가 -->
@@ -55,31 +55,46 @@
 								</li>
 							</ul>
 						</nav>
-					</div><!-- //lnb -->
+					</div> <!-- //lnb -->
 
 					<div id="contents">
+						<!-- 페이지 타이틀 -->
 						<div class="page-title-zone">
 							<h2 class="page-title">제목</h2>
 							<p class="desc">농업은 생명, 농촌은 미래, 상주시 농기계임대사업 홈페이지에 오신것을 환영합니다.</p>
-						</div><!-- //page-title-zone -->
+						</div>
+						<!-- //페이지 타이틀 -->
 
+						<!-- 페이지 컨텐츠 -->
 						<div class="content-zone">
 							<!-- 내용 -->
-<div class="ui--searchzone">
-	<div class="form">
-		<div class="sel-type2">
-			<select name="" id="" title="소분류 선택">
-				<option value="">장비(대분류)</option>
-			</select>
-		</div>
-		<input type="text" class="inp-type2" placeholder="검색어를 입력해주세요." title="검색어 입력">
-		<button type="submit" class="btn-type4"><span>검색</span></button>
-	</div>
-</div>
+						</div>
+						<!-- //페이지 컨텐츠 -->
 
-
-
-						</div><!-- //content-zone -->
+						<!-- 만족도 조사 -->
+						<div class="satisfaction-zone">
+							<p class="txt">이 페이지에서 제공하는 정보에 대하여 만족하십니까?</p>
+							<ul class="ipt-lst">
+								<li class="radio-type1"><input type="radio" name="satics" id="satics1" checked="checked"><label for="satics1"><span>매우만족</span></label></li>
+								<li class="radio-type1"><input type="radio" name="satics" id="satics2"><label for="satics2"><span>만족</span></label></li>
+								<li class="radio-type1"><input type="radio" name="satics" id="satics3"><label for="satics3"><span>보통</span></label></li>
+								<li class="radio-type1"><input type="radio" name="satics" id="satics4"><label for="satics4"><span>불만족</span></label></li>
+								<li class="radio-type1"><input type="radio" name="satics" id="satics5"><label for="satics5"><span>매우불만족</span></label></li>
+							</ul>
+							<div class="form">
+								<input type="text" name="" id="" title="페이지 의견 입력">
+								<button type="submit"><span>의견 반영하기</span></button>
+							</div>
+							<div class="infor-box">
+								<ul class="lst">
+									<li>담당부서 : 담당부서</li>
+									<li>담당자 : 담당자</li>
+									<li>연락처 : 054) 123-1234</li>
+								</ul>
+								<p class="date">최종수정일 : 2018-07-23</p>
+							</div>
+						</div>
+						<!-- //만족도 조사 -->
 					</div><!-- //contents -->
 				</div><!-- //container-inner -->
 			</div><!-- //container -->

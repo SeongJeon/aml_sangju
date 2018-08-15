@@ -12,9 +12,9 @@
 				</div>
 				<div class="code-view" style="position:relative">
 <!-- code -->
-<p class="point01">Point color #008fc0</p>
-<p class="point02">Point color #2f6ab9</p>
-<p class="point02">Point color #fb5521</p>
+<p class="point01">Point color #1a8d45</p>
+<p class="point02">Point color #ee0808</p>
+<p class="point03">Point color #17913b</p>
 
 <br><br>
 
@@ -57,7 +57,7 @@
 
 <br><br>
 
-<p class="txt-hyphen">color:#444, font-size:14px, line-height:20px</p>
+<p class="txt-hyphen">color:#444, font-size:14px, line-height:28px</p>
 <ul class="txt-hyphen">
 	<li>test</li>
 	<li>test</li>
@@ -78,18 +78,28 @@
 				</div>
 				<div class="code-view" style="position:relative">
 <!-- code -->
-<div class="tab-zone">
-	<ul>
-		<li class="current"><a href="#">탭명1</a></li>
-		<li><a href="#">탭명2</a></li>
-	</ul>
+<div class="ui--tab">
+    <ul>
+        <li class="current"><a href="#">탭명1</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명1</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명2</a></li>
+        <li><a href="#">탭명2</a></li>
+    </ul>
 </div>
 
 <br><br>
 
 
 <!-- js 들어간 경우 -->
-<div class="tab-zone js-tab">
+<div class="ui--tab js-tab">
 	<ul>
 		<li class="current"><a href="#">탭명1</a></li>
 		<li><a href="#">탭명2</a></li>
@@ -131,13 +141,6 @@
 			<th scope="col">test4</th>
 		</tr>
 	</thead>
-	<tfoot>
-		<tr>
-			<td>test</td>
-			<td>test</td>
-			<td>test</td>
-		</tr>
-	</tfoot>
 	<tbody>
 		<tr>
 			<th scope="row">test</th>
@@ -173,10 +176,10 @@
 				</div>
 				<div class="code-view" style="position:relative">
 <!-- code -->
-<table class="tbl-type2">
+<table class="tbl-list">
 	<caption>TABLE TITLE - test1, test2, test3, test4</caption>
 	<colgroup>
-		<col style="width:10%" class="pc">
+		<col style="width:10%">
 		<col style="width:10%">
 		<col>
 		<col style="width:10%">
@@ -191,9 +194,9 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td class="pc">test</td>
 			<td>test</td>
-			<td class="lnk"><a href="#">링크입니다.</a></td>
+			<td class="point01">test</td>
+			<td>test</td>
 			<td>test</td>
 		</tr>
 	</tbody>
@@ -212,8 +215,8 @@
 				</div>
 				<div class="code-view" style="position:relative">
 <!-- code -->
-<p class="tbl-top"><strong class="point04">*</strong> 표시는 필수 입력사항 입니다.</p>
-<table class="tbl-type3">
+<p class="tbl-top"><strong class="point02">*</strong> 표시는 필수 입력사항 입니다.</p>
+<table class="tbl-form">
 	<caption>TABLE TITLE - test1, test2, test3, test4</caption>
 	<colgroup>
 		<col>
@@ -226,6 +229,26 @@
 		</tr>
 	</tbody>
 </table>
+
+<br><br>
+
+<table class="tbl-form type2">
+	<caption>TABLE TITLE - test1, test2, test3, test4</caption>
+	<colgroup>
+		<col>
+		<col>
+	</colgroup>
+	<tbody>
+		<tr>
+			<th scope="row"><strong class="important">*</strong><span>test</span></th>
+			<td>test</td>
+		</tr>
+	</tbody>
+</table>
+<p class="tbl-btm"><strong class="point02">*</strong> 표시는 필수 입력사항 입니다.</p>
+
+
+
 <!-- //code -->
 				</div>
 			</div>
@@ -275,16 +298,33 @@
 <!-- code -->
 <div class="ui--searchzone">
 	<div class="form">
-		<div class="sel-type4">
-			<select name="" id="" title="">
-				<option value="">제목+내용</option>
-				<option value="">제목</option>
+		<div class="sel-type2">
+			<select name="" id="" title="대분류 선택">
+				<option value="">임대장소</option>
 			</select>
 		</div>
-		<input type="text" class="inp-type3" placeholder="검색어를 입력해주세요.">
-		<button type="submit" class="btn-type2 blue"><span>검색</span></button>
+		<div class="sel-type2">
+			<select name="" id="" title="소분류 선택">
+				<option value="">장비(대분류)</option>
+			</select>
+		</div>
+		<input type="text" class="inp-type2" placeholder="검색어를 입력해주세요." title="검색어 입력">
+		<button type="submit" class="btn-type4"><span>검색</span></button>
 	</div>
-	<a href="#" class="btn-type2 write"><span>글쓰기</span></a>
+</div>
+
+<br><br>
+
+<div class="ui--searchzone">
+	<div class="form">
+		<div class="sel-type2">
+			<select name="" id="" title="분류 선택">
+				<option value="">전체</option>
+			</select>
+		</div>
+		<input type="text" class="inp-type2" placeholder="검색어를 입력해주세요." title="검색어 입력">
+		<button type="submit" class="btn-type4"><span>검색</span></button>
+	</div>
 </div>
 <!-- //code -->
 				</div>

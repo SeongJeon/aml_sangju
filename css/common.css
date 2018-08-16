@@ -666,6 +666,10 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
 @media (max-width: 321px) { /* HEADER */
   #header #m-gnb .gnb .help-box { padding-left: 8rem; background-position: 5% 50%; }
   #header #m-gnb .gnb .help-box .bank { float: none; }
-  #header #m-gnb .gnb .help-box .infor { float: none; width: 15rem; margin-top: 0.5rem; } }
+  #header #m-gnb .gnb .help-box .infor { float: none; width: 15rem; margin-top: 0.5rem; }
+  /* 만족도조사 */
+  .satisfaction-zone .infor-box .lst li:nth-child(2) { width: 30%; }
+  .satisfaction-zone .infor-box .lst li:nth-child(3) { width: 36.6%; }
+  .satisfaction-zone .infor-box .date { float: none; margin-top: 0.5rem; text-align: center; } }
 @media print { #lnb, #header, #footer, #breadcrumb { display: none; }
   #container #contents { padding: 0; } }

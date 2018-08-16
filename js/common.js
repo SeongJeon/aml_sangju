@@ -20,9 +20,9 @@ var gbgs = {
 			var header=$("#header"), gnb = $("#gnb"), gnbbtn = gnb.find("h2 a"), depth = gnb.find(".depth"),
 			spd = 200, _temp = false;
 
-			//default 
+			//default
 			$('#m-gnb').hide();
-			
+
 			// resize
 			$(window).on("resize", function(){
 				if($(window).width() > 1020) $('#m-gnb').hide();
@@ -50,11 +50,11 @@ var gbgs = {
 		function moEvent(){
 			var openbtn = $(".m-gnb"), gnb = $("#m-gnb"), closebtn = gnb.find(".btn-close"), spd=300;
 
-			// default 
+			// default
 			if($(".menu > li",gnb).hasClass("on")){
 				$(".menu > li.on",gnb).find(".depth").show();
 			}
-			
+
 
 			// open btn
 			openbtn.on("click", function(){
@@ -297,7 +297,7 @@ var main_Js = (function(){
 	// main to visual
 	$('.main-visual-zone .slider').slick({
 		autoplay:true,
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 400,
 		autoplaySpeed:4000,

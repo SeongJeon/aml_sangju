@@ -9,6 +9,7 @@
 	.main-visual-zone {
 		position:relative; height:319px;
 
+		.mo {display:none}
 		.slider {
 			height:319px;
 			img { height:100%; }
@@ -149,56 +150,124 @@
 
 	// mobile 에서만 적용
 	.mobile .main {
-		/* 퀵메뉴 영역 */
-		.main-quick-zone {
-			background-size:10% auto;
-			.quick-slider {
-				.slick-slide a {
-					.icon {
-						-ms-transition:inherit; -moz-transition:inherit; -webkit-transition:inherit;transition:inherit;
-						&:before {-ms-transition:inherit; -moz-transition:inherit; -webkit-transition:inherit;transition:inherit;}
-						&:after {-ms-transition:inherit; -moz-transition:inherit; -webkit-transition:inherit;transition:inherit;}
-					}
-					.go {-ms-transition:inherit; -moz-transition:inherit; -webkit-transition:inherit;transition:inherit; }
-				}
-			}
-		}
 	}
 }
-@media (max-width:1000px) {
+@media (max-width:1020px) {
 	.main {
-		/* 작은 도서관 영역 */
-		.main-small-lib-zone {
+		padding-bottom:1.5rem;
 
-			ul {
-				padding:0 1rem;
-				li {
-					width:50%;
-					&:nth-child(1),
-					&:nth-child(2) {border-bottom:1px solid #ccc;}
-					&:nth-child(3):before {display:none}
-					&:nth-child(odd) a {padding-left:0;}
-					&:nth-child(even) a {padding-right:0;}
+		// 메인 비주얼
+		.main-visual-zone {
+			overflow:hidden; height:34rem;
+
+			.pc {display:none}
+			.mo {display:inherit; width:100%; height:100%;}
+
+			.slider {
+				height:34rem;
+				img { height:100%; }
+				.slick-slide {height:34rem;outline:none}
+			}
+		}
+		// 중요 메뉴
+		.main-important-menu {
+			height:10.5rem; margin-top:-10.5rem;
+			li {
+				display:block; height:10.5rem;
+				&:before { top:1.3rem;height:8.3rem;}
+				&:first-child:before {display:none}
+			}
+			a {
+				display:block; height:10.5rem; padding:1.3rem 0; width:100%; color:#fff;font-weight:bold; box-sizing:border-box; vertical-align:middle;
+				span {display:block; margin-top:0.7rem; text-align:center; font-size:1rem; line-height:1.2;}
+				&:before {display:block; width:5.2rem; height:5.2rem; margin:0 auto;}
+				&.goto1:before {background-size:auto 100%}
+				&.goto2:before {background-size:auto 100%}
+				&.goto3:before {background-size:auto 100%}
+				&.goto4:before {background-size:auto 100%}
+				&.goto5:before {background-size:auto 100%}
+			}
+		}
+		// 공지사항 자유게시판
+		.main-group {margin:1.4rem auto 0; height:auto; padding:0 1rem;}
+		.main-board-zone {
+			width:100%; height:auto; padding:1rem 1.2rem 1.2rem;
+			.tit {font-size:1.4rem; }
+			.lst {
+				margin-top:1.9rem;
+				li {margin-top:0.7rem;}
+				li:first-child {margin:0;}
+				a {font-size:1rem; line-height:1.6rem;}
+				.bul {width:4.8rem; font-size:0.9rem;line-height:1.5rem;}
+				.cont {margin-left:0.2rem;max-width:65%;}
+				.date {margin-top:0.2rem;}
+			}
+			.close {
+				right:0.5rem; top:0.5rem; width:2.5rem; height:2.5rem;
+				&:before {left:1.2rem; top:0.8rem; height:1rem; }
+				&:after {left:0.8rem; top:1.2rem; width:1rem;}
+			}
+		}
+		// 안내영역
+		.main-gruid-zone {
+			position:static; float:left; width:50%; height:auto; margin-top:1rem;
+			.tit {padding-left:3px; font-size:18px; color:#fff; font-weight:bold;}
+
+			.guide1 {
+				position:relative; width:100%; height:126px; padding:7px 16px 13px; @include background("main/bg-guide1.jpg", no-repeat 50% 50%); background-size:100% 100%; box-sizing:border-box;
+				.slider {height:73px; width:100%; margin-top:9px; background:#fff;}
+				.slick-arrow {display:none !important}
+				.slick-dots {
+					position:absolute; top:-25px; right:0;
+					&:after {display:block; clear:both; content:""}
+					li {float:left; margin-left:7px}
+					li:first-child {margin:0;}
+					button {width:11px; height:11px; background:rgba(0,0,0,0.3); text-indent:-9999em; border-radius:100px;}
+					.slick-active button {background:#fff;}
+				}
+			}
+			.guide2 {
+				width:100%; height:85px; margin-top:5px; padding:4px 16px 0; @include background("main/bg-guide2.jpg", no-repeat 50% 50%); background-size:100% 100%; box-sizing:border-box;
+				.box {
+					padding:3px 0 0 54px; margin-top:4px; height:44px; background:url('../images/main/icon-guide.png') no-repeat 12px 50%, #fff; box-sizing:border-box;
+					.name {font-size:12px; color:#373737;}
+					.num {margin-top:-2px; font-size:17px;font-weight:bold; color:#00944a;}
 				}
 			}
 		}
+		// 배너영역
+		.main-banner-zone {
+			position:relative; right:inherit; top:inherit; float:right; width:50%; height:auto; margin-top:1rem;
+
+			.indicator {
+				*[class*="btn-"] {
+					position:absolute; top:0; width:32px; height:30px; background:rgba(0,0,0,0.5);
+					span {display: inline-block; text-indent:-9999em;}
+					&:before {display:inline-block; position:absolute; top:0; left:0; width:100%; line-height:30px; color:#fff; font-family:$font4; font-size:16px;}
+				}
+
+				.btn-prev {
+					right:32px;
+					&:before {content:"<"}
+				}
+				.btn-next {
+					right:0;
+					&:before {content:">"}
+				}
+			}
+		}
+
 	}
 }
 @media (max-width:600px) {
 	.main {
-		background-size:12% auto;
-		/* 작은 도서관 영역 */
-		.main-small-lib-zone {
-			.lib-name{
-				padding-top:4px;
-				&:before {top:-1px}
-				.small {margin-top:0.1rem}
+		// 메인 비주얼
+		.main-visual-zone {
+			.visual-txt {
+				top:4rem;
+				.txt1 {height:2.5rem; width:90%; margin:0 auto; @include background("main/img-m-visual-txt.png",no-repeat 50% 50%);background-size:auto 100%;}
+				.txt2 {display: inline-block; width:auto; margin:1.5rem auto 0; padding:0 1rem; font-size:0.7rem;line-height:2.2rem;}
 			}
-		}
-
-		/* 퀵메뉴 영역 */
-		.main-quick-zone {
-			background-size:10% auto;
 		}
 	}
 }
@@ -223,14 +292,10 @@
 }
 @media (max-width:321px) {
 	.main {
-		/* 이달의 새책 */
-		.main-book-zone {
-			.book-inner {
-				.new-books {
-					.txt-dotted {
-						.writer {display:block; float:none; color:#999;}
-					}
-				}
+		/* 공지사항 자유게시판 */
+		.main-board-zone {
+			.lst {
+				.cont {max-width:60%;}
 			}
 		}
 	}

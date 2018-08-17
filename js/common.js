@@ -2,7 +2,11 @@
 PC & MOBILE Class JAVASCRIPT
 ----------------------------------------------------------------- */
 // 진입 모바일
-if(navigator.userAgent.match(/Mobile|iP(hone|od)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){$("body").addClass("mobile");}
+if(navigator.userAgent.match(/Mobile|iP(hone|od)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
+	$("body").addClass("mobile");
+
+	if(navigator.userAgent.match(/Mobile|iP(hone|od)|iPad/)) $("body").addClass("ios");
+}
 else{$("body").addClass("pc");}
 
 
@@ -307,7 +311,7 @@ var main_Js = (function(){
 
 	// main banner
 	$('.main-banner-zone .slider').slick({
-		autoplay:false,
+		autoplay:true,
 		dots: false,
 		infinite: true,
 		speed: 400,

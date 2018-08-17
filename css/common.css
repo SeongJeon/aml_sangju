@@ -191,6 +191,8 @@ select::-ms-expand { display: none; }
 #container #contents .page-title-zone .page-title { font-size: 30px; color: #212121; font-weight: bold; letter-spacing: -1px; }
 #container #contents .page-title-zone .desc { margin-top: 12px; color: #7e7e7e; font-size: 15px; line-height: 1.4; }
 
+br.mo { display: none; }
+
 /* POINT COLOR */
 .point01 { color: #1a8d45 !important; }
 
@@ -545,6 +547,7 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   #container #contents .page-title-zone .desc { margin-top: 0.8rem; font-size: 0.7rem; word-break: keep-all; }
   .scrollzone { overflow-x: scroll; }
   .scrollzone .scrollinner { width: 200%; }
+  br.mo { display: inherit; }
   /* ICON */
   .icon-file { width: 1.5rem; height: 1.2rem; background-size: auto 100%; }
   /* BUTTON */

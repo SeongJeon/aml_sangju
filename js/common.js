@@ -330,54 +330,6 @@ var main_Js = (function(){
 		cssEase: 'linear',
 		ltr: true
 	});
-
-	// main notice zone
-	// $('.main-movie-zone .movie-slider').slick({
-	// 	ltr: true,
-	// 	autoplay:true,
-	// 	dots: false,
-	// 	infinite: true,
-	// 	speed: 400,
-	// 	autoplaySpeed:4000,
-	// 	prevArrow: $(".main-movie-zone .btn-prev"),
-	// 	nextArrow: $(".main-movie-zone .btn-next"),
-	// 	cssEase: 'linear',
-	// 	slidesToShow: 3,
-	// 	slidesToScroll: 1,
-	// 	accessibility: true,
-	// 	responsive: [
-	// 	   {
-	// 	      breakpoint: 1320,
-	// 	      settings: {
-	// 	        slidesToShow: 2,
-	// 	        slidesToScroll: 1,
-	// 	        infinite: true,
-	// 	        dots: false
-	// 	      }
-	// 	   }
-	// 	]
-	// });
-
-	// main banner zone
-	// $('.main-banner-zone .banner-slider').slick({
-	// 	ltr: true,
-	// 	autoplay:true,
-	// 	infinite: true,
-	// 	speed: 400,
-	// 	autoplaySpeed:4000,
-	// 	prevArrow: $(".main-banner-zone .btn-prev"),
-	// 	nextArrow: $(".main-banner-zone .btn-next"),
-	// 	cssEase: 'linear',
-	// 	slidesToShow: 1,
-	// 	slidesToScroll: 1,
-	// 	accessibility: true,
-	// 	dots: true,
-	// 	appendDots: $(".banner-indicator"),
-	// 	dotsClass: 'count',
-	// 	customPaging: function (slider, i) {
-	// 	return  '<em>'+(i + 1) + '</em>/' + slider.slideCount;
-	// 	}
-	// });
 })();
 
 

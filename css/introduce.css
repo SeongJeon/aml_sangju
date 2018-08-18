@@ -1,0 +1,43 @@
+.h4:before {top:2px;}
+.h4.type2:before {top:0;}
+
+.introduce .greeting {}
+.introduce .greeting .tit-sub {text-align:center;}
+.introduce .greeting .info {margin-top:32px;}
+.introduce .greeting .info:after {display:block; content:""; clear:both;}
+.introduce .greeting .info .photo {float:left; }
+.introduce .greeting .info .txt {float:left; max-width:539px; padding-left:30px; box-sizing:border-box; line-height:24px;}
+.introduce .greeting .info .txt p {margin:20px 0;}
+.introduce .greeting .info .txt p:first-child {margin-top:0;}
+.introduce .greeting .info .txt p .bold {font-weight:bold;} 
+.introduce .purpose {margin:0 0 0 20px;}
+.introduce .purpose .h4 {margin-top:20px;}
+.introduce .purpose .txt-hyphen {margin:0 0 0 20px;}
+.introduce .step-procedure {}
+.introduce .step-procedure ol {}
+.introduce .step-procedure ol:after {display:block; content:""; clear:both;}
+.introduce .step-procedure ol li {float:left;}
+.introduce .step-procedure ol li:first-child {margin-left:0;}
+.introduce .step-procedure ol li .txt {display:block;}
+
+@media (max-width: 1040px) {
+	p.txt-hyphen,
+	.txt-hyphen > li,
+	p.txt-important {padding-left:1rem; font-size:1rem; line-height:1.4;}
+	p.txt-hyphen:before,
+	.txt-hyphen > li:before {top:0.7rem; width:0.5rem; height:1px;}
+
+	.introduce .greeting .info .photo,
+	.introduce .greeting .info .txt {float:none; text-align:center; max-width:100%;}'
+	.introduce .greeting .info .photo {margin-left:-10px}
+	.introduce .greeting .info .photo img {margin-left:12px;}
+	.introduce .greeting .info .txt {margin-top:20px;}
+	.introduce .purpose .h4 {margin-top:1rem;}
+}
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 360px) {
+
+}

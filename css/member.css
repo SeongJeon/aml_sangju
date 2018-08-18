@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .member .txt-box { text-align: center; letter-spacing: -2px; font-size: 18px; font-weight: bold; line-height: 24px; margin-bottom: 28px; }
 
 .member .ui--tab { margin-bottom: 40px; }
@@ -43,6 +44,48 @@
 .member .site-area .site-inner .txt-hyphen li { margin-top: 17px; }
 
 .member .site-area .site-inner .txt-hyphen li:first-child { margin-top: 0; }
+
+.member .list-view { margin: 18px 0 40px; }
+
+.member .list-view.window li:nth-child(1):before { background: url(/aml_sangju/images/member/ico-veiw01.png) no-repeat left top; }
+
+.member .list-view.window li:nth-child(2):before { background: url(/aml_sangju/images/member/ico-veiw02.png) no-repeat left top; }
+
+.member .list-view.window li:nth-child(3):before { background: url(/aml_sangju/images/member/ico-veiw03.png) no-repeat left top; }
+
+.member .list-view.window li:nth-child(4):before { background: url(/aml_sangju/images/member/ico-veiw04.png) no-repeat left top; }
+
+.member .list-view.window li:nth-child(5):before { background: url(/aml_sangju/images/member/ico-veiw05.png) no-repeat left top; }
+
+.member .list-view.window li:nth-child(6):before { background: url(/aml_sangju/images/member/ico-veiw06.png) no-repeat left top; }
+
+.member .list-view.window li:nth-child(7):before { background: url(/aml_sangju/images/member/ico-veiw07.png) no-repeat left top; }
+
+.member .list-view.linux li:nth-child(1):before { background: url(/aml_sangju/images/member/ico-veiw08.png) no-repeat left top; }
+
+.member .list-view.linux li:nth-child(2):before { background: url(/aml_sangju/images/member/ico-veiw09.png) no-repeat left top; }
+
+.member .list-view.linux li:nth-child(3):before { background: url(/aml_sangju/images/member/ico-veiw10.png) no-repeat left top; }
+
+.member .list-view.mac li:nth-child(1):before { background: url(/aml_sangju/images/member/ico-veiw08.png) no-repeat left top; }
+
+.member .list-view.mac li:nth-child(2):before { background: url(/aml_sangju/images/member/ico-veiw09.png) no-repeat left top; }
+
+.member .list-view.mac li:nth-child(3):before { background: url(/aml_sangju/images/member/ico-veiw10.png) no-repeat left top; }
+
+.member .list-view li { position: relative; overflow: hidden; margin-top: 5px; padding: 18px 18px 18px 0; border: 1px solid #e1e0e0; }
+
+.member .list-view li:fisrt-child { margin-top: 0; }
+
+.member .list-view li:before { position: absolute; top: 10px; left: 18px; display: inline-block; width: 68px; height: 62px; content: ""; }
+
+.member .list-view li p { position: absolute; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); max-width: 60%; margin-left: 115px; }
+
+.member .list-view li .btn-down { float: right; width: 125px; height: 45px; background: #468966; color: #fff; font-family: "Nanum Square R", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+
+.member .list-view li .btn-down span { display: inline-block; }
+
+.member .list-view li .btn-down span:after { display: inline-block; margin-left: 10px; width: 15px; height: 15px; background: url(/aml_sangju/images/member/ico-down.png) no-repeat 50% 50%; vertical-align: -1px; content: ""; }
 
 @media (max-width: 1040px) { .member .txt-box { font-size: 14px; }
   .member .h4.type2 { margin: 15px 0 7px 10px; }

@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "base";
 .member {
   .txt-box {
     text-align: center;
@@ -104,6 +105,121 @@
           margin-top: 17px;
           &:first-child {
             margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .list-view {
+    margin: 18px 0 40px;
+    &.window {
+      li {
+        &:nth-child(1):before {
+          background: url(/aml_sangju/images/member/ico-veiw01.png) no-repeat
+            left top;
+        }
+        &:nth-child(2):before {
+          background: url(/aml_sangju/images/member/ico-veiw02.png) no-repeat
+            left top;
+        }
+        &:nth-child(3):before {
+          background: url(/aml_sangju/images/member/ico-veiw03.png) no-repeat
+            left top;
+        }
+        &:nth-child(4):before {
+          background: url(/aml_sangju/images/member/ico-veiw04.png) no-repeat
+            left top;
+        }
+        &:nth-child(5):before {
+          background: url(/aml_sangju/images/member/ico-veiw05.png) no-repeat
+            left top;
+        }
+        &:nth-child(6):before {
+          background: url(/aml_sangju/images/member/ico-veiw06.png) no-repeat
+            left top;
+        }
+        &:nth-child(7):before {
+          background: url(/aml_sangju/images/member/ico-veiw07.png) no-repeat
+            left top;
+        }
+      }
+    }
+    &.linux {
+      li {
+        &:nth-child(1):before {
+          background: url(/aml_sangju/images/member/ico-veiw08.png) no-repeat
+            left top;
+        }
+        &:nth-child(2):before {
+          background: url(/aml_sangju/images/member/ico-veiw09.png) no-repeat
+            left top;
+        }
+        &:nth-child(3):before {
+          background: url(/aml_sangju/images/member/ico-veiw10.png) no-repeat
+            left top;
+        }
+      }
+    }
+    &.mac {
+      li {
+        &:nth-child(1):before {
+          background: url(/aml_sangju/images/member/ico-veiw08.png) no-repeat
+            left top;
+        }
+        &:nth-child(2):before {
+          background: url(/aml_sangju/images/member/ico-veiw09.png) no-repeat
+            left top;
+        }
+        &:nth-child(3):before {
+          background: url(/aml_sangju/images/member/ico-veiw10.png) no-repeat
+            left top;
+        }
+      }
+    }
+    li {
+      position: relative;
+      overflow: hidden;
+      margin-top: 5px;
+      padding: 18px 18px 18px 0;
+      border: 1px solid #e1e0e0;
+      &:fisrt-child {
+        margin-top: 0;
+      }
+      &:before {
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        display: inline-block;
+        width: 68px;
+        height: 62px;
+        content: "";
+      }
+
+      p {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        max-width: 60%;
+        margin-left: 115px;
+      }
+      .btn-down {
+        float: right;
+        width: 125px;
+        height: 45px;
+        background: #468966;
+        color: #fff;
+        font-family: $font4;
+        span {
+          display: inline-block;
+          &:after {
+            display: inline-block;
+            margin-left: 10px;
+            width: 15px;
+            height: 15px;
+            background: url(/aml_sangju/images/member/ico-down.png) no-repeat
+              50% 50%;
+            vertical-align: -1px;
+            content: "";
           }
         }
       }

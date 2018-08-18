@@ -22,6 +22,14 @@
         margin-top: 0;
       }
     }
+    &.use {
+      li {
+        margin-top: 0;
+      }
+      .img-box {
+        margin-top: 14px;
+      }
+    }
     .txt-num {
       em {
         display: block;

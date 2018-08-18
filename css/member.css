@@ -10,6 +10,10 @@
 
 .member .txt-hyphen > li:first-child { margin-top: 0; }
 
+.member .txt-hyphen.use li { margin-top: 0; }
+
+.member .txt-hyphen.use .img-box { margin-top: 14px; }
+
 .member .txt-hyphen .txt-num em { display: block; margin-top: 30px; }
 
 .member .txt-hyphen .txt-num ul { margin-left: 20px; }

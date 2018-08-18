@@ -228,15 +228,19 @@ br.mo { display: none; }
 .btn-type4 { display: inline-block; min-width: 58px; padding: 0 10px 2px; line-height: 36px; color: #fff; border-width: 1px; border-style: solid; border-color: #22b24c; box-sizing: content-box; text-align: center; letter-spacing: -0.5px; font-size: 15px; background: #22b24c; }
 .btn-type4.green { border-color: #468966; background: #468966; color: #fff; }
 .btn-type4.gray { border-color: #787878; background: #787878; color: #fff; }
+.btn-type4.lightgreen { border-color: #87bf69; background: #87bf69; color: #fff; }
 
 .btn-type5 { display: inline-block; min-width: 160px; padding: 0 10px 2px; line-height: 31px; color: #636363; border-width: 1px; border-style: solid; border-color: #cbc6c5; box-sizing: border-box; text-align: center; letter-spacing: -0.5px; font-size: 15px; vertical-align: top; }
 .btn-type5.green { border-color: #22b24c; background: #22b24c; color: #fff; }
 
 /* BUTTON GROUP */
 .btn-submit-group { margin-top: 55px; text-align: center; }
+.btn-submit-group:after { display: block; clear: both; content: ""; }
 .btn-submit-group * + * { margin-left: 5px; }
 .btn-submit-group .btn-type2 { min-width: 88px; padding: 0 35px 3px; }
 .btn-submit-group .btn-type4 { min-width: 78px; }
+.btn-submit-group .left { float: left; }
+.btn-submit-group .right { float: right; }
 
 /* ICON */
 .icon-file { display: inline-block; vertical-align: middle; content: ""; width: 21px; height: 17px; background: url("../images/icon/icon-file.png") no-repeat 50% 50%; text-indent: -9999em; }
@@ -328,13 +332,14 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
 .tbl-type1 thead th[rowspan] { border-right: 1px solid #e2e1e1; }
 
 .tbl-list { margin-top: 20px; border-top: 2px solid #22b24c; border-bottom: 1px solid #e2e1e1; font-size: 15px; text-align: center; letter-spacing: -0.5px; }
-.tbl-list tr > * { height: 43px; padding: 5px 15px; border-top: 1px solid #e2e1e1; border-right: 1px solid #e2e1e1; color: #535353; box-sizing: border-box; word-break: break-all; }
+.tbl-list tr > * { height: 43px; padding: 5px 10px; border-top: 1px solid #e2e1e1; border-right: 1px solid #e2e1e1; color: #535353; box-sizing: border-box; word-break: break-all; }
 .tbl-list tr > *:first-child { border-left: 1px solid #e2e1e1; }
 .tbl-list thead tr:first-child > * { border-top: 0; }
 .tbl-list thead th { padding: 5px; font-weight: normal; background: #f5f9ee; color: #424242; }
 .tbl-list tbody tr:first-child > * { border-top-color: #aaa; }
+.tbl-list .mo { display: none; }
 .tbl-list .align-l { text-align: left; }
-.tbl-list .lnk { text-align: left; }
+.tbl-list .lnk { padding-left: 15px; text-align: left; }
 .tbl-list .lnk a { display: inline-block; position: relative; top: 2px; overflow: hidden; max-width: 90%; text-overflow: ellipsis; white-space: nowrap; color: #535353; }
 .tbl-list .lnk a:hover { text-decoration: underline; }
 .tbl-list .noti { display: inline-block; width: 21px; height: 18px; text-indent: -9999em; background: url("../images/icon/icon-noti.png") no-repeat 50% 50%; margin-right: 5px; }
@@ -360,7 +365,7 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
 .tbl-btm .point04 { font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 
 /* PAGING */
-.ui--paging { text-align: center; margin-top: 30px; }
+.ui--paging { position: relative; text-align: center; margin-top: 30px; }
 .ui--paging > div { display: inline-block; position: relative; padding: 0 75px; }
 .ui--paging ol { display: inline-block; }
 .ui--paging ol:after { display: block; clear: both; content: ""; }
@@ -380,6 +385,7 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
 .ui--paging p.allprev a:before { content: "<<"; }
 .ui--paging p.allnext { right: 0; }
 .ui--paging p.allnext a:before { content: ">>"; }
+.ui--paging .btn-type4 { position: absolute; right: 0; top: -5px; }
 
 /* TAB */
 .ui--tab ul:after { display: block; clear: both; content: ""; }
@@ -582,7 +588,10 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   .tbl-type1 tr > * { height: 2.6rem; padding: 0 0.5rem; }
   .tbl-list { font-size: 0.9rem; margin-top: 2rem; }
   .tbl-list tr > * { height: 3rem; padding: 0.3rem 0.7rem; }
+  .tbl-list .pc { display: none; }
+  .tbl-list .mo { display: inherit; }
   .tbl-list .noti { position: relative; top: 0.2rem; width: 1rem; height: 0.9rem; background-size: auto 100%; }
+  .tbl-list .lnk { padding-left: 0.7rem; }
   .tbl-list.type2 tbody tr > * { font-size: 0.9rem; }
   .tbl-form { font-size: 0.9rem; }
   .tbl-form tr > * { height: 3rem; padding: 0.3rem 0.5rem; }

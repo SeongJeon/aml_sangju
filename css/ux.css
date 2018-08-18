@@ -5,9 +5,10 @@
 
 @import url("main.css"); /* main */
 @import url("member.css"); /* 멤버존 */
-@import url("openboard.css"); /* 열린마당 */
-@import url("culture.css"); /* 문화행사 */
-@import url("use.css"); /* 이용안내 */
-@import url("smalllib.css"); /* 작은도서관 */
-@import url("introduce.css"); /* 도서관소개 */
+@import url("community.css"); /* 공지사항 */
+@import url("data.css"); /* 자료실 */
+@import url("customer.css"); /* 고객지원 */
+@import url("education.css"); /* 교육훈련 */
+@import url("business.css"); /* 임대사업 */
+@import url("introduce.css"); /* 임대사업소개 */
 

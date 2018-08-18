@@ -6,7 +6,7 @@
 @import url("main.css"); /* main */
 @import url("member.css"); /* 멤버존 */
 @import url("community.css"); /* 공지사항 */
-@import url("data.css"); /* 자료실 */
+/*@import url("data.css"); */ /* 자료실 */
 @import url("customer.css"); /* 고객지원 */
 @import url("education.css"); /* 교육훈련 */
 @import url("business.css"); /* 임대사업 */

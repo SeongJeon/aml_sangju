@@ -222,7 +222,7 @@ br.mo { display: none; }
 .btn-type2.write:before { display: inline-block; content: ""; vertical-align: -5px; width: 22px; height: 20px; margin-right: 7px; background: url("../images/icon/icon-write.png") no-repeat 50% 50%; }
 
 .btn-type3 { display: inline-block; min-width: 94px; height: 34px; padding: 0 10px; color: #575757; line-height: 32px; font-size: 15px; box-sizing: border-box; text-align: center; border-width: 1px; border-style: solid; border-color: #c8c8c8; }
-.btn-type3.fileadd { padding: 0 15px; }
+.btn-type3.fileadd { padding: 0 10px; width: 112px; box-sizing: border-box; }
 .btn-type3.fileadd:before { display: inline-block; content: ""; width: 19px; height: 14px; background: url("../images/icon/icon-fileadd.png") no-repeat 50% 50%; margin-right: 5px; vertical-align: middle; }
 
 .btn-type4 { display: inline-block; min-width: 58px; padding: 0 10px 2px; line-height: 36px; color: #fff; border-width: 1px; border-style: solid; border-color: #22b24c; box-sizing: content-box; text-align: center; letter-spacing: -0.5px; font-size: 15px; background: #22b24c; }
@@ -565,10 +565,12 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   .btn-type2.write:before { vertical-align: -5px; width: 1.1rem; height: 1rem; margin-right: 7px; background-size: auto 100%; }
   .btn-type3 { min-width: inherit; height: 2.7rem; padding: 0 0.5rem; line-height: 2.5rem; font-size: 0.8rem; }
   .btn-type3.green { line-height: 2.5rem; }
-  .btn-type3.write { line-height: 2.5rem; }
-  .btn-type3.write:before { vertical-align: -5px; width: 1.1rem; height: 1rem; margin-right: 7px; background-size: auto 100%; }
+  .btn-type3.fileadd { padding: 0 0.2rem; width: 6rem; }
+  .btn-type3.fileadd:before { width: 1rem; height: 0.7rem; background-size: auto 100%; margin-right: 0.2rem; }
   .btn-type4 { min-width: inherit; height: 2.5rem; padding: 0 0.5rem; line-height: 2.3rem; font-size: 0.8rem; box-sizing: border-box; }
   .btn-type5 { min-width: 6rem; padding: 0 1rem 2px; line-height: 2.5rem; font-size: 0.8rem; }
+  /* BUTTON SUBMIT GROUP */
+  .btn-submit-group { margin-top: 3rem; }
   /* TITLE */
   .h3 { font-size: 1.4rem; }
   .h3:before { top: 0.1rem; width: 1rem; height: 1rem; margin-right: 0.3rem; background-size: auto 100%; }

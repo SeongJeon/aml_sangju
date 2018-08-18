@@ -425,6 +425,13 @@ var plugin_lnb = (function(){
 	})
 })();
 
+
+// ADD FILE
+$(document).on("click", ".form--addfile .fileadd", function(){
+	$(this).next("input[type=file]").trigger("click");
+});
+
+
 /* -----------------------------------------------------------------
 DOCUMENT READY
 ----------------------------------------------------------------- */

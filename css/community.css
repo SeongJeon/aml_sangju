@@ -72,13 +72,31 @@ select::-ms-expand { display: none; }
 @media (max-width: 600px) { html { font-size: 13px; } }
 @media (max-width: 430px) { html { font-size: 11px; } }
 @media (max-width: 375px) { html { font-size: 10px; } }
+/* 공통 FORM UI */
 /* 비밀번호 확인 */
 .pw-confiirm-zone { position: relative; width: 475px; padding: 15px 122px 15px 22px; margin: 80px auto 0; background: #f5f5f5; border: 1px solid #d2d2d2; box-sizing: border-box; }
 .pw-confiirm-zone .btn-type4 { position: absolute; top: 15px; right: 22px; width: 101px; box-sizing: border-box; }
+
+/* 글쓰기 */
+.form--addfile { position: relative; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+.form--addfile .inp-type1 { flex: 1; }
+.form--addfile .btn-type3 { margin-left: -1px; }
+.form--addfile .txt { display: inline-block; width: 80px; margin-left: 8px; font-size: 15px; color: #22b24c; line-height: 34px; }
+.form--addfile input[type=file] { position: absolute; left: -9999em; width: 1px; height: 1px; }
+
+/* 텍스트에디터 */
+.form--texteditor { overflow: hidden; width: 100%; height: 210px; }
+
+/* 커뮤니티 공통 */
+.community .inp-type1.size--small { width: 235px; }
 
 @media (max-width: 1040px) { /* 비밀번호 확인 */
   .pw-confiirm-zone { margin: 4rem auto 0; } }
 @media (max-width: 768px) { /* 비밀번호 확인 */
   .pw-confiirm-zone { width: 90%; padding: 1rem 1rem 1rem; margin: 3rem auto 4rem; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   .pw-confiirm-zone .ipt-type2 { flex: 1; }
-  .pw-confiirm-zone .btn-type4 { position: static; width: 6rem; } }
+  .pw-confiirm-zone .btn-type4 { position: static; width: 6rem; }
+  /* 글쓰기 */
+  .form--addfile .txt { width: auto; margin-left: 0.3rem; font-size: 0.8rem; line-height: 2.7rem; }
+  /* 커뮤니티 공통 */
+  .community .inp-type1.size--small { width: 100%; } }

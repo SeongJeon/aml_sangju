@@ -358,9 +358,8 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
 .tbl-form.type2 tr > * { border-bottom: 1px solid #ddd; }
 .tbl-form.type2 th { background: #f5f5f5; }
 .tbl-form.type3 { border-top-color: #22b24c; border-bottom-color: #dddddd; }
-.tbl-form.type3 tr > * { border-bottom: 1px solid #ddd; font-size: 15px; text-align: center; }
-.tbl-form.type3 tr > *[colspan] { text-align: left; }
-.tbl-form.type3 th { width: auto; padding: 0 5px; background: #f5f5f5; }
+.tbl-form.type3 tr > * { border-bottom: 1px solid #ddd; font-size: 15px; }
+.tbl-form.type3 th { width: auto; padding: 0 5px; background: #f5f5f5; text-align: center; }
 
 .tbl-top { text-align: right; margin-bottom: 12px; color: #535353; }
 .tbl-top .point04 { font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
@@ -435,6 +434,19 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
 .satisfaction-zone .infor-box .lst li:first-child { margin: 0; }
 .satisfaction-zone .infor-box .lst li:before { display: inline-block; content: ""; width: 8px; height: 2px; margin-right: 10px; background: #333; vertical-align: middle; }
 .satisfaction-zone .infor-box .date { float: right; }
+
+/* RIPLY */
+.ui--reply { margin-top: 20px; border-top: 2px solid #d7d6d6; }
+.ui--reply .form-reply { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; padding: 20px; background: #eff0f1; }
+.ui--reply .form-reply .form-textarea { flex: 1; display: inline-block; position: relative; vertical-align: top; }
+.ui--reply .form-reply .form-textarea textarea { width: 100%; height: 80px; border: 1px solid #dcdcdc; background: #fff; font-size: 14px; padding: 10px 10px 25px; resize: none; box-sizing: border-box; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; vertical-align: top; }
+.ui--reply .form-reply .form-textarea .byte { position: absolute; right: 10px; bottom: 10px; font-size: 12px; font-weight: bold; color: #adadad; }
+.ui--reply .form-reply button { width: 132px; margin-left: 5px; background: #1a8d45; height: 80px; color: #fff; font-weight: bold; font-size: 16px; text-align: center; }
+.ui--reply .lst-reply li { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; overflow: hidden; padding: 14px 20px 16px; border-bottom: 1px solid #e2e1e1; font-size: 14px; color: #adadad; }
+.ui--reply .lst-reply .cont { width: 530px; padding-right: 10px; box-sizing: border-box; }
+.ui--reply .lst-reply .writer { flex: 1; }
+.ui--reply .lst-reply .date { width: 85px; text-align: right; }
+.ui--reply .lst-reply .btn-remove { position: relative; top: -1px; width: 24px; height: 24px; margin-left: 18px; text-indent: -9999em; background: url("../images/button/btn-remove.png") no-repeat 50% 50%; vertical-align: top; }
 
 /* LAYER */
 #layer { display: none; position: fixed; min-width: 320px; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0, 0, 0, 0.6); z-index: 100000; }
@@ -607,7 +619,8 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   .tbl-form th .important + span { margin-left: 0.7rem; }
   .tbl-form.type2 tr > * { font-size: 0.9rem; }
   .tbl-form.type2 th { font-size: 1rem; }
-  .tbl-form.type3 tr > * { font-size: 0.9rem; }
+  .tbl-form.type3 tr > * { font-size: 0.9rem; text-align: center; }
+  .tbl-form.type3 tr > *[colspan] { text-align: left; }
   .tbl-form.type3 th { padding: 0 0.1rem; }
   /* TAB */
   .ui--tab li { display: table; width: 16.66%; height: 4rem; }
@@ -669,6 +682,17 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   .satisfaction-zone .infor-box .lst li:nth-child(2) { text-align: center; }
   .satisfaction-zone .infor-box .lst li:nth-child(3) { text-align: right; }
   .satisfaction-zone .infor-box .date { float: none; margin-top: 0.5rem; text-align: center; }
+  /* RIPLY */
+  .ui--reply { margin-top: 1rem; }
+  .ui--reply .form-reply { display: block; padding: 1rem; }
+  .ui--reply .form-reply .form-textarea { flex: inherit; display: block; }
+  .ui--reply .form-reply .form-textarea textarea { width: 100%; height: 6rem; font-size: 0.8rem; padding: 0.5rem 0.5rem 1.2rem; }
+  .ui--reply .form-reply .form-textarea .byte { right: 0.5rem; bottom: 0.5rem; font-size: 0.7rem; }
+  .ui--reply .form-reply button { width: 100%; margin: 0.2rem 0 0; height: 3rem; font-size: 0.8rem; }
+  .ui--reply .lst-reply li { padding: 1rem 0.5rem; font-size: 0.8rem; }
+  .ui--reply .lst-reply .cont { width: 67%; padding-right: 1rem; }
+  .ui--reply .lst-reply .date { width: 5rem; }
+  .ui--reply .lst-reply .btn-remove { top: 0; width: 1.2rem; height: 1.1rem; margin-left: 0.5rem; background-size: auto 100%; }
   /* LAYER */
   #layer .layer-inner .layer-container { width: 95%; }
   #layer .layer-inner .layer-container .layer-header .desc { font-size: 0.9rem; line-height: 1.3rem; }

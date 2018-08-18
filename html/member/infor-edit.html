@@ -88,6 +88,118 @@
 						<div class="content-zone">
 							<h3 class="h3">개인정보수정</h3>
 
+							<!-- 폼 테이블 영역 -->
+							<p class="tbl-top"><strong class="point02">*</strong> 표시는 필수 입력사항 입니다.</p>
+							<table class="tbl-form">
+								<caption>개인정보수정 - 아이디, 기존 비밀번호, 변경할 비밀번호, 이름, 이메일, 전화번호, 휴대전화, 주소</caption>
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><span>아이디</span></th>
+										<td><input type="text" name="" id="" title="아이디 입력" readonly="readonly" class="inp-type1" value="aml_sangju"></td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>기존 비밀번호</span></th>
+										<td><input type="password" name="" id="" title="기존 비밀번호 입력" class="inp-type1 size--small"></td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>변경할 비밀번호</span></th>
+										<td>
+											<input type="password" name="" id="" title="변경할 비밀번호 입력" class="inp-type1">
+											<input type="password" name="" id="" title="변경할 비밀번호 확인 입력" class="inp-type1" placeholder="비밀번호 확인">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><span>이름</span></th>
+										<td><input type="text" name="" id="" title="이름 입력" class="inp-type1" value="홍길동"></td>
+									</tr>
+									<tr>
+										<th scope="row"><span>이메일</span></th>
+										<td>
+											<div class="form--email">
+												<input type="text" name="" id="" title="이메일 아이디 입력" class="inp-type1" value="aml_sangju">
+												<span class="txt">@</span>
+												<input type="text" name="" id="" title="이메일 도메인 입력" class="inp-type1" value="naver.com">
+												<div class="sel-type1">
+													<select name="" id="" title="도메인 선택">
+														<option value="">직접입력</option>
+													</select>
+												</div>
+											</div>
+											<ul class="ipt-lst">
+												<li class="radio-type1"><input type="radio" name="sendagree" id="agree1" checked="checked"><label for="agree1"><span>이메일 수신 동의</span></label></li>
+												<li class="radio-type1"><input type="radio" name="sendagree" id="agree2"><label for="agree2"><span>이메일 수신 미동의</span></label></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>전화번호</span></th>
+										<td>
+											<div class="form--call">
+												<div class="sel-type1">
+													<select name="" id="" title="전화번호 앞자리 선택">
+														<option value="">070</option>
+													</select>
+												</div>
+												<span class="txt">-</span>
+												<input type="text" name="" id="" title="전화번호 중간자리 입력" class="inp-type1" value="1234">
+												<span class="txt">-</span>
+												<input type="text" name="" id="" title="전화번호 마지막자리 입력" class="inp-type1" value="5678">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>휴대전화</span></th>
+										<td>
+											<div class="form--call">
+												<div class="sel-type1">
+													<select name="" id="" title="휴대전화 앞자리 선택">
+														<option value="">010</option>
+													</select>
+												</div>
+												<span class="txt">-</span>
+												<input type="text" name="" id="" title="휴대전화 중간자리 입력" class="inp-type1">
+												<span class="txt">-</span>
+												<input type="text" name="" id="" title="휴대전화 마지막자리 입력" class="inp-type1">
+											</div>
+											<ul class="ipt-lst">
+												<li class="radio-type1"><input type="radio" name="messgeagree" id="messgeagree1" checked="checked"><label for="messgeagree1"><span>문자 수신 동의</span></label></li>
+												<li class="radio-type1"><input type="radio" name="messgeagree" id="messgeagree2"><label for="messgeagree2"><span>문자 수신 미동의</span></label></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>주소</span></th>
+										<td>
+											<div class="form--addr">
+												<div class="block">
+													<input type="text" name="" id="" title="우편번호 입력" class="inp-type1" placeholder="우편번호(ex.12345)">
+													<a href="#" class="btn-type3"><span>우편번호 검색</span></a>
+												</div>
+												<div class="block">
+													<input type="text" name="" id="" title="기본주소 입력" class="inp-type1" placeholder="기본주소">
+													<input type="text" name="" id="" title="상세주소 입력" class="inp-type1" placeholder="상세주소">
+												</div>
+											</div>
+											<ul class="ipt-lst">
+												<li class="radio-type1"><input type="radio" name="letteragree" id="letteragree1" checked="checked"><label for="letteragree1"><span>우편물 수신 동의</span></label></li>
+												<li class="radio-type1"><input type="radio" name="letteragree" id="letteragree2"><label for="letteragree2"><span>우편물 수신 미동의</span></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //폼 테이블 영역 -->
+
+							<!-- 하단 버튼 영역 -->
+							<div class="btn-submit-group">
+								<button type="submit" class="btn-type2 green"><span>수정완료</span></button>
+							</div>
+							<!-- //하단 버튼 영역 -->
+
 						</div>
 						<!-- //페이지 컨텐츠 -->
 

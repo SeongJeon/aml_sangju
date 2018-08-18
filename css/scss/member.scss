@@ -91,7 +91,7 @@
               width: 20px;
               height: 20px;
               background: url(/aml_sangju/images/member/bul-site.png) no-repeat
-                left top;
+              left top;
               content: "";
             }
           }
@@ -116,31 +116,31 @@
       li {
         &:nth-child(1):before {
           background: url(/aml_sangju/images/member/ico-veiw01.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(2):before {
           background: url(/aml_sangju/images/member/ico-veiw02.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(3):before {
           background: url(/aml_sangju/images/member/ico-veiw03.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(4):before {
           background: url(/aml_sangju/images/member/ico-veiw04.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(5):before {
           background: url(/aml_sangju/images/member/ico-veiw05.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(6):before {
           background: url(/aml_sangju/images/member/ico-veiw06.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(7):before {
           background: url(/aml_sangju/images/member/ico-veiw07.png) no-repeat
-            left top;
+          left top;
         }
       }
     }
@@ -148,15 +148,15 @@
       li {
         &:nth-child(1):before {
           background: url(/aml_sangju/images/member/ico-veiw08.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(2):before {
           background: url(/aml_sangju/images/member/ico-veiw09.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(3):before {
           background: url(/aml_sangju/images/member/ico-veiw10.png) no-repeat
-            left top;
+          left top;
         }
       }
     }
@@ -164,15 +164,15 @@
       li {
         &:nth-child(1):before {
           background: url(/aml_sangju/images/member/ico-veiw08.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(2):before {
           background: url(/aml_sangju/images/member/ico-veiw09.png) no-repeat
-            left top;
+          left top;
         }
         &:nth-child(3):before {
           background: url(/aml_sangju/images/member/ico-veiw10.png) no-repeat
-            left top;
+          left top;
         }
       }
     }
@@ -217,7 +217,7 @@
             width: 15px;
             height: 15px;
             background: url(/aml_sangju/images/member/ico-down.png) no-repeat
-              50% 50%;
+            50% 50%;
             vertical-align: -1px;
             content: "";
           }
@@ -225,6 +225,44 @@
       }
     }
   }
+
+
+
+
+
+	.tbl-form {
+		.inp-type1 {width:266px;}
+		.ipt-lst {
+			margin:7px 0 5px;
+			li {margin-right: 0;}
+			li + li { margin-left:30px}
+		}
+	}
+	/* 이메일  */
+	.form--email {
+		.txt {margin:0 4px; font-size:15px;}
+		.inp-type1:nth-of-type(1) {width:266px;}
+		.inp-type1:nth-of-type(2) {width:123px;}
+		.sel-type1 {display:inline-block; width:123px; margin-left:2px;}
+	}
+	/* 전화번호 */
+	.form--call {
+		display: inline-block;
+		.sel-type1 {display: inline-block; width:86px;}
+		.inp-type1 {width:86px;}
+		& + .ipt-lst {
+			display: inline-block; margin:0 0 0 10px; vertical-align: middle; line-height: 1;
+			li + li {margin-left:12px}
+		}
+	}
+	/* 주소 */
+	.form--addr {
+		.block {
+			margin-top:4px;
+			&:nth-of-type(1) {margin-top:0;}
+		}
+		.btn-type3 {vertical-align: top;}
+	}
 }
 
 @media (max-width: 1040px) {
@@ -276,6 +314,54 @@
     }
   }
 }
+
+@media (max-width:800px) {
+	.member {
+		.tbl-form {
+			.inp-type1 {
+				width:100%;
+				& + .inp-type1 {margin-top:0.3rem}
+			}
+			.ipt-lst {
+				margin:0.3rem 0; line-height: 1;
+				li + li { margin-left:1rem}
+			}
+		}
+
+		/* 이메일  */
+		.form--email {
+			position: relative;
+			.inp-type1 {width:100% !important;}
+			.inp-type1:nth-of-type(1) {padding-right:2rem; margin-bottom:0.3rem;}
+			.txt {display:inline-block; position:absolute;  right:0; top:0; width:2rem; margin:0; font-size:0.8rem;line-height: 2.7rem; text-align:center;}
+			.sel-type1 {display:block; width:100%; margin:0.3rem 0 0;}
+		}
+		/* 전화번호 */
+		.form--call {
+			display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; 
+			.sel-type1 {flex:1}
+			.inp-type1 {flex:1}
+			.txt {margin:0 0.3rem; line-height: 2.7rem;}
+			.ipt-lst {
+				display:block; margin:0.3rem 0 0;
+				li + li {margin-left:1rem}
+			}
+		}
+		/* 주소 */
+		.form--addr {
+			.block {
+				margin-top:0.3rem;
+				&:nth-of-type(1) {
+					margin-top:0; 
+					display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+					.inp-type1 {flex:1}
+				}
+			}
+			.btn-type3 {margin-left:0.3rem; vertical-align: top;}
+		}
+	}
+}
+
 
 @media (max-width: 768px) {
   .member {

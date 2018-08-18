@@ -1,7 +1,16 @@
 @charset "utf-8";
 
 @import 'base';
-@import 'reset';
+
+
+/* 커뮤니티 공통 */ 
+.community {
+    .inp-type1.size--small {width:235px;}
+}
+
+
+
+
 
 
 /* 공통 FORM UI */
@@ -31,22 +40,6 @@
 
 
 
-/* 커뮤니티 공통 */ 
-.community {
-	.inp-type1.size--small {width:235px;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -69,6 +62,12 @@
 
 }
 @media (max-width:768px) {
+	/* 커뮤니티 공통 */ 
+	.community {
+		.inp-type1.size--small {width:100%;}
+	}
+
+
 	/* 비밀번호 확인 */
 	.pw-confiirm-zone {
 		width:90%; padding:1rem 1rem 1rem; margin:3rem auto 4rem; 
@@ -76,20 +75,10 @@
 		.ipt-type2 {flex:1;}
 		.btn-type4 {position: static; width:6rem;}
 	}
-
-
 	/* 글쓰기 */
 	.form--addfile {
 		.txt {width:auto; margin-left:0.3rem; font-size:0.8rem; line-height:2.7rem;}	
 	}
-
-
-	/* 커뮤니티 공통 */ 
-	.community {
-		.inp-type1.size--small {width:100%;}
-	}
-
-
 }
 @media (max-width:470px) {
 }

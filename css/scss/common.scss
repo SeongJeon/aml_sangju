@@ -221,7 +221,7 @@
 	}
 
 	#contents {
-		min-height:1000px; //temp
+		min-height:800px; //temp
 		position: relative; padding:65px 0 250px 260px;
 		.page-title-zone {
 			position:relative; padding-bottom:22px; margin-bottom:30px; border-bottom:1px solid #cbc8c7; text-align:center;
@@ -366,7 +366,7 @@ br.mo {display:none}
 	position: relative; display: inline-block; overflow:hidden;
 	input {position:absolute; overflow:hidden; left:3px; top:50%; width:1px; height:1px;  visibility: hidden;}
 	label {
-		display:inline-block; position:relative; font-size:14px; color:#777; cursor:pointer; line-height:18px;
+		display:inline-block; position:relative; font-size:14px; color:#777; cursor:pointer; line-height:18px; letter-spacing: -0.5px;
 		&:before {display:inline-block; content:""; width:18px; height:18px; @include background("common/ipt-radio.png",no-repeat 0 0); vertical-align:middle;}
 		span {margin-left:6px}
 	}
@@ -490,7 +490,7 @@ p.txt-hyphen {
 		height:44px; border-bottom:1px solid #c6c6c6; color:#333; box-sizing:border-box;
 	}
 	th {
-		width:168px; padding-left:20px; color:#333; background:#f0f7e8; font-weight:normal; font-size:15px;
+		width:168px; padding-left:20px; color:#333; background:#f0f7e8; font-weight:normal; font-size:15px; text-align: left; 
 		span {position:relative; display:inline-block; margin-left:20px}
 		.important {color:#ee0808; font-family:$font3;}
 		.important + span {margin-left:10px}
@@ -940,7 +940,7 @@ p.txt-hyphen {
 			.share {top:0.8rem; right:0;}
 		}
 		#contents {
-			padding:1.8rem 1rem 15rem; min-height:calc(100vh - 40rem);
+			padding:1.8rem 1rem 17rem; min-height:calc(100vh - 40rem);
 			.page-title-zone {
 				padding-bottom:1.2rem; margin-bottom:1.25rem;
 				.page-title {font-size:1.7rem;}
@@ -998,7 +998,11 @@ p.txt-hyphen {
 	/* BUTTON SUBMIT GROUP */
 	.btn-submit-group {
 		margin-top:3rem;
+		.btn-type2 {min-width:6rem; padding:0 1rem 3px}
+		.btn-type4 {min-width:6rem;}
 	}
+	
+
 
 
 
@@ -1071,9 +1075,9 @@ p.txt-hyphen {
 		font-size:0.9rem;
 		tr > * {height:3rem; padding:0.3rem 0.5rem; }
 		th {
-			width:25%; padding-left:1rem;
-			span {margin-left:1.25rem}
-			.important + span {margin-left:0.7rem}
+			width:25%; padding-left:0.5rem; font-size:0.9rem;
+			span {margin-left:0.8rem}
+			.important + span {margin-left:0.3rem}
 		}
 
 		&.type2 {
@@ -1088,6 +1092,8 @@ p.txt-hyphen {
 			th {padding:0 0.1rem;}
 		}
 	}
+
+	.tbl-top {margin-bottom:0.6rem; font-size:0.9rem;}
 
 
 
@@ -1339,7 +1345,7 @@ p.txt-hyphen {
 @media (max-width:360px) {
 	/* CONTAINER */
 	#container {
-		#contents {padding:1.9rem 1rem 16rem; }
+		#contents {padding:1.9rem 1rem 17rem; }
 	}
 	/* GALLERY LIST */
 	.pc .ui--gallery-lst {

@@ -12,7 +12,7 @@
 		<div class="count">
 			<p class="total">총 :
 				<a href="#"></a> 페이지 </p>
-				<p class="complete">완료 : <a href="#"></a> 페이지 (<em></em>%)</p>
+			<p class="complete">완료 : <a href="#"></a> 페이지 (<em></em>%)</p>
 			<!-- <p class="progress">진행 중 : <a href="#"></a> 페이지 (<em></em>%)</p> -->
 		</div>
 	</div>
@@ -418,7 +418,7 @@
 				<td></td>
 				<!-- 비고  -->
 			</tr>
-			<tr >
+			<tr>
 				<td></td>
 				<!-- 2depth -->
 				<td></td>
@@ -753,7 +753,7 @@
 			<tr>
 				<td></td>
 				<!-- 2depth -->
-				<td>개인정보처리방침</td>
+				<td>개인정보보호정책</td>
 				<!-- 3depth -->
 				<td></td>
 				<!-- 1depth -->
@@ -765,7 +765,7 @@
 				<!-- 파일명 -->
 				<td></td>
 				<!-- 완료 날짜 -->
-				<td>0</td>
+				<td>2</td>
 				<!-- 작업 전 0 / 작업 중 1 / 완료 2  -->
 				<td></td>
 				<!-- 비고  -->
@@ -839,12 +839,12 @@
 
 <script>
 	// default
-	var txt, c=0, per;
+	var txt, c = 0, per;
 	// complete
 	$("table tbody tr").each(function () {
 		$(this).addClass("before");
 
-		if($(this).find("td:nth-child(7)").text() == "2") c++;
+		if ($(this).find("td:nth-child(7)").text() == "2") c++;
 
 		txt = parseInt($(this).find("td:nth-child(7)").text());
 		switch (txt) {
@@ -858,7 +858,7 @@
 
 	})
 
-	per = Math.ceil(c*(100/$("table tbody tr").length)) ;
+	per = Math.ceil(c * (100 / $("table tbody tr").length));
 	$('.count .complete a').text(c).next("em").text(per);
 
 	$("table a").on("click", function () {

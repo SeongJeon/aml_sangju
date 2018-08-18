@@ -1,0 +1,27 @@
+.member .txt-box { text-align: center; letter-spacing: -2px; font-size: 18px; font-weight: bold; line-height: 24px; margin-bottom: 28px; }
+
+.member .ui--tab { margin-bottom: 40px; }
+
+.member .h4 { margin: 30px 0 14px 20px; }
+
+.member .txt-hyphen { margin-left: 44px; }
+
+.member .txt-hyphen > li { margin-top: 30px; }
+
+.member .txt-hyphen > li:first-child { margin-top: 0; }
+
+.member .txt-hyphen .txt-num em { display: block; margin-top: 30px; }
+
+.member .txt-hyphen .txt-num ul { margin-left: 20px; }
+
+@media (max-width: 1040px) { .member .txt-box { font-size: 14px; }
+  .member .h4.type2 { margin: 15px 0 7px 10px; }
+  .member .txt-hyphen > li { margin-top: 0.8rem; font-size: 1rem; }
+  .member .txt-hyphen .txt-num em { margin-top: 0.8rem; } }
+
+@media (max-width: 360px) { .member .txt-box { margin-bottom: 14px; font-size: 12px; }
+  .member .ui--tab { margin-bottom: 20px; }
+  .member .txt-hyphen { margin-left: 20px; }
+  .member .txt-hyphen > li { line-height: 18px; }
+  .member .txt-hyphen > li:before { top: 8px; }
+  .member .txt-hyphen .txt-num ul { margin-left: 14px; } }

@@ -24,6 +24,10 @@
 .form--texteditor {
 	overflow:hidden; width:100%; height:210px;
 }
+/* 상세 내용보기 */
+.form--content {
+	overflow:hidden; width:100%; min-height:350px; padding:10px; color:#525252; font-size:15px; line-height: 24px;
+}
 
 
 
@@ -55,6 +59,13 @@
 	.pw-confiirm-zone {
 		margin:4rem auto 0; 
 	}
+
+	/* 상세 내용보기 */
+	.form--content {
+		padding:0.5rem;
+		min-height:20rem; font-size:0.9rem; line-height: 1.4;
+	}
+
 
 }
 @media (max-width:768px) {

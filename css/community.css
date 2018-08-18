@@ -78,3 +78,7 @@ select::-ms-expand { display: none; }
 
 @media (max-width: 1040px) { /* 비밀번호 확인 */
   .pw-confiirm-zone { margin: 4rem auto 0; } }
+@media (max-width: 768px) { /* 비밀번호 확인 */
+  .pw-confiirm-zone { width: 90%; padding: 1rem 1rem 1rem; margin: 3rem auto 4rem; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .pw-confiirm-zone .ipt-type2 { flex: 1; }
+  .pw-confiirm-zone .btn-type4 { position: static; width: 6rem; } }

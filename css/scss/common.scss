@@ -509,6 +509,8 @@ p.txt-hyphen {
 		}
 		th {width:auto; padding:0 5px; background: #f5f5f5; text-align:center;}
 	}
+
+	.txt-help {margin:3px 0;color:#1a8d45; font-size:14px;}
 }
 
 .tbl-top {
@@ -985,8 +987,8 @@ p.txt-hyphen {
 		&.green {line-height:2.5rem;}
 
 		&.fileadd {
-			padding:0 0.2rem; width:6rem;
-			&:before {width:1rem; height:0.7rem;background-size: auto 100%; margin-right:0.2rem;}
+			padding:0 0.2rem; width:6rem;font-size:0.8rem;
+			&:before {width:1rem; height:0.7rem;background-size: auto 100%; margin-right:0.2rem; }
 		}
 	}
 	.btn-type4 {
@@ -1091,6 +1093,8 @@ p.txt-hyphen {
 			}
 			th {padding:0 0.1rem;}
 		}
+
+		.txt-help {font-size:0.9rem; margin:0.3rem 0;}
 	}
 
 	.tbl-top {margin-bottom:0.6rem; font-size:0.9rem;}

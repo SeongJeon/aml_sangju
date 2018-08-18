@@ -6,6 +6,11 @@
 /* 커뮤니티 공통 */ 
 .community {
     .inp-type1.size--small {width:235px;}
+    .tbl-form.type3 {
+    	td {color:#525252}
+    	.tit {font-weight: bold; color:#333;}
+	   .file a:hover {text-decoration: underline;}
+    }
 }
 
 

@@ -360,6 +360,7 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
 .tbl-form.type3 { border-top-color: #22b24c; border-bottom-color: #dddddd; }
 .tbl-form.type3 tr > * { border-bottom: 1px solid #ddd; font-size: 15px; }
 .tbl-form.type3 th { width: auto; padding: 0 5px; background: #f5f5f5; text-align: center; }
+.tbl-form .txt-help { margin: 3px 0; color: #1a8d45; font-size: 14px; }
 
 .tbl-top { text-align: right; margin-bottom: 12px; color: #535353; }
 .tbl-top .point04 { font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
@@ -596,7 +597,7 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   .btn-type2.write:before { vertical-align: -5px; width: 1.1rem; height: 1rem; margin-right: 7px; background-size: auto 100%; }
   .btn-type3 { min-width: inherit; height: 2.7rem; padding: 0 0.5rem; line-height: 2.5rem; font-size: 0.8rem; }
   .btn-type3.green { line-height: 2.5rem; }
-  .btn-type3.fileadd { padding: 0 0.2rem; width: 6rem; }
+  .btn-type3.fileadd { padding: 0 0.2rem; width: 6rem; font-size: 0.8rem; }
   .btn-type3.fileadd:before { width: 1rem; height: 0.7rem; background-size: auto 100%; margin-right: 0.2rem; }
   .btn-type4 { min-width: inherit; height: 2.5rem; padding: 0 0.5rem; line-height: 2.3rem; font-size: 0.8rem; box-sizing: border-box; }
   .btn-type5 { min-width: 6rem; padding: 0 1rem 2px; line-height: 2.5rem; font-size: 0.8rem; }
@@ -639,6 +640,7 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   .tbl-form.type3 tr > * { font-size: 0.9rem; text-align: center; }
   .tbl-form.type3 tr > *[colspan] { text-align: left; }
   .tbl-form.type3 th { padding: 0 0.1rem; }
+  .tbl-form .txt-help { font-size: 0.9rem; margin: 0.3rem 0; }
   .tbl-top { margin-bottom: 0.6rem; font-size: 0.9rem; }
   /* TAB */
   .ui--tab li { display: table; width: 16.66%; height: 4rem; }

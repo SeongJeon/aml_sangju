@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* 커뮤니티 공통 */
 .community .inp-type1.size--small { width: 235px; }
+.community .tbl-form.type3 td { color: #525252; }
+.community .tbl-form.type3 .tit { font-weight: bold; color: #333; }
+.community .tbl-form.type3 .file a:hover { text-decoration: underline; }
 
 /* 공통 FORM UI */
 /* 비밀번호 확인 */

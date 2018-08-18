@@ -21,7 +21,7 @@
 		<header><!-- /aml_sangju/html/include/header.html --> </header>
 
 		<main>
-			<div id="container" class="member"><!-- member(멤버존) / introduce(임대사업소개) / business(임대사업) /	education(교육훈련) /	customer(고객지원) / community(커뮤니티) / data(자료실)    -->
+			<div id="container" class="community">
 				<div id="breadcrumb">
 					<div class="inner">
 						<ol class="breadcrumb">
@@ -38,21 +38,11 @@
 					<div id="lnb">
 						<nav>
 							<div class="tit-depth2">
-								<h2>도서관 소개 <span class="small">Introduce Library</span></h2>
+								<h2>커뮤니티 <span class="small">Good, Sang Ju!</span></h2>
 							</div>
 							<ul class="menu">
-								<li class="current"><h3> <a href="#">메뉴1</a> </h3></li>
-								<li><h3> <a href="#">메뉴2 <span class="hidden">현재 선택 메뉴</span></a> </h3></li>
-								<li><h3> <a href="#">메뉴3</a> </h3></li>
-								<li class="more on"><!-- 소메뉴있을 시 more 클래스 추가 / 초기 열어두고 싶을땐 on 클래스 추가 -->
-									<h3> <a href="#">메뉴4</a> </h3>
-									<div class="depth">
-										<ul>
-											<li class="current"><h4><a href="#">소메뉴1</a></h4></li><!-- 현재메뉴 표현시 current 클래스 추가 -->
-											<li><h4><a href="#">소메뉴2</a></h4></li>
-										</ul>
-									</div>
-								</li>
+								<li class="current"><h3> <a href="#">공지사항 <span class="hidden">현재 선택 메뉴</span></a> </h3></li>
+								<li><h3> <a href="#">자유게시판</a> </h3></li>
 							</ul>
 						</nav>
 					</div> <!-- //lnb -->
@@ -60,15 +50,78 @@
 					<div id="contents">
 						<!-- 페이지 타이틀 -->
 						<div class="page-title-zone">
-							<h2 class="page-title">제목</h2>
+							<h2 class="page-title">공지사항</h2>
 							<p class="desc">농업은 생명, 농촌은 미래, 상주시 농기계임대사업 홈페이지에 오신것을 환영합니다.</p>
 						</div>
 						<!-- //페이지 타이틀 -->
 
 						<!-- 페이지 컨텐츠 -->
 						<div class="content-zone">
-							<!-- 내용 -->
+							<!-- 검색영역 -->
+							<div class="ui--searchzone">
+								<div class="form">
+									<div class="sel-type2">
+										<select name="" id="" title="분류 선택">
+											<option value="">졔목+내용</option>
+										</select>
+									</div>
+									<input type="text" class="inp-type2" placeholder="장비를 입력해주세요." title="검색어 입력">
+									<button type="submit" class="btn-type4"><span>검색</span></button>
+								</div>
+							</div>
+							<!-- //검색영역 -->
 
+							<!-- 목록 -->
+							<table class="tbl-list type2">
+								<caption>공지사항 목록 - 번호, 제목, 첨부파일, 작성자, 작성일</caption>
+								<colgroup>
+									<col style="width:8%" class="pc">
+									<col>
+									<col style="width:10%">
+									<col style="width:10%" class="pc">
+									<col style="width:12%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="pc">번호</th>
+										<th scope="col">제목</th>
+										<th scope="col">첨부파일</th>
+										<th scope="col">작성자</th>
+										<th scope="col">작성일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="pc">10</td>
+										<td class="lnk">
+											<em class="noti">공지</em>
+											<a href="#">소형건설기계(소형굴삭기, 지게차)교육 상주에서도 취득이 가능합니다.</a>
+										</td>
+										<td><span class="icon-file">첨부파일</span></td>
+										<td class="pc">관리자</td>
+										<td>0000-00-00</td>
+									</tr>
+								</tbody>
+							</table>							
+							<!-- //목록 -->
+							
+							<!-- 페이징 -->
+							<div class="ui--paging">
+								<div>
+									<p class="allprev"><a href="#"><span>목록 처음으로 이동</span></a></p>
+									<p class="prev"><a href="#"><span>이전으로 이동</span></a></p>
+									<ol>
+										<li class="on"><a href="#"><span>1</span></a></li>
+										<li><a href="#"><span>2</span></a></li>
+										<li><a href="#"><span>3</span></a></li>
+										<li><a href="#"><span>4</span></a></li>
+										<li><a href="#"><span>5</span></a></li>
+									</ol>
+									<p class="allnext"><a href="#"><span>목록 마지막으로 이동</span></a></p>
+									<p class="next"><a href="#"><span>다음으로 이동</span></a></p>
+								</div>
+							</div>
+							<!--// 페이징 -->
 						</div>
 						<!-- //페이지 컨텐츠 -->
 

@@ -327,11 +327,11 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
 .tbl-type1 thead th:first-child { border-left: 0; }
 .tbl-type1 thead th[rowspan] { border-right: 1px solid #e2e1e1; }
 
-.tbl-list { border-top: 2px solid #22b24c; border-bottom: 1px solid #e2e1e1; font-size: 15px; text-align: center; letter-spacing: -0.5px; }
+.tbl-list { margin-top: 20px; border-top: 2px solid #22b24c; border-bottom: 1px solid #e2e1e1; font-size: 15px; text-align: center; letter-spacing: -0.5px; }
 .tbl-list tr > * { height: 43px; padding: 5px 15px; border-top: 1px solid #e2e1e1; border-right: 1px solid #e2e1e1; color: #535353; box-sizing: border-box; word-break: break-all; }
 .tbl-list tr > *:first-child { border-left: 1px solid #e2e1e1; }
 .tbl-list thead tr:first-child > * { border-top: 0; }
-.tbl-list thead th { font-weight: normal; background: #f5f9ee; color: #424242; }
+.tbl-list thead th { padding: 5px; font-weight: normal; background: #f5f9ee; color: #424242; }
 .tbl-list tbody tr:first-child > * { border-top-color: #aaa; }
 .tbl-list .align-l { text-align: left; }
 .tbl-list .lnk { text-align: left; }
@@ -580,7 +580,7 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   /* TABLE */
   .tbl-type1 { font-size: 0.9rem; }
   .tbl-type1 tr > * { height: 2.6rem; padding: 0 0.5rem; }
-  .tbl-list { font-size: 0.9rem; }
+  .tbl-list { font-size: 0.9rem; margin-top: 2rem; }
   .tbl-list tr > * { height: 3rem; padding: 0.3rem 0.7rem; }
   .tbl-list .noti { position: relative; top: 0.2rem; width: 1rem; height: 0.9rem; background-size: auto 100%; }
   .tbl-list.type2 tbody tr > * { font-size: 0.9rem; }

@@ -443,6 +443,7 @@ p.txt-hyphen {
 	}
 }
 .tbl-list {// 목록 형
+	margin-top:20px; 
 	border-top:2px solid #22b24c; border-bottom:1px solid #e2e1e1; font-size:15px; text-align:center; letter-spacing:-0.5px;
 	tr > * {
 		height:43px; padding:5px 15px; border-top:1px solid #e2e1e1; border-right:1px solid #e2e1e1; color:#535353; box-sizing:border-box; word-break:break-all;
@@ -450,7 +451,7 @@ p.txt-hyphen {
 	}
 	thead {
 		tr:first-child > * {border-top:0;}
-		th {font-weight:normal; background:#f5f9ee; color:#424242;}
+		th {padding:5px; font-weight:normal; background:#f5f9ee; color:#424242;}
 	}
 	tbody {
 		tr:first-child > * {border-top-color:#aaa}
@@ -711,19 +712,6 @@ p.txt-hyphen {
 
 
 
-
-
-
-@media (max-width:1680px) {
-	// #header #gnb .menu{
-	// 	padding:33px 180px 0 0;
-	// 	& > li {width:12%}
-	// 	.depth ul{
-	// 		padding-left:15px; padding-right:15px;
-	// 		a {font-size:13px;}
-	// 	}
-	// }
-}
 
 
 @media (max-width:1040px) {
@@ -988,7 +976,7 @@ p.txt-hyphen {
 		tr > * {height:2.6rem; padding:0 0.5rem; }
 	}
 	.tbl-list {// 목록 형
-		font-size:0.9rem;
+		font-size:0.9rem; margin-top:2rem;
 		tr > * {height:3rem; padding:0.3rem 0.7rem; }
 
 		.noti {

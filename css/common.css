@@ -571,9 +571,10 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   .btn-type5 { min-width: 6rem; padding: 0 1rem 2px; line-height: 2.5rem; font-size: 0.8rem; }
   /* TITLE */
   .h3 { font-size: 1.4rem; }
-  .h3:before { width: 2rem; height: 1.3rem; margin-right: 0.5rem; background-size: auto 100%; }
-  .h4 { padding-top: 0.8rem; font-size: 1.2rem; }
-  .h4:before { width: 1.5rem; height: 2px; }
+  .h3:before { top: 0.1rem; width: 1rem; height: 1rem; margin-right: 0.3rem; background-size: auto 100%; }
+  .h4 { font-size: 1.2rem; }
+  .h4:before { top: 0.1rem; width: 1rem; height: 1rem; margin-right: 0.3rem; background-size: auto 100%; }
+  .h4.type2 { font-size: 1.2rem; }
   /* FORM */
   .sel-type1 select { height: 2.7rem; padding: 0 2rem 0 0.7rem; width: 100%; background-size: auto 100%; font-size: 0.8rem; }
   .sel-type2 select { height: 2.5rem; width: 100%; padding: 0 0.7rem; font-size: 0.7rem; background-size: auto 100%; }

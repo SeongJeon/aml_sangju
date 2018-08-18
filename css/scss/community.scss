@@ -4,9 +4,10 @@
 @import 'reset';
 
 
+/* 비밀번호 확인 */
 .pw-confiirm-zone {
-	padding:15px 22px; background: #f5f5f5; border:1px solid #d2d2d2;
-	
+	position:relative; width:475px; padding:15px 122px 15px 22px; margin:80px auto 0; background: #f5f5f5; border:1px solid #d2d2d2;box-sizing:border-box;
+	.btn-type4 {position: absolute; top:15px; right:22px; width:101px; box-sizing:border-box;}
 }
 
 
@@ -34,6 +35,11 @@
 
 
 @media (max-width:1040px) {
+	/* 비밀번호 확인 */
+	.pw-confiirm-zone {
+		margin:4rem auto 0; 
+	}
+
 }
 @media (max-width:768px) {
 }

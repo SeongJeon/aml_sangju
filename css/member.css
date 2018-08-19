@@ -129,6 +129,30 @@
 
 .member .info-box .check-type1 label { padding-left: 0; }
 
+.member .step-join { overflow: hidden; margin-bottom: 44px; }
+
+.member .step-join li { position: relative; float: left; width: calc(25% - 26px); height: 78px; margin-left: 34px; padding-left: 18px; line-height: 78px; font-size: 20px; font-weight: bold; letter-spacing: -2px; color: #303030; border: 1px solid #d6d5d5; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.member .step-join li:first-child { margin-left: 0; }
+
+.member .step-join li:first-child:before { content: ""; }
+
+.member .step-join li.current { line-height: 74px; border: 4px solid #22b24c; }
+
+.member .step-join li.current span { background: #22b24c; }
+
+.member .step-join li.current:before { left: -27px; }
+
+.member .step-join li:before { position: absolute; left: -24px; color: #7b7b7b; font-size: 1.6rem; font-family: "Nanum Square B", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; content: ">"; }
+
+.member .step-join li span { display: inline-block; margin-right: 6px; text-align: center; color: #fff; width: 32px; height: 58px; background: #afda97; }
+
+.member .complete-box { padding: 53px 0 28px; border-top: 1px solid #666; border-bottom: 1px solid #eee; background: #f7f7f7; text-align: center; }
+
+.member .complete-box .point01 { margin-bottom: 22px; font-weight: bold; font-size: 22px; }
+
+.member .complete-box .txt { font-size: 15px; color: #777; }
+
 @media (max-width: 1040px) { .member .txt-box { font-size: 14px; }
   .member .h4.type2 { margin: 15px 0 7px 10px; }
   .member .txt-hyphen > li { margin-top: 0.8rem; font-size: 1rem; }
@@ -161,16 +185,7 @@
   .member .form--addr .block:nth-of-type(1) .inp-type1 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .member .form--addr .btn-type3 { margin-left: 0.3rem; vertical-align: top; } }
 
-@media (max-width: 768px) { .member .site-area { margin: 0; }
-  .member .site-area .site-inner { width: calc(50% - 6px); margin-left: 6px; }
-  .member .site-area .site-inner:nth-of-type(2n + 1) { margin-left: 0; }
-  .member .site-area .site-inner:nth-of-type(n + 3) { margin-top: 20px; }
-  .member .site-area .site-inner:nth-of-type(4) { margin-left: 6px; }
-  .member .site-area .site-inner h3 { height: 23px; line-height: 23px; margin-bottom: 10px; font-size: 12px; } }
-
-@media (max-width: 360px) { .member .txt-box { margin-bottom: 14px; font-size: 12px; }
-  .member .ui--tab { margin-bottom: 20px; }
-  .member .txt-hyphen { margin-left: 20px; }
+@media (max-width: 768px) { .member .txt-hyphen { margin-left: 20px; }
   .member .txt-hyphen > li { line-height: 18px; }
   .member .txt-hyphen > li:before { top: 8px; }
   .member .txt-hyphen .txt-num ul { margin-left: 14px; }
@@ -181,5 +196,25 @@
   .member .list-view li p { position: static; top: auto; -webkit-transform: translate(0, 0); transform: translate(0, 0); max-width: inherit; margin: 0 0 10px 0; padding-top: 42px; }
   .member .list-view li .btn-down { float: none; width: 80px; height: 30px; }
   .member .list-view li .btn-down span:after { margin-left: 5px; width: 13px; height: 14px; vertical-align: -2px; }
+  .member .site-area { margin: 0; }
+  .member .site-area .site-inner { width: calc(50% - 6px); margin-left: 6px; }
+  .member .site-area .site-inner:nth-of-type(2n + 1) { margin-left: 0; }
+  .member .site-area .site-inner:nth-of-type(n + 3) { margin-top: 20px; }
+  .member .site-area .site-inner:nth-of-type(4) { margin-left: 6px; }
+  .member .site-area .site-inner h3 { height: 23px; line-height: 23px; margin-bottom: 10px; font-size: 12px; }
+  .member .ui--tab { margin-bottom: 20px; }
   .member .info-box .txt-hyphen { margin: 5px 0 0 12px; }
-  .member .info-box .check-type1 label { font-size: 1rem; } }
+  .member .info-box .check-type1 label { font-size: 1rem; }
+  .member .step-join li { width: calc(25% - 13px); height: 45px; margin-left: 15px; padding-left: 0; line-height: 45px; font-size: 12px; }
+  .member .step-join li.current { border: 2px solid #22b24c; line-height: 45px; }
+  .member .step-join li.current:before { left: -13px; }
+  .member .step-join li:before { left: -12px; font-size: 1rem; }
+  .member .step-join li span { width: 20px; height: 100%; margin-right: 3px; }
+  .member .complete-box { padding: 27px 10px 14px; }
+  .member .complete-box .point01 { margin-bottom: 11px; font-weight: bold; font-size: 15px; }
+  .member .complete-box .txt { font-size: 12px; } }
+
+@media (max-width: 360px) { .member .txt-box { margin-bottom: 14px; font-size: 12px; }
+  .member .step-join li { width: calc(25% - 7px); margin-left: 9px; font-size: 1.1rem; }
+  .member .step-join li:before { left: -8px; }
+  .member .step-join li.current:before { left: -9px; } }

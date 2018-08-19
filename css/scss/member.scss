@@ -306,6 +306,74 @@
       }
     }
   }
+  .step-join {
+    overflow: hidden;
+    margin-bottom: 44px;
+    li {
+      position: relative;
+      float: left;
+      width: calc(25% - 26px);
+      height: 78px;
+      margin-left: 34px;
+      padding-left: 18px;
+      line-height: 78px;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      color: #303030;
+      border: 1px solid #d6d5d5;
+      box-sizing: border-box;
+      &:first-child {
+        margin-left: 0;
+        &:before {
+          content: "";
+        }
+      }
+      &.current {
+        line-height: 74px;
+        border: 4px solid #22b24c;
+        span {
+          background: #22b24c;
+        }
+        &:before {
+          left: -27px;
+        }
+      }
+      &:before {
+        position: absolute;
+        left: -24px;
+        color: #7b7b7b;
+        font-size: 1.6rem;
+        font-family: $font5;
+        content: ">";
+      }
+      span {
+        display: inline-block;
+        margin-right: 6px;
+        text-align: center;
+        color: #fff;
+        width: 32px;
+        height: 58px;
+        background: #afda97;
+      }
+    }
+  }
+  .complete-box {
+    padding: 53px 0 28px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #eee;
+    background: #f7f7f7;
+    text-align: center;
+    .point01 {
+      margin-bottom: 22px;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .txt {
+      font-size: 15px;
+      color: #777;
+    }
+  }
 }
 
 @media (max-width: 1040px) {
@@ -453,40 +521,6 @@
 
 @media (max-width: 768px) {
   .member {
-    .site-area {
-      margin: 0;
-      .site-inner {
-        width: calc(50% - 6px);
-        margin-left: 6px;
-        &:nth-of-type(2n + 1) {
-          margin-left: 0;
-        }
-        &:nth-of-type(n + 3) {
-          margin-top: 20px;
-        }
-        &:nth-of-type(4) {
-          margin-left: 6px;
-        }
-        h3 {
-          height: 23px;
-          line-height: 23px;
-          margin-bottom: 10px;
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 360px) {
-  .member {
-    .txt-box {
-      margin-bottom: 14px;
-      font-size: 12px;
-    }
-    .ui--tab {
-      margin-bottom: 20px;
-    }
     .txt-hyphen {
       margin-left: 20px;
       > li {
@@ -536,12 +570,100 @@
         }
       }
     }
+    .site-area {
+      margin: 0;
+      .site-inner {
+        width: calc(50% - 6px);
+        margin-left: 6px;
+        &:nth-of-type(2n + 1) {
+          margin-left: 0;
+        }
+        &:nth-of-type(n + 3) {
+          margin-top: 20px;
+        }
+        &:nth-of-type(4) {
+          margin-left: 6px;
+        }
+        h3 {
+          height: 23px;
+          line-height: 23px;
+          margin-bottom: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+    .ui--tab {
+      margin-bottom: 20px;
+    }
+
     .info-box {
       .txt-hyphen {
         margin: 5px 0 0 12px;
       }
       .check-type1 label {
         font-size: 1rem;
+      }
+    }
+    .step-join {
+      li {
+        width: calc(25% - 13px);
+        height: 45px;
+        margin-left: 15px;
+        padding-left: 0;
+        line-height: 45px;
+        font-size: 12px;
+        &.current {
+          border: 2px solid #22b24c;
+          line-height: 45px;
+          &:before {
+            left: -13px;
+          }
+        }
+        &:before {
+          left: -12px;
+          font-size: 1rem;
+        }
+        span {
+          width: 20px;
+          height: 100%;
+          margin-right: 3px;
+        }
+      }
+    }
+    .complete-box {
+      padding: 27px 10px 14px;
+      .point01 {
+        margin-bottom: 11px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .txt {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .member {
+    .txt-box {
+      margin-bottom: 14px;
+      font-size: 12px;
+    }
+
+    .step-join {
+      li {
+        width: calc(25% - 7px);
+        margin-left: 9px;
+        font-size: 1.1rem;
+        &:before {
+          left: -8px;
+        }
+        &.current {
+          &:before {
+            left: -9px;
+          }
+        }
       }
     }
   }

@@ -395,6 +395,141 @@
       }
     }
   }
+  .txt-self {
+    padding-top: 16px;
+    margin-bottom: 14px;
+    border-top: 2px solid #22b24c;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .cert-box {
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #d6d5d5;
+  }
+  .cert-inner {
+    width: 290px;
+    margin: 0 auto;
+    padding-left: 90px;
+    background: url(/aml_sangju/images/member/ico-cert.png) no-repeat left top;
+    em {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-family: $font5;
+      font-size: 22px;
+      color: #303030;
+    }
+    p {
+      margin-bottom: 19px;
+    }
+    a {
+      position: relative;
+      display: block;
+      width: 199px;
+      height: 44px;
+      padding-left: 20px;
+      line-height: 44px;
+      font-size: 16px;
+      color: #fff;
+      font-weight: bold;
+      background: #22b24c;
+      border-radius: 3px;
+      box-sizing: border-box;
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        content: ">";
+      }
+    }
+  }
+  .list-important {
+    margin: 0 0 18px 23px;
+    > li {
+      position: relative;
+      margin-top: 16px;
+      padding-left: 30px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:before {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        padding-top: 3px;
+        font-family: $font5;
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+        background: #f63b02;
+        box-sizing: border-box;
+        content: "!";
+      }
+    }
+    .list-dash {
+      > li {
+        position: relative;
+        padding-left: 13px;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "-";
+        }
+      }
+      ul {
+        overflow: hidden;
+        margin: 8px 0 10px -13px;
+        padding: 14px 0 10px;
+        border: 1px solid #d6d5d5;
+        text-align: center;
+        li {
+          display: inline-block;
+          &:before {
+            display: inline-block;
+            margin: 0 45px 0 42px;
+            content: "/";
+          }
+          &:first-child {
+            &:before {
+              margin: 0;
+              content: "";
+            }
+          }
+        }
+      }
+    }
+    p span {
+      text-decoration: underline;
+    }
+    & + .btn-area {
+      text-align: center;
+      a {
+        position: relative;
+        display: inline-block;
+        width: 149px;
+        height: 38px;
+        padding-left: 18px;
+        font-family: $font4;
+        font-size: 15px;
+        text-align: left;
+        line-height: 38px;
+        border: 1px solid #d6d5d5;
+        box-sizing: border-box;
+        &:before {
+          position: absolute;
+          top: 0;
+          right: 20px;
+          content: ">";
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1040px) {
@@ -691,6 +826,80 @@
         margin-top: 24px;
       }
     }
+    .txt-self {
+      padding-top: 8px;
+      margin-bottom: 7px;
+      font-size: 1.1rem;
+    }
+    .cert-box {
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+    .cert-inner {
+      width: 145px;
+      padding-left: 4.5rem;
+      background-size: 3.5rem 100% !important;
+      em {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+      p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+      }
+      a {
+        width: 115px;
+        height: 22px;
+        padding-left: 10px;
+        line-height: 22px;
+        font-size: 12px;
+        &:after {
+          right: 7px;
+        }
+      }
+    }
+    .list-important {
+      margin: 0 0 10px 0;
+      > li {
+        margin-top: 8px;
+        padding-left: 1.3rem;
+        &:before {
+          width: 1rem;
+          height: 1rem;
+          top: 3px;
+          padding-top: 0;
+          font-size: 0.9rem;
+          line-height: 1rem;
+        }
+      }
+      .list-dash {
+        > li {
+          padding-left: 8px;
+        }
+        ul {
+          margin: 4px 0 5px -6px;
+          padding: 7px 0 5px;
+          border: 1px solid #d6d5d5;
+          li {
+            &:before {
+              margin: 0 0.5rem 0 0.5rem;
+            }
+          }
+        }
+      }
+      & + .btn-area {
+        a {
+          width: 9rem;
+          height: 3rem;
+          padding-left: 10px;
+          font-size: 1rem;
+          line-height: 3rem;
+          &:before {
+            right: 1rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -710,6 +919,19 @@
         &.current {
           &:before {
             left: -9px;
+          }
+        }
+      }
+    }
+    .list-important {
+      .list-dash {
+        ul {
+          li {
+            display: block;
+            &:before {
+              margin: 0;
+              content: "";
+            }
           }
         }
       }

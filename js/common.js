@@ -225,7 +225,7 @@ var gbgs = {
 			curr = $(this).index();
 			$(this).addClass(hasClassName).siblings().removeClass(hasClassName);
 			$(contName).eq(curr).show().siblings(contName).hide();
-
+			$('.slider').slick('setPosition');
 			return false;
 		});
 	},
@@ -358,6 +358,7 @@ var plugin_tab = (function(){
 		curr = $(this).index();
 		$(this).addClass(hasClassName).append("<span class='hidden'>현재 선택 탭</span>").siblings().removeClass(hasClassName).find(".hidden").remove();
 		$(contName).eq(curr).show().siblings(contName).hide();
+		$('.slider').slick('setPosition');
 
 		return false;
 	});

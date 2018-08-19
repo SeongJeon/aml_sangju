@@ -230,7 +230,7 @@
   .member .info-box .check-type1 { margin-top: 15px; }
   .member .agree-box { margin-top: 22px; }
   .member .agree-box:nth-of-type(1) { margin-top: 12px; }
-  .member .agree-box .ipt-textarea1 { font-size: 1.2rem; }
+  .member .agree-box .ipt-textarea1 { font-size: 1.2rem; line-height: 20px; }
   .member .agree-box .check-type1 { margin-top: 8px; }
   .member .agree-box + .check-type1 { margin-top: 24px; } }
 

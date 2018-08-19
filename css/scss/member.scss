@@ -289,7 +289,6 @@
       vertical-align: top;
     }
   }
-
   .info-box {
     text-align: center;
     .h4 {
@@ -372,6 +371,27 @@
     .txt {
       font-size: 15px;
       color: #777;
+    }
+  }
+  .agree-box {
+    margin-top: 44px;
+    text-align: right;
+    &:nth-of-type(1) {
+      margin-top: 23px;
+    }
+    .check-type1 {
+      margin-top: 16px;
+      label {
+        padding-left: 0;
+      }
+    }
+    & + .check-type1 {
+      display: block;
+      margin-top: 48px;
+      text-align: center;
+      label {
+        padding-left: 0;
+      }
     }
   }
 }
@@ -605,6 +625,7 @@
       }
     }
     .step-join {
+      margin-bottom: 22px;
       li {
         width: calc(25% - 13px);
         height: 45px;
@@ -639,6 +660,21 @@
       }
       .txt {
         font-size: 12px;
+      }
+    }
+    .agree-box {
+      margin-top: 22px;
+      &:nth-of-type(1) {
+        margin-top: 12px;
+      }
+      .ipt-textarea1 {
+        font-size: 1.2rem;
+      }
+      .check-type1 {
+        margin-top: 8px;
+      }
+      & + .check-type1 {
+        margin-top: 24px;
       }
     }
   }

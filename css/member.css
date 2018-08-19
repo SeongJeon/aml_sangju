@@ -153,6 +153,18 @@
 
 .member .complete-box .txt { font-size: 15px; color: #777; }
 
+.member .agree-box { margin-top: 44px; text-align: right; }
+
+.member .agree-box:nth-of-type(1) { margin-top: 23px; }
+
+.member .agree-box .check-type1 { margin-top: 16px; }
+
+.member .agree-box .check-type1 label { padding-left: 0; }
+
+.member .agree-box + .check-type1 { display: block; margin-top: 48px; text-align: center; }
+
+.member .agree-box + .check-type1 label { padding-left: 0; }
+
 @media (max-width: 1040px) { .member .txt-box { font-size: 14px; }
   .member .h4.type2 { margin: 15px 0 7px 10px; }
   .member .txt-hyphen > li { margin-top: 0.8rem; font-size: 1rem; }
@@ -205,6 +217,7 @@
   .member .ui--tab { margin-bottom: 20px; }
   .member .info-box .txt-hyphen { margin: 5px 0 0 12px; }
   .member .info-box .check-type1 label { font-size: 1rem; }
+  .member .step-join { margin-bottom: 22px; }
   .member .step-join li { width: calc(25% - 13px); height: 45px; margin-left: 15px; padding-left: 0; line-height: 45px; font-size: 12px; }
   .member .step-join li.current { border: 2px solid #22b24c; line-height: 45px; }
   .member .step-join li.current:before { left: -13px; }
@@ -212,7 +225,12 @@
   .member .step-join li span { width: 20px; height: 100%; margin-right: 3px; }
   .member .complete-box { padding: 27px 10px 14px; }
   .member .complete-box .point01 { margin-bottom: 11px; font-weight: bold; font-size: 15px; }
-  .member .complete-box .txt { font-size: 12px; } }
+  .member .complete-box .txt { font-size: 12px; }
+  .member .agree-box { margin-top: 22px; }
+  .member .agree-box:nth-of-type(1) { margin-top: 12px; }
+  .member .agree-box .ipt-textarea1 { font-size: 1.2rem; }
+  .member .agree-box .check-type1 { margin-top: 8px; }
+  .member .agree-box + .check-type1 { margin-top: 24px; } }
 
 @media (max-width: 360px) { .member .txt-box { margin-bottom: 14px; font-size: 12px; }
   .member .step-join li { width: calc(25% - 7px); margin-left: 9px; font-size: 1.1rem; }

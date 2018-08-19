@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .member { /* 이메일  */ /* 전화번호 */ /* 주소 */ }
 
-.member .txt-box { text-align: center; letter-spacing: -2px; font-size: 18px; font-weight: bold; line-height: 24px; margin-bottom: 28px; }
+.member .txt-box { margin-bottom: 28px; text-align: center; letter-spacing: -2px; font-size: 18px; font-weight: bold; line-height: 24px; word-break: keep-all; }
 
 .member .ui--tab { margin-bottom: 40px; }
 
@@ -197,7 +197,8 @@
   .member .form--addr .block:nth-of-type(1) .inp-type1 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .member .form--addr .btn-type3 { margin-left: 0.3rem; vertical-align: top; } }
 
-@media (max-width: 768px) { .member .txt-hyphen { margin-left: 20px; }
+@media (max-width: 768px) { .member .txt-box { margin: 0 5rem 2rem; line-height: 20px; }
+  .member .txt-hyphen { margin-left: 10px; }
   .member .txt-hyphen > li { line-height: 18px; }
   .member .txt-hyphen > li:before { top: 8px; }
   .member .txt-hyphen .txt-num ul { margin-left: 14px; }
@@ -206,7 +207,7 @@
   .member .list-view li { padding: 9px; }
   .member .list-view li:before { width: 34px; height: 31px; }
   .member .list-view li p { position: static; top: auto; -webkit-transform: translate(0, 0); transform: translate(0, 0); max-width: inherit; margin: 0 0 10px 0; padding-top: 42px; }
-  .member .list-view li .btn-down { float: none; width: 80px; height: 30px; }
+  .member .list-view li .btn-down { position: absolute; top: 10px; right: 10px; float: none; width: 80px; height: 30px; }
   .member .list-view li .btn-down span:after { margin-left: 5px; width: 13px; height: 14px; vertical-align: -2px; }
   .member .site-area { margin: 0; }
   .member .site-area .site-inner { width: calc(50% - 6px); margin-left: 6px; }
@@ -226,13 +227,14 @@
   .member .complete-box { padding: 27px 10px 14px; }
   .member .complete-box .point01 { margin-bottom: 11px; font-weight: bold; font-size: 15px; }
   .member .complete-box .txt { font-size: 12px; }
+  .member .info-box .check-type1 { margin-top: 15px; }
   .member .agree-box { margin-top: 22px; }
   .member .agree-box:nth-of-type(1) { margin-top: 12px; }
   .member .agree-box .ipt-textarea1 { font-size: 1.2rem; }
   .member .agree-box .check-type1 { margin-top: 8px; }
   .member .agree-box + .check-type1 { margin-top: 24px; } }
 
-@media (max-width: 360px) { .member .txt-box { margin-bottom: 14px; font-size: 12px; }
+@media (max-width: 360px) { .member .txt-box { font-size: 12px; }
   .member .step-join li { width: calc(25% - 7px); margin-left: 9px; font-size: 1.1rem; }
   .member .step-join li:before { left: -8px; }
   .member .step-join li.current:before { left: -9px; } }

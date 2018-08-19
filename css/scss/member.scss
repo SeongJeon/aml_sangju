@@ -2,12 +2,13 @@
 @import "base";
 .member {
   .txt-box {
+    margin-bottom: 28px;
     text-align: center;
     letter-spacing: -2px;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
-    margin-bottom: 28px;
+    word-break: keep-all;
   }
   .ui--tab {
     margin-bottom: 40px;
@@ -541,8 +542,12 @@
 
 @media (max-width: 768px) {
   .member {
+    .txt-box {
+      margin: 0 5rem 2rem;
+      line-height: 20px;
+    }
     .txt-hyphen {
-      margin-left: 20px;
+      margin-left: 10px;
       > li {
         line-height: 18px;
         &:before {
@@ -576,6 +581,9 @@
           padding-top: 42px;
         }
         .btn-down {
+          position: absolute;
+          top: 10px;
+          right: 10px;
           float: none;
           width: 80px;
           height: 30px;
@@ -662,6 +670,11 @@
         font-size: 12px;
       }
     }
+    .info-box {
+      .check-type1 {
+        margin-top: 15px;
+      }
+    }
     .agree-box {
       margin-top: 22px;
       &:nth-of-type(1) {
@@ -683,10 +696,8 @@
 @media (max-width: 360px) {
   .member {
     .txt-box {
-      margin-bottom: 14px;
       font-size: 12px;
     }
-
     .step-join {
       li {
         width: calc(25% - 7px);

@@ -179,13 +179,13 @@
 
 .member .cert-inner a:after { position: absolute; top: 0; right: 25px; content: ">"; }
 
-.member .list-important { margin: 0 0 18px 23px; }
+.member .list-important { margin: 0 0 18px 23px; word-break: keep-all; }
 
-.member .list-important > li, .member .list-important span { position: relative; margin-top: 16px; padding-left: 30px; }
+.member .list-important > li, .member .list-important > span { position: relative; margin-top: 16px; padding-left: 30px; }
 
-.member .list-important > li:first-child, .member .list-important span:first-child { margin-top: 0; }
+.member .list-important > li:first-child, .member .list-important > span:first-child { margin-top: 0; }
 
-.member .list-important > li:before, .member .list-important span:before { display: inline-block; position: absolute; top: 0; left: 0; width: 20px; height: 20px; padding-top: 3px; font-family: "Nanum Square B", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 15px; text-align: center; color: #fff; border-radius: 50%; background: #f63b02; -webkit-box-sizing: border-box; box-sizing: border-box; content: "!"; }
+.member .list-important > li:before, .member .list-important > span:before { display: inline-block; position: absolute; top: 0; left: 0; width: 20px; height: 20px; padding-top: 3px; font-family: "Nanum Square B", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 15px; text-align: center; color: #fff; border-radius: 50%; background: #f63b02; -webkit-box-sizing: border-box; box-sizing: border-box; content: "!"; }
 
 .member .list-important .list-dash > li { position: relative; padding-left: 13px; }
 
@@ -209,11 +209,45 @@
 
 .member .form-area { padding: 45px 40px; border: 1px solid #cbc8c7; text-align: center; }
 
-.member .form-area .txt-box { margin: 0 0 20px 26px; padding: 8px 0 13px 116px; background: url(/aml_sangju/images/member/ico-login.png) no-repeat left top; text-align: left; letter-spacing: 0; }
+.member .form-area .txt-box { margin: 0 0 20px 26px; padding: 8px 0 13px 116px; background: url(/aml_sangju/images/member/ico-find.png) no-repeat left top; text-align: left; letter-spacing: 0; }
 
 .member .form-area .txt-box em { display: inline-block; margin-bottom: 10px; font-size: 22px; }
 
 .member .form-area .txt-box p { font-weight: normal; font-size: 15px; }
+
+.member .form-area.login { padding: 45px 78px; }
+
+.member .form-area.login .form-box ul { width: 376px; }
+
+.member .form-area.login .form-box ul li { position: relative; margin-top: 4px; }
+
+.member .form-area.login .form-box ul li:first-child { margin-top: 0; }
+
+.member .form-area.login .form-box ul li:after { position: absolute; right: 12px; top: 9px; display: block; content: ""; width: 23px; height: 23px; }
+
+.member .form-area.login .form-box ul li:first-child:after { background: url(/aml_sangju/images/member/ico-ipt1.png) no-repeat; }
+
+.member .form-area.login .form-box ul li:last-child:after { background: url(/aml_sangju/images/member/ico-ipt2.png) no-repeat; }
+
+.member .form-area.login .form-box ul li input { width: 100% !important; height: 43px; line-height: 43px; }
+
+.member .form-area.login .txt-box { margin: 0 0 20px 0; padding: 19px 0 8px 100px; background: url(/aml_sangju/images/member/ico-login.png) no-repeat left top; }
+
+.member .form-area.login .txt-box p { letter-spacing: -2px; }
+
+.member .form-area.login .important-area { margin-top: 30px; padding-top: 20px; border-top: 1px solid #d6d5d5; }
+
+.member .form-area.login .important-area > div { position: relative; margin-top: 5px; }
+
+.member .form-area.login .important-area > div:nth-of-type(1) { margin-top: 0; }
+
+.member .form-area.login .important-area > div:after { display: block; clear: both; content: ""; }
+
+.member .form-area.login .important-area .list-important { margin: 0; float: left; min-height: 33px; padding-top: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.member .form-area.login .important-area .list-important span:before { background: #1f8a70; }
+
+.member .form-area.login .important-area .btn-type5.navy { float: right; border: 0 none; background: #004358; border-radius: 3px; color: #fff; }
 
 .member .form-box { display: inline-block; }
 
@@ -231,9 +265,9 @@
 
 .member .form-box ul li:last-child .inp-type1:nth-of-type(2), .member .form-box ul li:last-child .sel-type1 { width: 8rem; }
 
-.member .form-box ul li > span { display: table-cell; width: 66px; }
+.member .form-box ul li > span { display: table-cell; width: 66px; text-align: left; vertical-align: middle; }
 
-.member .form-box .btn-email { width: 95px; height: 96px; color: #fff; font-weight: bold; background: #22b24c; border-radius: 3px; }
+.member .form-box .btn-submit { width: 95px; height: 96px; color: #fff; font-weight: bold; background: #22b24c; border-radius: 3px; }
 
 .member .form-box .list-important { margin: 20px 0 0 0; text-align: right; }
 
@@ -313,24 +347,31 @@
   .member .cert-inner a { width: 115px; height: 22px; padding-left: 10px; line-height: 22px; font-size: 12px; }
   .member .cert-inner a:after { right: 7px; }
   .member .list-important { margin: 0 0 10px 0; }
-  .member .list-important > li, .member .list-important span { margin-top: 8px; padding-left: 1.3rem; }
-  .member .list-important > li:before, .member .list-important span:before { width: 1rem; height: 1rem; top: 3px; padding-top: 0; font-size: 0.9rem; line-height: 1rem; }
+  .member .list-important > li, .member .list-important > span { margin-top: 8px; padding-left: 1.3rem; }
+  .member .list-important > li:before, .member .list-important > span:before { width: 1rem; height: 1rem; top: 3px; padding-top: 0; font-size: 0.9rem; line-height: 1rem; }
   .member .list-important .list-dash > li { padding-left: 8px; }
   .member .list-important .list-dash ul { margin: 4px 0 5px -6px; padding: 7px 0 5px; border: 1px solid #d6d5d5; }
   .member .list-important .list-dash ul li:before { margin: 0 0.5rem 0 0.5rem; }
   .member .list-important + .btn-area a { width: 9rem; height: 3rem; padding-left: 10px; font-size: 1rem; line-height: 3rem; }
   .member .list-important + .btn-area a:before { right: 1rem; }
-  .member .form-area { padding: 2rem; }
+  .member .form-area { padding: 2rem !important; }
   .member .form-area .txt-box { margin: 0 0 10px 13px; padding: 4px 0 6px 6rem; background-size: 5rem auto; }
   .member .form-area .txt-box em { margin-bottom: 5px; font-size: 1.3rem; line-height: 1.5rem; }
   .member .form-area .txt-box p { font-size: 1.1rem; line-height: 1.3rem; }
-  .member .form-box ul { float: none; margin: 0 0 5px 0; }
+  .member .form-area.login .txt-box { margin: 0 0 10px 0; padding: 10px 0 4px 9.5rem; }
+  .member .form-area.login .form-box { width: 80%; }
+  .member .form-area.login .form-box ul { margin-bottom: 15px; width: 100%; }
+  .member .form-area.login .form-box ul li:after { top: 5px; right: 6px; width: 1.8rem; height: 1.8rem; background-size: 100% !important; }
+  .member .form-area.login .important-area { margin-top: 15px; padding-top: 10px; }
+  .member .form-area.login .important-area .list-important { float: none; min-height: auto; margin-bottom: 5px; padding-top: 0; text-align: left; }
+  .member .form-area.login .important-area .btn-type5.navy { float: left; }
+  .member .form-box ul { float: none; margin: 0 0 10px 0; }
   .member .form-box ul li { margin-top: 0.3rem; }
   .member .form-box ul li .inp-type1 { height: 2.7rem !important; }
   .member .form-box ul li .sel-type1 select { height: 2.7rem !important; }
   .member .form-box ul li:last-child .sel-type1 { width: 100%; }
-  .member .form-box ul li > span { width: 4rem; font-size: 0.8rem; }
-  .member .form-box .btn-email { width: 7rem; height: 4rem; }
+  .member .form-box ul li > span { width: 5rem; font-size: 0.8rem; }
+  .member .form-box .btn-submit { width: 7rem; height: 4rem; }
   .member .form-box .list-important { margin: 10px 0 0 0; text-align: center; }
   .member .form-box .list-important span:before { top: 2px; } }
 

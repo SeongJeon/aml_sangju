@@ -99,7 +99,7 @@
 	.introduce .greeting .info .txt {float:none; text-align:center; max-width:100%;}'
 	.introduce .greeting .info .photo {margin-left:-10px}
 	.introduce .greeting .info .photo img {margin-left:12px;}
-	.introduce .greeting .info .txt {margin-top:20px;}
+	.introduce .greeting .info .txt {margin-top:20px; padding-left:0;}
 	.introduce .purpose .h4 {margin-top:1rem;}
 	
 	.introduce .step-procedure {margin-bottom:2rem;}
@@ -110,17 +110,19 @@
 
 	.introduce .list-procedure ol > li .num {width:10rem; font-size:1.2rem;}
 	.introduce .list-procedure ol > li .num span {font-size:1.8rem;}
-
+	.introduce .purpose {margin:0 0 0;}
 	.introduce .indent1 {display:block; text-indent:-7.2rem; padding-left:7.2rem;}
 	.introduce .indent2 {display:block; text-indent:-6.2rem; padding-left:6.2rem;}
 	.introduce .indent3 {display:block; text-indent:-7.5rem; padding-left:7.5rem;}
 	.introduce .indent4 {display:block; text-indent:-2.9rem; padding-left:2.9rem;}
 	.introduce .txt-ck {margin-left:1rem;}
-	.introduce .ordinance .contract {margin-left:1rem;}
+	.introduce .ordinance .contract {margin-left:0;}
 	.introduce .ordinance .contract .txt-hyphen {margin-left:1.5rem;}
 	.introduce .ordinance .contract .h4 {margin-top:1.5rem;}
 	.introduce .list-staff {margin-top:1.5rem;}
 	.introduce .list-staff .h3 {margin-bottom:1rem;}
+	.introduce .list-staff .list > li .info > li .txt1,
+	.introduce .list-staff .list > li .info > li .txt2 {font-size:0.9rem;}
 	.introduce .map-area .btn {margin-top:1.5rem;}
 	.introduce .map-area .btn a {padding:0 1rem; font-size:1rem;}
 }

@@ -13,12 +13,31 @@
 .introduce .purpose {margin:0 0 0 20px;}
 .introduce .purpose .h4 {margin-top:20px;}
 .introduce .purpose .txt-hyphen {margin:0 0 0 20px;}
-.introduce .step-procedure {}
-.introduce .step-procedure ol {}
-.introduce .step-procedure ol:after {display:block; content:""; clear:both;}
-.introduce .step-procedure ol li {float:left;}
+.introduce .step-procedure {margin-bottom:45px; text-align:center;}
+.introduce .step-procedure ol {display:inline-block;}
+/*.introduce .step-procedure ol:after {display:block; content:""; clear:both;}*/
+.introduce .step-procedure ol li {position:relative; float:left; width:105px; margin-left:58px;}
+.introduce .step-procedure ol li:before {position:absolute; left:-43px; top:50%; display:block; content:""; width:26px; height:15px; margin-top:-15px; background:url("../images/introduce/step-procedure-arrow.gif") no-repeat;}
 .introduce .step-procedure ol li:first-child {margin-left:0;}
+.introduce .step-procedure ol li:first-child:before {background:none;}
 .introduce .step-procedure ol li .txt {display:block;}
+
+.introduce .list-procedure {margin-top:20px;}
+.introduce .list-procedure ol {}
+.introduce .list-procedure ol > li {position:relative; display:table; width:100%; margin-top:64px;}
+.introduce .list-procedure ol > li:first-child {margin-top:0;}
+.introduce .list-procedure ol > li:after {position:absolute; left:50%; top:-51px; display:block; content:""; width:44px; height:41px; margin-left:-22px; background:url("../images/introduce/bg-list-procedure-arrow.png") no-repeat;}
+.introduce .list-procedure ol > li:first-child:after {display:none;}
+.introduce .list-procedure ol > li .num {display:table-cell; width:159px; height:145px; background:url("../images/introduce/bg-list-procedure-num.png") no-repeat; background-size:cover; font-size:20px; text-align:center; font-weight:bold; vertical-align:middle;}
+.introduce .list-procedure ol > li .num span {display:block; font-size:28px;}
+.introduce .list-procedure ol > li .info {display:table-cell; padding:18px 15px 18px 15px;vertical-align:top; border:1px solid #d6d5d5; border-left:none; text-align:left;}
+.introduce .list-procedure ol > li .info .h4 {}
+.introduce .list-procedure ol > li .info .txt-hyphen {margin-top:7px;}
+.introduce .list-procedure ol > li .info .txt-hyphen > li {line-height:20px;}
+.introduce .list-procedure ol > li .info .txt-hyphen > li:before {top:9px;}
+.introduce .list-procedure ol > li .info .txt-hyphen > li > dl {display:table;}
+.introduce .list-procedure ol > li .info .txt-hyphen > li > dl dt {display:table-cell;}
+.introduce .list-procedure ol > li .info .txt-hyphen > li > dl dd {display:table-cell; max-width:450px;}
 
 @media (max-width: 1040px) {
 	p.txt-hyphen,
@@ -26,6 +45,7 @@
 	p.txt-important {padding-left:1rem; font-size:1rem; line-height:1.4;}
 	p.txt-hyphen:before,
 	.txt-hyphen > li:before {top:0.7rem; width:0.5rem; height:1px;}
+	
 
 	.introduce .greeting .info .photo,
 	.introduce .greeting .info .txt {float:none; text-align:center; max-width:100%;}'
@@ -33,6 +53,15 @@
 	.introduce .greeting .info .photo img {margin-left:12px;}
 	.introduce .greeting .info .txt {margin-top:20px;}
 	.introduce .purpose .h4 {margin-top:1rem;}
+	
+	.introduce .step-procedure {margin-bottom:2rem;}
+	.introduce .step-procedure ol li {width:5rem; margin-left:1.2rem;}
+	.introduce .step-procedure ol li .txt {padding-left:1.6rem; text-indent:-1.6rem; text-align:left;}
+	.introduce .step-procedure ol li:before {left:-1.2rem; width:1rem; height:0.5rem; margin-top:-1.5rem; background-size:cover;}
+	.introduce .step-procedure ol li img {width:4rem;}
+
+	.introduce .list-procedure ol > li .num {width:10rem; font-size:1.2rem;}
+	.introduce .list-procedure ol > li .num span {font-size:1.8rem;}
 }
 @media (max-width: 768px) {
 

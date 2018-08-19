@@ -530,6 +530,54 @@
       }
     }
   }
+  .form-area {
+    padding: 45px 40px;
+    border: 1px solid #cbc8c7;
+    .txt-box {
+      margin: 0 0 20px 26px;
+      padding: 8px 0 13px 116px;
+      background: url(/aml_sangju/images/member/ico-login.png) no-repeat left
+        top;
+      text-align: left;
+      letter-spacing: 0;
+      em {
+        margin-bottom: 10px;
+        font-size: 22px;
+      }
+      p {
+        font-weight: normal;
+        font-size: 15px;
+      }
+    }
+  }
+  .form-box {
+    overflow: hidden;
+    ul {
+      float: left;
+      width: 565px;
+      margin-right: 8px;
+      li {
+        display: table;
+        width: 100%;
+        margin-top: 6px;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          .inp-type1 {
+            width: 205px;
+          }
+          .inp-type1:nth-of-type(2) {
+            width: 133px;
+          }
+        }
+        > span {
+          display: table-cell;
+          width: 66px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1040px) {

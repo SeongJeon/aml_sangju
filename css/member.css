@@ -207,6 +207,28 @@
 
 .member .list-important + .btn-area a:before { position: absolute; top: 0; right: 20px; content: ">"; }
 
+.member .form-area { padding: 45px 40px; border: 1px solid #cbc8c7; }
+
+.member .form-area .txt-box { margin: 0 0 20px 26px; padding: 8px 0 13px 116px; background: url(/aml_sangju/images/member/ico-login.png) no-repeat left top; text-align: left; letter-spacing: 0; }
+
+.member .form-area .txt-box em { margin-bottom: 10px; font-size: 22px; }
+
+.member .form-area .txt-box p { font-weight: normal; font-size: 15px; }
+
+.member .form-box { overflow: hidden; }
+
+.member .form-box ul { float: left; width: 565px; margin-right: 8px; }
+
+.member .form-box ul li { display: table; width: 100%; margin-top: 6px; }
+
+.member .form-box ul li:first-child { margin-top: 0; }
+
+.member .form-box ul li:last-child .inp-type1 { width: 205px; }
+
+.member .form-box ul li:last-child .inp-type1:nth-of-type(2) { width: 133px; }
+
+.member .form-box ul li > span { display: table-cell; width: 66px; }
+
 @media (max-width: 1040px) { .member .txt-box { font-size: 14px; }
   .member .h4.type2 { margin: 15px 0 7px 0; }
   .member .txt-hyphen { margin-left: 0; }

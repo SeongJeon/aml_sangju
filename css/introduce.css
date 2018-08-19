@@ -1,3 +1,6 @@
+@charset "utf-8";
+
+
 .h4:before {top:2px;}
 .h4.type2:before {top:0;}
 
@@ -103,10 +106,12 @@
 	.introduce .purpose .h4 {margin-top:1rem;}
 	
 	.introduce .step-procedure {margin-bottom:2rem;}
-	.introduce .step-procedure ol li {width:5rem; margin-left:1.2rem;}
-	.introduce .step-procedure ol li .txt {padding-left:1.6rem; text-indent:-1.6rem; text-align:left;}
-	.introduce .step-procedure ol li:before {left:-1.2rem; width:1rem; height:0.5rem; margin-top:-1.5rem; background-size:cover;}
+	.introduce .step-procedure ol {display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;}
+	.introduce .step-procedure ol li {flex:1; width:5rem; margin-left:1.2rem;}
+	.introduce .step-procedure ol li .txt {padding-left:1.6rem; text-indent:-1.6rem; text-align:center; font-size:0.8rem;}
+	.introduce .step-procedure ol li:before {left:-1.2rem; width:1rem; height:0.5rem; margin-top:-0.25rem; background-size:cover;}
 	.introduce .step-procedure ol li img {width:4rem;}
+	
 
 	.introduce .list-procedure ol > li .num {width:10rem; font-size:1.2rem;}
 	.introduce .list-procedure ol > li .num span {font-size:1.8rem;}
@@ -135,6 +140,7 @@
 	.introduce .list-down > li {padding:1rem 1.5rem;}
 	.introduce .list-down > li .btn {width: 80px; height: 30px;}
 	.introduce .list-down > li .btn:after {margin-left: 5px; width: 13px; height: 14px; vertical-align: -2px;}
+
 }
 
 @media (max-width: 360px) {

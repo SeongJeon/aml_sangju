@@ -1039,6 +1039,14 @@ p.txt-hyphen {
 		height:2.5rem; padding:0 1rem; font-size:0.8rem;
 	}
 
+	.check-type1 {
+		label {
+			font-size:0.9rem; line-height: 1rem;
+			&:before {width:1.1rem; height:1.1rem; background-size:auto 100%;}
+			span {margin-left:0.3rem;}
+		}
+		input:checked + label:before {background-size:auto 100%;}
+	}
 	.radio-type1 {
 		label {
 			font-size:0.9rem; line-height: 1rem;

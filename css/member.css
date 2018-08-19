@@ -181,11 +181,11 @@
 
 .member .list-important { margin: 0 0 18px 23px; }
 
-.member .list-important > li { position: relative; margin-top: 16px; padding-left: 30px; }
+.member .list-important > li, .member .list-important span { position: relative; margin-top: 16px; padding-left: 30px; }
 
-.member .list-important > li:first-child { margin-top: 0; }
+.member .list-important > li:first-child, .member .list-important span:first-child { margin-top: 0; }
 
-.member .list-important > li:before { display: inline-block; position: absolute; top: 0; left: 0; width: 20px; height: 20px; padding-top: 3px; font-family: "Nanum Square B", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 15px; text-align: center; color: #fff; border-radius: 50%; background: #f63b02; -webkit-box-sizing: border-box; box-sizing: border-box; content: "!"; }
+.member .list-important > li:before, .member .list-important span:before { display: inline-block; position: absolute; top: 0; left: 0; width: 20px; height: 20px; padding-top: 3px; font-family: "Nanum Square B", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 15px; text-align: center; color: #fff; border-radius: 50%; background: #f63b02; -webkit-box-sizing: border-box; box-sizing: border-box; content: "!"; }
 
 .member .list-important .list-dash > li { position: relative; padding-left: 13px; }
 
@@ -211,23 +211,31 @@
 
 .member .form-area .txt-box { margin: 0 0 20px 26px; padding: 8px 0 13px 116px; background: url(/aml_sangju/images/member/ico-login.png) no-repeat left top; text-align: left; letter-spacing: 0; }
 
-.member .form-area .txt-box em { margin-bottom: 10px; font-size: 22px; }
+.member .form-area .txt-box em { display: inline-block; margin-bottom: 10px; font-size: 22px; }
 
 .member .form-area .txt-box p { font-weight: normal; font-size: 15px; }
 
 .member .form-box { overflow: hidden; }
 
-.member .form-box ul { float: left; width: 565px; margin-right: 8px; }
+.member .form-box ul { float: left; margin-right: 8px; }
 
 .member .form-box ul li { display: table; width: 100%; margin-top: 6px; }
 
+.member .form-box ul li .inp-type1 { height: 45px !important; }
+
+.member .form-box ul li .sel-type1 select { height: 45px !important; }
+
 .member .form-box ul li:first-child { margin-top: 0; }
 
-.member .form-box ul li:last-child .inp-type1 { width: 205px; }
+.member .form-box ul li:last-child .inp-type1 { width: 15rem; }
 
-.member .form-box ul li:last-child .inp-type1:nth-of-type(2) { width: 133px; }
+.member .form-box ul li:last-child .inp-type1:nth-of-type(2), .member .form-box ul li:last-child .sel-type1 { width: 8rem; }
 
 .member .form-box ul li > span { display: table-cell; width: 66px; }
+
+.member .form-box .btn-email { width: 95px; height: 96px; color: #fff; font-weight: bold; background: #22b24c; border-radius: 3px; }
+
+.member .form-box .list-important { margin: 20px 0 0 0; text-align: right; }
 
 @media (max-width: 1040px) { .member .txt-box { font-size: 14px; }
   .member .h4.type2 { margin: 15px 0 7px 0; }
@@ -311,7 +319,22 @@
   .member .list-important .list-dash ul { margin: 4px 0 5px -6px; padding: 7px 0 5px; border: 1px solid #d6d5d5; }
   .member .list-important .list-dash ul li:before { margin: 0 0.5rem 0 0.5rem; }
   .member .list-important + .btn-area a { width: 9rem; height: 3rem; padding-left: 10px; font-size: 1rem; line-height: 3rem; }
-  .member .list-important + .btn-area a:before { right: 1rem; } }
+  .member .list-important + .btn-area a:before { right: 1rem; }
+  .member .form-area { padding: 2rem; }
+  .member .form-area .txt-box { margin: 0 0 10px 13px; padding: 4px 0 6px 6rem; background-size: 5rem auto; }
+  .member .form-area .txt-box em { margin-bottom: 5px; font-size: 1.3rem; line-height: 1.5rem; }
+  .member .form-area .txt-box p { font-size: 1.1rem; line-height: 1.3rem; }
+  .member .form-box { overflow: hidden; }
+  .member .form-box ul { float: left; margin-right: 8px; }
+  .member .form-box ul li { display: table; width: 100%; margin-top: 6px; }
+  .member .form-box ul li .inp-type1 { height: 45px !important; }
+  .member .form-box ul li .sel-type1 select { height: 45px !important; }
+  .member .form-box ul li:first-child { margin-top: 0; }
+  .member .form-box ul li:last-child .inp-type1 { width: 15rem; }
+  .member .form-box ul li:last-child .inp-type1:nth-of-type(2), .member .form-box ul li:last-child .sel-type1 { width: 8rem; }
+  .member .form-box ul li > span { display: table-cell; width: 66px; }
+  .member .form-box .btn-email { width: 95px; height: 96px; color: #fff; font-weight: bold; background: #22b24c; border-radius: 3px; }
+  .member .form-box .list-important { margin: 20px 0 0 0; text-align: right; } }
 
 @media (max-width: 360px) { .member .txt-box { font-size: 12px; }
   .member .step-join li { width: calc(25% - 7px); margin-left: 9px; font-size: 1.1rem; }

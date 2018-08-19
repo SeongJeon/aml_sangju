@@ -446,7 +446,8 @@
   }
   .list-important {
     margin: 0 0 18px 23px;
-    > li {
+    > li,
+    span {
       position: relative;
       margin-top: 16px;
       padding-left: 30px;
@@ -541,6 +542,7 @@
       text-align: left;
       letter-spacing: 0;
       em {
+        display: inline-block;
         margin-bottom: 10px;
         font-size: 22px;
       }
@@ -554,21 +556,29 @@
     overflow: hidden;
     ul {
       float: left;
-      width: 565px;
       margin-right: 8px;
       li {
         display: table;
         width: 100%;
         margin-top: 6px;
+        .inp-type1 {
+          height: 45px !important;
+        }
+        .sel-type1 {
+          select {
+            height: 45px !important;
+          }
+        }
         &:first-child {
           margin-top: 0;
         }
         &:last-child {
           .inp-type1 {
-            width: 205px;
+            width: 15rem;
           }
-          .inp-type1:nth-of-type(2) {
-            width: 133px;
+          .inp-type1:nth-of-type(2),
+          .sel-type1 {
+            width: 8rem;
           }
         }
         > span {
@@ -576,6 +586,18 @@
           width: 66px;
         }
       }
+    }
+    .btn-email {
+      width: 95px;
+      height: 96px;
+      color: #fff;
+      font-weight: bold;
+      background: #22b24c;
+      border-radius: 3px;
+    }
+    .list-important {
+      margin: 20px 0 0 0;
+      text-align: right;
     }
   }
 }
@@ -946,6 +968,71 @@
             right: 1rem;
           }
         }
+      }
+    }
+    .form-area {
+      padding: 2rem;
+      .txt-box {
+        margin: 0 0 10px 13px;
+        padding: 4px 0 6px 6rem;
+        background-size: 5rem auto;
+        em {
+          margin-bottom: 5px;
+          font-size: 1.3rem;
+          line-height: 1.5rem;
+        }
+        p {
+          font-size: 1.1rem;
+          line-height: 1.3rem;
+        }
+      }
+    }
+    .form-box {
+      overflow: hidden;
+      ul {
+        float: left;
+        margin-right: 8px;
+        li {
+          display: table;
+          width: 100%;
+          margin-top: 6px;
+          .inp-type1 {
+            height: 45px !important;
+          }
+          .sel-type1 {
+            select {
+              height: 45px !important;
+            }
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+          &:last-child {
+            .inp-type1 {
+              width: 15rem;
+            }
+            .inp-type1:nth-of-type(2),
+            .sel-type1 {
+              width: 8rem;
+            }
+          }
+          > span {
+            display: table-cell;
+            width: 66px;
+          }
+        }
+      }
+      .btn-email {
+        width: 95px;
+        height: 96px;
+        color: #fff;
+        font-weight: bold;
+        background: #22b24c;
+        border-radius: 3px;
+      }
+      .list-important {
+        margin: 20px 0 0 0;
+        text-align: right;
       }
     }
   }

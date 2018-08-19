@@ -215,7 +215,7 @@
 
 .member .form-area .txt-box p { font-weight: normal; font-size: 15px; }
 
-.member .form-box { overflow: hidden; }
+.member .form-box { display: inline-block; text-align: center; }
 
 .member .form-box ul { float: left; margin-right: 8px; }
 
@@ -324,15 +324,14 @@
   .member .form-area .txt-box { margin: 0 0 10px 13px; padding: 4px 0 6px 6rem; background-size: 5rem auto; }
   .member .form-area .txt-box em { margin-bottom: 5px; font-size: 1.3rem; line-height: 1.5rem; }
   .member .form-area .txt-box p { font-size: 1.1rem; line-height: 1.3rem; }
-  .member .form-box { overflow: hidden; }
-  .member .form-box ul { float: left; margin-right: 8px; }
-  .member .form-box ul li { display: table; width: 100%; margin-top: 6px; }
-  .member .form-box ul li .inp-type1 { height: 45px !important; }
-  .member .form-box ul li .sel-type1 select { height: 45px !important; }
+  .member .form-box ul { float: none; margin: 0 0 5px 0; }
+  .member .form-box ul li { display: table; width: 100%; margin-top: 0.3rem; }
+  .member .form-box ul li .inp-type1 { height: 2.7rem !important; }
+  .member .form-box ul li .sel-type1 select { height: 2.7rem !important; }
   .member .form-box ul li:first-child { margin-top: 0; }
   .member .form-box ul li:last-child .inp-type1 { width: 15rem; }
-  .member .form-box ul li:last-child .inp-type1:nth-of-type(2), .member .form-box ul li:last-child .sel-type1 { width: 8rem; }
-  .member .form-box ul li > span { display: table-cell; width: 66px; }
+  .member .form-box ul li:last-child .inp-type1:nth-of-type(2), .member .form-box ul li:last-child .sel-type1 { width: 100%; }
+  .member .form-box ul li > span { width: 4rem; font-size: 0.8rem; }
   .member .form-box .btn-email { width: 95px; height: 96px; color: #fff; font-weight: bold; background: #22b24c; border-radius: 3px; }
   .member .form-box .list-important { margin: 20px 0 0 0; text-align: right; } }
 

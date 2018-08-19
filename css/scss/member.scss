@@ -553,7 +553,8 @@
     }
   }
   .form-box {
-    overflow: hidden;
+    display: inline-block;
+    text-align: center;
     ul {
       float: left;
       margin-right: 8px;
@@ -988,20 +989,19 @@
       }
     }
     .form-box {
-      overflow: hidden;
       ul {
-        float: left;
-        margin-right: 8px;
+        float: none;
+        margin: 0 0 5px 0;
         li {
           display: table;
           width: 100%;
-          margin-top: 6px;
+          margin-top: 0.3rem;
           .inp-type1 {
-            height: 45px !important;
+            height: 2.7rem !important;
           }
           .sel-type1 {
             select {
-              height: 45px !important;
+              height: 2.7rem !important;
             }
           }
           &:first-child {
@@ -1013,12 +1013,12 @@
             }
             .inp-type1:nth-of-type(2),
             .sel-type1 {
-              width: 8rem;
+              width: 100%;
             }
           }
           > span {
-            display: table-cell;
-            width: 66px;
+            width: 4rem;
+            font-size: 0.8rem;
           }
         }
       }

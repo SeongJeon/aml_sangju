@@ -39,6 +39,11 @@
 .introduce .list-procedure ol > li .info .txt-hyphen > li > dl dt {display:table-cell;}
 .introduce .list-procedure ol > li .info .txt-hyphen > li > dl dd {display:table-cell; max-width:450px;}
 
+.introduce .indent1 {display:block; text-indent:-100px; padding-left:100px;}
+.introduce .indent2 {display:block; text-indent:-86px; padding-left:86px;}
+.introduce .indent3 {display:block; text-indent:-105px; padding-left:105px;}
+.introduce .indent4 {display:block; text-indent:-40px; padding-left:40px;}
+
 @media (max-width: 1040px) {
 	p.txt-hyphen,
 	.txt-hyphen > li,
@@ -62,6 +67,11 @@
 
 	.introduce .list-procedure ol > li .num {width:10rem; font-size:1.2rem;}
 	.introduce .list-procedure ol > li .num span {font-size:1.8rem;}
+
+	.introduce .indent1 {display:block; text-indent:-7.2rem; padding-left:7.2rem;}
+	.introduce .indent2 {display:block; text-indent:-6.2rem; padding-left:6.2rem;}
+	.introduce .indent3 {display:block; text-indent:-7.5rem; padding-left:7.5rem;}
+	.introduce .indent4 {display:block; text-indent:-2.9rem; padding-left:2.9rem;}
 }
 @media (max-width: 768px) {
 

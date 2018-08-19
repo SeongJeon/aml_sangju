@@ -207,7 +207,7 @@
 
 .member .list-important + .btn-area a:before { position: absolute; top: 0; right: 20px; content: ">"; }
 
-.member .form-area { padding: 45px 40px; border: 1px solid #cbc8c7; }
+.member .form-area { padding: 45px 40px; border: 1px solid #cbc8c7; text-align: center; }
 
 .member .form-area .txt-box { margin: 0 0 20px 26px; padding: 8px 0 13px 116px; background: url(/aml_sangju/images/member/ico-login.png) no-repeat left top; text-align: left; letter-spacing: 0; }
 
@@ -215,7 +215,7 @@
 
 .member .form-area .txt-box p { font-weight: normal; font-size: 15px; }
 
-.member .form-box { display: inline-block; text-align: center; }
+.member .form-box { display: inline-block; }
 
 .member .form-box ul { float: left; margin-right: 8px; }
 
@@ -313,8 +313,8 @@
   .member .cert-inner a { width: 115px; height: 22px; padding-left: 10px; line-height: 22px; font-size: 12px; }
   .member .cert-inner a:after { right: 7px; }
   .member .list-important { margin: 0 0 10px 0; }
-  .member .list-important > li { margin-top: 8px; padding-left: 1.3rem; }
-  .member .list-important > li:before { width: 1rem; height: 1rem; top: 3px; padding-top: 0; font-size: 0.9rem; line-height: 1rem; }
+  .member .list-important > li, .member .list-important span { margin-top: 8px; padding-left: 1.3rem; }
+  .member .list-important > li:before, .member .list-important span:before { width: 1rem; height: 1rem; top: 3px; padding-top: 0; font-size: 0.9rem; line-height: 1rem; }
   .member .list-important .list-dash > li { padding-left: 8px; }
   .member .list-important .list-dash ul { margin: 4px 0 5px -6px; padding: 7px 0 5px; border: 1px solid #d6d5d5; }
   .member .list-important .list-dash ul li:before { margin: 0 0.5rem 0 0.5rem; }
@@ -325,15 +325,14 @@
   .member .form-area .txt-box em { margin-bottom: 5px; font-size: 1.3rem; line-height: 1.5rem; }
   .member .form-area .txt-box p { font-size: 1.1rem; line-height: 1.3rem; }
   .member .form-box ul { float: none; margin: 0 0 5px 0; }
-  .member .form-box ul li { display: table; width: 100%; margin-top: 0.3rem; }
+  .member .form-box ul li { margin-top: 0.3rem; }
   .member .form-box ul li .inp-type1 { height: 2.7rem !important; }
   .member .form-box ul li .sel-type1 select { height: 2.7rem !important; }
-  .member .form-box ul li:first-child { margin-top: 0; }
-  .member .form-box ul li:last-child .inp-type1 { width: 15rem; }
-  .member .form-box ul li:last-child .inp-type1:nth-of-type(2), .member .form-box ul li:last-child .sel-type1 { width: 100%; }
+  .member .form-box ul li:last-child .sel-type1 { width: 100%; }
   .member .form-box ul li > span { width: 4rem; font-size: 0.8rem; }
-  .member .form-box .btn-email { width: 95px; height: 96px; color: #fff; font-weight: bold; background: #22b24c; border-radius: 3px; }
-  .member .form-box .list-important { margin: 20px 0 0 0; text-align: right; } }
+  .member .form-box .btn-email { width: 7rem; height: 4rem; }
+  .member .form-box .list-important { margin: 10px 0 0 0; text-align: center; }
+  .member .form-box .list-important span:before { top: 2px; } }
 
 @media (max-width: 360px) { .member .txt-box { font-size: 12px; }
   .member .step-join li { width: calc(25% - 7px); margin-left: 9px; font-size: 1.1rem; }

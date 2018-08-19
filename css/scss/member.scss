@@ -534,6 +534,7 @@
   .form-area {
     padding: 45px 40px;
     border: 1px solid #cbc8c7;
+    text-align: center;
     .txt-box {
       margin: 0 0 20px 26px;
       padding: 8px 0 13px 116px;
@@ -554,7 +555,6 @@
   }
   .form-box {
     display: inline-block;
-    text-align: center;
     ul {
       float: left;
       margin-right: 8px;
@@ -931,7 +931,8 @@
     }
     .list-important {
       margin: 0 0 10px 0;
-      > li {
+      > li,
+      span {
         margin-top: 8px;
         padding-left: 1.3rem;
         &:before {
@@ -993,8 +994,6 @@
         float: none;
         margin: 0 0 5px 0;
         li {
-          display: table;
-          width: 100%;
           margin-top: 0.3rem;
           .inp-type1 {
             height: 2.7rem !important;
@@ -1004,14 +1003,7 @@
               height: 2.7rem !important;
             }
           }
-          &:first-child {
-            margin-top: 0;
-          }
           &:last-child {
-            .inp-type1 {
-              width: 15rem;
-            }
-            .inp-type1:nth-of-type(2),
             .sel-type1 {
               width: 100%;
             }
@@ -1023,16 +1015,17 @@
         }
       }
       .btn-email {
-        width: 95px;
-        height: 96px;
-        color: #fff;
-        font-weight: bold;
-        background: #22b24c;
-        border-radius: 3px;
+        width: 7rem;
+        height: 4rem;
       }
       .list-important {
-        margin: 20px 0 0 0;
-        text-align: right;
+        margin: 10px 0 0 0;
+        text-align: center;
+        span {
+          &:before {
+            top: 2px;
+          }
+        }
       }
     }
   }

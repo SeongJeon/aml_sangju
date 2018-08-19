@@ -166,7 +166,8 @@
 .member .agree-box + .check-type1 label { padding-left: 0; }
 
 @media (max-width: 1040px) { .member .txt-box { font-size: 14px; }
-  .member .h4.type2 { margin: 15px 0 7px 10px; }
+  .member .h4.type2 { margin: 15px 0 7px 0; }
+  .member .txt-hyphen { margin-left: 0; }
   .member .txt-hyphen > li { margin-top: 0.8rem; font-size: 1rem; }
   .member .txt-hyphen .txt-num em { margin-top: 0.8rem; }
   .member .site-area .site-inner .site-list > li { margin-top: 10px; }
@@ -198,7 +199,6 @@
   .member .form--addr .btn-type3 { margin-left: 0.3rem; vertical-align: top; } }
 
 @media (max-width: 768px) { .member .txt-box { margin: 0 5rem 2rem; line-height: 20px; }
-  .member .txt-hyphen { margin-left: 10px; }
   .member .txt-hyphen > li { line-height: 18px; }
   .member .txt-hyphen > li:before { top: 8px; }
   .member .txt-hyphen .txt-num ul { margin-left: 14px; }

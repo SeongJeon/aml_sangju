@@ -403,9 +403,10 @@
       font-size: 14px;
     }
     .h4.type2 {
-      margin: 15px 0 7px 10px;
+      margin: 15px 0 7px 0;
     }
     .txt-hyphen {
+      margin-left: 0;
       > li {
         margin-top: 0.8rem;
         font-size: 1rem;
@@ -547,7 +548,6 @@
       line-height: 20px;
     }
     .txt-hyphen {
-      margin-left: 10px;
       > li {
         line-height: 18px;
         &:before {

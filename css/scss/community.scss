@@ -3,7 +3,7 @@
 @import 'base';
 
 
-/* 커뮤니티 공통 */ 
+/* 커뮤니티 공통 */
 .community {
     .inp-type1.size--small {width:235px;}
     .tbl-form.type3 {
@@ -31,7 +31,7 @@
 	display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
 	.inp-type1 {flex:1;}
 	.btn-type3 {margin-left:-1px;}
-	.txt {display:inline-block; width:80px;margin-left:8px; font-size:15px; color:#22b24c; line-height:34px;}	
+	.txt {display:inline-block; width:80px;margin-left:8px; font-size:15px; color:#22b24c; line-height:34px;}
 	input[type=file] {position: absolute; left:-9999em; width:1px; height:1px; }
 }
 /* 텍스트에디터 */
@@ -55,19 +55,19 @@
 @media (max-width:1040px) {
 	/* 비밀번호 확인 */
 	.pw-confiirm-zone {
-		margin:4rem auto 0; 
+		margin:4rem auto 0;
 	}
 
 	/* 상세 내용보기 */
 	.form--content {
 		padding:0.5rem;
-		min-height:20rem; font-size:0.9rem; line-height: 1.4;
+		min-height:20rem; font-size:1.1rem; line-height: 1.4;
 	}
 
 
 }
 @media (max-width:768px) {
-	/* 커뮤니티 공통 */ 
+	/* 커뮤니티 공통 */
 	.community {
 		.inp-type1.size--small {width:100%;}
 	}
@@ -75,14 +75,14 @@
 
 	/* 비밀번호 확인 */
 	.pw-confiirm-zone {
-		width:90%; padding:1rem 1rem 1rem; margin:3rem auto 4rem; 
+		width:90%; padding:1rem 1rem 1rem; margin:3rem auto 4rem;
 		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
 		.ipt-type2 {flex:1;}
 		.btn-type4 {position: static; width:6rem;}
 	}
 	/* 글쓰기 */
 	.form--addfile {
-		.txt {width:auto; margin-left:0.3rem; font-size:0.8rem; line-height:2.7rem;}	
+		.txt {width:auto; margin-left:0.3rem; font-size:0.8rem; line-height:2.7rem;}
 	}
 }
 @media (max-width:470px) {

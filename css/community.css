@@ -26,7 +26,7 @@
 @media (max-width: 1040px) { /* 비밀번호 확인 */
   .pw-confiirm-zone { margin: 4rem auto 0; }
   /* 상세 내용보기 */
-  .form--content { padding: 0.5rem; min-height: 20rem; font-size: 0.9rem; line-height: 1.4; } }
+  .form--content { padding: 0.5rem; min-height: 20rem; font-size: 1.1rem; line-height: 1.4; } }
 @media (max-width: 768px) { /* 커뮤니티 공통 */
   .community .inp-type1.size--small { width: 100%; }
   /* 비밀번호 확인 */

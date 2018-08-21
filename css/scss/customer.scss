@@ -1,0 +1,154 @@
+@charset "utf-8";
+.customer {
+  .tbl-list {
+    &.type2 {
+      letter-spacing: -1px;
+      em {
+        font-weight: bold;
+      }
+      .gear {
+        text-align: left;
+      }
+      .not {
+        color: #e30d0d;
+        font-weight: bold;
+      }
+      .btn-apply {
+        padding: 4px 5px 5px 5px;
+        border-radius: 14px;
+        background: #666;
+        color: #fff;
+      }
+      .education-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: left;
+      }
+      span {
+        display: inline-block;
+        padding: 5px;
+        min-width: 70px;
+        text-align: center;
+        font-size: 13px;
+        color: #fff;
+        box-sizing: border-box;
+        &.blue {
+          background: #447ed4;
+        }
+        &.green {
+          background: #22b24c;
+        }
+      }
+    }
+  }
+  .calendar-area {
+    float: left;
+    > * {
+      float: left;
+    }
+    span {
+      display: inline-block;
+      margin: 8px;
+    }
+    .inp-type2 {
+      width: 129px;
+    }
+    .btn-calendar {
+      margin: 9px 0 0 -34px;
+    }
+  }
+  .form-area {
+    float: left;
+    .sel-type2 {
+      width: 120px !important;
+      margin: 0 8px 0 8px !important;
+      vertical-align: top;
+      & + .inp-type2 {
+        width: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .customer {
+    .tbl-list {
+      &.type2 {
+        span {
+          padding: 0.5rem;
+          min-width: 5.5rem;
+          font-size: 1rem;
+        }
+        .mobile03 {
+          width: 17% !important;
+        }
+        .mobile04 {
+          width: 20% !important;
+        }
+      }
+    }
+
+    .calendar-area {
+      width: 32%;
+      span {
+        margin: 3% 1%;
+      }
+      .inp-type2 {
+        width: 47.5%;
+      }
+    }
+    .form-area {
+      width: calc(100% - 32%);
+      .sel-type2 {
+        width: 31% !important;
+        margin: 0 1% 0 1% !important;
+        vertical-align: top;
+        & + .inp-type2 {
+          width: 54%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .customer {
+    .tbl-list {
+      &.type2 {
+        .mobile01 {
+          width: 12% !important;
+        }
+        .mobile02 {
+          width: 20% !important;
+        }
+      }
+    }
+    .calendar-area {
+      overflow: hidden;
+      float: none;
+      width: 100%;
+      margin-bottom: 1%;
+      span {
+        margin: 2% 1%;
+      }
+      .inp-type2 {
+        width: calc(50% - 2%);
+      }
+      .btn-calendar {
+        margin: 2% 0 0 -3.4rem;
+      }
+    }
+    .form-area {
+      width: 100%;
+      .sel-type2 {
+        width: 31% !important;
+        margin: 0 1% 0 0 !important;
+        vertical-align: top;
+        & + .inp-type2 {
+          width: 54.5%;
+        }
+      }
+    }
+  }
+}

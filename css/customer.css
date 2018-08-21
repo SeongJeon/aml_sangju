@@ -1,0 +1,53 @@
+.customer .tbl-list.type2 { letter-spacing: -1px; }
+
+.customer .tbl-list.type2 em { font-weight: bold; }
+
+.customer .tbl-list.type2 .gear { text-align: left; }
+
+.customer .tbl-list.type2 .not { color: #e30d0d; font-weight: bold; }
+
+.customer .tbl-list.type2 .btn-apply { padding: 4px 5px 5px 5px; border-radius: 14px; background: #666; color: #fff; }
+
+.customer .tbl-list.type2 .education-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; }
+
+.customer .tbl-list.type2 span { display: inline-block; padding: 5px; min-width: 70px; text-align: center; font-size: 13px; color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.customer .tbl-list.type2 span.blue { background: #447ed4; }
+
+.customer .tbl-list.type2 span.green { background: #22b24c; }
+
+.customer .calendar-area { float: left; }
+
+.customer .calendar-area > * { float: left; }
+
+.customer .calendar-area span { display: inline-block; margin: 8px; }
+
+.customer .calendar-area .inp-type2 { width: 129px; }
+
+.customer .calendar-area .btn-calendar { margin: 9px 0 0 -34px; }
+
+.customer .form-area { float: left; }
+
+.customer .form-area .sel-type2 { width: 120px !important; margin: 0 8px 0 8px !important; vertical-align: top; }
+
+.customer .form-area .sel-type2 + .inp-type2 { width: 220px; }
+
+@media (max-width: 1040px) { .customer .tbl-list.type2 span { padding: 0.5rem; min-width: 5.5rem; font-size: 1rem; }
+  .customer .tbl-list.type2 .mobile03 { width: 17% !important; }
+  .customer .tbl-list.type2 .mobile04 { width: 20% !important; }
+  .customer .calendar-area { width: 32%; }
+  .customer .calendar-area span { margin: 3% 1%; }
+  .customer .calendar-area .inp-type2 { width: 47.5%; }
+  .customer .form-area { width: calc(100% - 32%); }
+  .customer .form-area .sel-type2 { width: 31% !important; margin: 0 1% 0 1% !important; vertical-align: top; }
+  .customer .form-area .sel-type2 + .inp-type2 { width: 54%; } }
+
+@media (max-width: 768px) { .customer .tbl-list.type2 .mobile01 { width: 12% !important; }
+  .customer .tbl-list.type2 .mobile02 { width: 20% !important; }
+  .customer .calendar-area { overflow: hidden; float: none; width: 100%; margin-bottom: 1%; }
+  .customer .calendar-area span { margin: 2% 1%; }
+  .customer .calendar-area .inp-type2 { width: calc(50% - 2%); }
+  .customer .calendar-area .btn-calendar { margin: 2% 0 0 -3.4rem; }
+  .customer .form-area { width: 100%; }
+  .customer .form-area .sel-type2 { width: 31% !important; margin: 0 1% 0 0 !important; vertical-align: top; }
+  .customer .form-area .sel-type2 + .inp-type2 { width: 54.5%; } }

@@ -33,8 +33,8 @@
 .customer .form-area .sel-type2 + .inp-type2 { width: 220px; }
 
 @media (max-width: 1040px) { .customer .tbl-list.type2 span { padding: 0.5rem; min-width: 5.5rem; font-size: 1rem; }
-  .customer .tbl-list.type2 .mobile03 { width: 17% !important; }
-  .customer .tbl-list.type2 .mobile04 { width: 20% !important; }
+  .customer .tbl-list.type2 .mobile03 { width: 22% !important; }
+  .customer .tbl-list.type2 .mobile04 { width: 24% !important; }
   .customer .calendar-area { width: 32%; }
   .customer .calendar-area span { margin: 3% 1%; }
   .customer .calendar-area .inp-type2 { width: 47.5%; }

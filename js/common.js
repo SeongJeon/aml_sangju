@@ -437,6 +437,16 @@ $(document).on("change", ".form--addfile input:file", function(){
 	$(this).closest(".form--addfile").find("input:text").val(path);
 })
 
+// DATE PICKER
+$( ".ipt-datepicker input" ).datepicker({
+	showOn: "button",
+	buttonImage: "../../images/button/btn-datepicker.png",
+	buttonImageOnly: true,
+	buttonText: "Select date"
+});
+
+
+
 /* -----------------------------------------------------------------
 DOCUMENT READY
 ----------------------------------------------------------------- */

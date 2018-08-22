@@ -371,6 +371,11 @@ br.mo {display:none}
 	width:100%; min-height:102px; padding:10px; border:1px solid #c8c8c8;
 	box-sizing:border-box; resize:none; color:#575757; font-size:16px; line-height:24px; font-family:$font6;
 }
+.ipt-datepicker {
+	position:relative; display:inline-block; vertical-align:top;
+	input {width:130px; padding:0 35px 0 10px; box-sizing:border-box;}
+	.ui-datepicker-trigger {position:absolute; top:50%; right:10px; margin-top:-10px; cursor:pointer;}
+}
 /* FORM - LIST  */
 .ipt-lst {
 	&:after {display:block; clear:both; content:""}
@@ -602,6 +607,12 @@ p.txt-hyphen {
 		// 셀렉트 한개
 		.sel-type2:first-child:nth-last-of-type(1) {float:left; width:145px; margin-right:8px; vertical-align: top;}
 		.sel-type2 + .inp-type2 {float:left; width:350px; }
+		// 데이터피커 추가
+		.ipt-datepicker {float:left; width:130px; }
+		.ipt-datepicker ~ .txt {float:left;margin:0 8px; line-height:40px;}
+		.ipt-datepicker .inp-type2 {width:100%}
+		.ipt-datepicker ~ .sel-type2 {float:left; width:125px; margin:0 8px;}
+		.ipt-datepicker ~ .sel-type2 + .inp-type2 {float:left; width:222px;}
 	}
 }
 /* 만족도조사 */
@@ -683,7 +694,33 @@ p.txt-hyphen {
 
 	a:hover {border-color:#22b24c}
 }
+/* DATEPICKER */
+.ui-datepicker {
+	display:none;
+	width:220px; padding-bottom:10px; border:1px solid #ccc; background:#fafafa; font-size:12px; text-align:center;
+	.ui-datepicker-title {padding:15px 0 15px; font-size:14px; font-weight:bold;}
+	.ui-datepicker-prev {
+		position:absolute; left:0; top:12px; padding:8px; cursor:pointer;
+		&:before {display:block; width:0; height:0; border-right:5px solid #000; border-top:5px solid transparent; border-bottom:5px solid transparent;content:"";}
+		.ui-icon {display:none}
+	}
 
+	.ui-datepicker-next {
+		position:absolute; right:0; top:12px; padding:8px; cursor:pointer;
+		&:before {display:block; width:0; height:0; border-left:5px solid #000; border-top:5px solid transparent; border-bottom:5px solid transparent;content:"";}
+		.ui-icon {display:none}
+	}
+	.ui-datepicker-calendar{
+		tr {
+			th {height:25px; background:#eee}
+			& > * {
+				height:20px;
+				&:first-child {padding-left:10px}
+				&:last-child {padding-right:10px}
+			}
+		}
+	}
+}
 
 
 
@@ -1048,6 +1085,10 @@ p.txt-hyphen {
 		}
 		input:checked + label:before {background-size:auto 100%;}
 	}
+	.ipt-datepicker {
+		.inp-type2 {padding-right:3rem}
+		.ui-datepicker-trigger {width:1.5rem; height:1.5rem; right:1rem; margin-top:-0.8rem;}
+	}
 
 
 
@@ -1126,6 +1167,12 @@ p.txt-hyphen {
 			.sel-type2:first-child:nth-last-of-type(1) {width:31%; margin-right:1%;}
 			.sel-type2 + .inp-type2 {width:55%;}
 			.sel-type2 + .inp-type2 + .btn-type4 {width:13%}
+			// 데이터피커 추가
+			.ipt-datepicker {width:46%; margin-bottom:0.2rem;}
+			.ipt-datepicker ~ .txt {width:4%; margin:0 2%; line-height:2.5rem; font-size:1.1rem; text-align:center;}
+			.ipt-datepicker .inp-type2 {width:100%}
+			.ipt-datepicker ~ .sel-type2 {clear:both; width:30%; margin:0 2% 0 0;}
+			.ipt-datepicker ~ .sel-type2 + .inp-type2 {width:55%}
 		}
 	}
 

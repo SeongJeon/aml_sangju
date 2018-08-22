@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.education { /* 농기계교육신청 - 목록 */ }
+.education .ui--searchzone .sel-type2 { width: 130px !important; }
+.education .ui--searchzone .inp-type2 { width: 234px !important; }
+.education .ui--searchzone .btn-type4.gray { width: 124px; margin-left: 10px; vertical-align: top; }
+.education .education-lst > li { margin-top: 20px; }
+.education .education-lst > li a { display: table; position: relative; width: 100%; padding: 10px 15px 10px 9px; border: 1px solid #d6d5d5; box-sizing: border-box; }
+.education .education-lst > li a:hover { border-color: #31b758; }
+.education .education-lst > li a:hover:after { display: block; position: absolute; width: 100%; height: 100%; border: 3px solid #31b758; box-sizing: border-box; content: ""; top: 0; left: 0; }
+.education .education-lst .img { display: table-cell; overflow: hidden; width: 246px; vertical-align: top; }
+.education .education-lst .img img { width: 100%; }
+.education .education-lst .infor { display: table-cell; vertical-align: top; padding-left: 20px; }
+.education .education-lst .infor .top-area { padding-bottom: 4px; border-bottom: 2px solid #e7e7e7; }
+.education .education-lst .infor .top-area .tit { display: inline-block; overflow: hidden; max-width: 340px; font-size: 18px; font-weight: bold; text-overflow: ellipsis; white-space: nowrap; line-height: 35px; }
+.education .education-lst .infor .top-area .bul-submit { float: right; width: 120px; height: 35px; line-height: 35px; text-align: center; color: #fff; font-size: 16px; background: #31b758; }
+.education .education-lst .infor .top-area .bul-submit.disable { background: #535353; }
+.education .education-lst .infor .btm-area { margin-top: 5px; padding-left: 3px; }
+.education .education-lst .infor .btm-area .txt-hyphen > li:before { background: #22b24c; }
+.education .education-lst .infor .btm-area .txt-important { color: #868686; font-size: 13px; line-height: 20px; word-break: keep-all; }
+
+@media (max-width: 1040px) { .education { /* 농기계교육신청 - 목록 */ }
+  .education .ui--searchzone .sel-type2 { width: 49% !important; }
+  .education .ui--searchzone .inp-type2 { width: 58% !important; }
+  .education .ui--searchzone .btn-type4.gray { width: 20%; margin: 0.3rem 0 0 2%; }
+  .education .education-lst > li { margin-top: 2rem; }
+  .education .education-lst > li a { padding: 1rem; }
+  .education .education-lst > li a:hover:after { border-width: 2px; }
+  .education .education-lst .img { overflow: hidden; width: 30%; }
+  .education .education-lst .infor { padding-left: 1rem; }
+  .education .education-lst .infor .top-area { padding-bottom: 0.2rem; }
+  .education .education-lst .infor .top-area .tit { max-width: 75%; font-size: 1.2rem; line-height: 2.6rem; }
+  .education .education-lst .infor .top-area .bul-submit { width: 25%; height: 2.6rem; line-height: 2.6rem; font-size: 1rem; }
+  .education .education-lst .infor .btm-area { margin-top: 0.5rem; padding-left: 0.2rem; }
+  .education .education-lst .infor .btm-area .txt-important { font-size: 1rem; line-height: 1.6; } }
+@media (max-width: 768px) { .education { /* 농기계교육신청 - 목록  */ }
+  .education .education-lst > li { display: block; }
+  .education .education-lst .img { display: block; width: 100%; text-align: center; }
+  .education .education-lst .infor { display: block; margin-top: 0.3rem; padding: 0; }
+  .education .education-lst .infor .top-area { padding-bottom: 0.2rem; }
+  .education .education-lst .infor .top-area .tit { max-width: 75%; font-size: 1.2rem; line-height: 2.6rem; }
+  .education .education-lst .infor .top-area .bul-submit { width: 25%; height: 2.6rem; line-height: 2.6rem; font-size: 1.1rem; }
+  .education .education-lst .infor .btm-area { margin-top: 0.5rem; padding-left: 0.5rem; }
+  .education .education-lst .infor .btm-area .txt-important { font-size: 1rem; line-height: 1.6; } }

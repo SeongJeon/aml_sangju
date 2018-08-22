@@ -423,7 +423,7 @@ p.txt-hyphen {
 }
 .txt-hyphen {
 	& > li {position:relative; padding-left:17px; font-size:14px; line-height:28px;}
-	& > li:before {display:block; position:absolute; left:0; top:15px; content:""; width:9px; height:2px; background:#838383; vertical-align:top}
+	& > li:before {display:block; position:absolute; left:0; top:14px; content:""; width:9px; height:2px; background:#838383; vertical-align:top}
 }
 
 

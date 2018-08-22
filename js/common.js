@@ -451,6 +451,20 @@ $( ".ipt-datepicker input" ).datepicker({
 	buttonText: "Select date"
 });
 
+// ALL CHECKED
+$(".js--allcheck input").on("change", function(){
+	var v = $(this).attr("data-group");
+
+	if($(this).prop("checked")==true){
+		$("input:checkbox").each(function(){
+			if($(this).attr("data-group") == v) $(this).prop("checked", true);
+		})
+	}else{
+		$("input:checkbox").each(function(){
+			if($(this).attr("data-group") == v) $(this).prop("checked", false);
+		})
+	}
+})
 
 
 /* -----------------------------------------------------------------

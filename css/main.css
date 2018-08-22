@@ -31,6 +31,7 @@
 .main .main-board-zone .lst li { margin-top: 9px; }
 .main .main-board-zone .lst li:first-child { margin: 0; }
 .main .main-board-zone .lst a { display: block; font-size: 13px; line-height: 19px; letter-spacing: -1px; }
+.main .main-board-zone .lst a:hover .cont { font-weight: bold; text-decoration: underline; }
 .main .main-board-zone .lst .bul { display: inline-block; width: 61px; border: 1px solid #dddbdb; color: #5c5c5c; font-size: 12px; text-align: center; line-height: 18px; vertical-align: middle; }
 .main .main-board-zone .lst .cont { display: inline-block; max-width: 260px; overflow: hidden; vertical-align: middle; text-overflow: ellipsis; white-space: nowrap; color: #333; }
 .main .main-board-zone .lst .date { float: right; display: inline-block; margin-top: 2px; color: #9e9e9e; }
@@ -53,7 +54,7 @@
 .main .main-gruid-zone .guide2 .box .name { font-size: 12px; color: #373737; }
 .main .main-gruid-zone .guide2 .box .num { margin-top: -2px; font-size: 17px; font-weight: bold; color: #00944a; }
 .main .main-banner-zone { overflow: hidden; position: absolute; right: 10px; top: 0; width: 282px; height: 100%; border: 1px solid #dbdbdb; box-sizing: border-box; }
-.main .main-banner-zone .indicator *[class*="btn-"] { position: absolute; top: 0; width: 32px; height: 30px; background: rgba(0, 0, 0, 0.5); }
+.main .main-banner-zone .indicator *[class*="btn-"] { position: absolute; bottom: 0; width: 32px; height: 30px; background: rgba(0, 0, 0, 0.5); }
 .main .main-banner-zone .indicator *[class*="btn-"] span { display: inline-block; text-indent: -9999em; }
 .main .main-banner-zone .indicator *[class*="btn-"]:before { display: inline-block; position: absolute; top: 0; left: 0; width: 100%; line-height: 30px; color: #fff; font-family: "Nanum Square R", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; }
 .main .main-banner-zone .indicator .btn-prev { right: 32px; }
@@ -66,8 +67,9 @@
 .main .main-goto-menu li:before { display: block; position: absolute; top: 8px; left: 0; width: 1px; height: 55px; background: #41a958; content: ""; }
 .main .main-goto-menu li:first-child:before { display: none; }
 .main .main-goto-menu a { display: block; position: relative; height: 70px; color: #fff; box-sizing: border-box; }
-.main .main-goto-menu a .name { display: block; position: absolute; top: 50%; width: 100%; font-size: 14px; font-weight: bold; transform: translate(0, -50%); vertical-align: middle; padding-bottom: 26px; }
+.main .main-goto-menu a .name { display: block; position: absolute; top: 50%; width: 100%; font-size: 14px; transform: translate(0, -50%); vertical-align: middle; padding-bottom: 26px; }
 .main .main-goto-menu a .goto { display: block; position: absolute; bottom: 8px; left: 50%; width: 70px; padding-bottom: 2px; margin-left: -35px; line-height: 16px; font-size: 10px; border-radius: 100px; background: #10491c; text-align: center; }
+.main .main-goto-menu a:hover .name { font-weight: bold; }
 .main .main-goto-menu a:hover .goto { background: #c8cb07; }
 
 @media (max-width: 1020px) { .main { padding-bottom: 1.5rem; }

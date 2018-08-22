@@ -30,6 +30,7 @@
 				&:first-child:before {display:none}
 			}
 			a {display:inline-block; color:#5a5a5a; font-size:15px; }
+			a:hover {font-weight:bold; text-decoration:underline}
 		}
 		.sitemap {
 			position:absolute; right:0; top:14px;

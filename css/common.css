@@ -85,6 +85,7 @@ select::-ms-expand { display: none; }
 #header .utile-zone .lnk-group li:before { display: inline-block; position: relative; top: 9px; content: ""; width: 4px; height: 4px; border-radius: 100px; background: #cbc8c7; margin: 0 12px; vertical-align: top; }
 #header .utile-zone .lnk-group li:first-child:before { display: none; }
 #header .utile-zone .lnk-group a { display: inline-block; color: #5a5a5a; font-size: 15px; }
+#header .utile-zone .lnk-group a:hover { font-weight: bold; text-decoration: underline; }
 #header .utile-zone .sitemap { position: absolute; right: 0; top: 14px; }
 #header .utile-zone .sitemap .btn-sitemap { display: block; width: 36px; height: 36px; border: 1px solid #5fa272; box-sizing: border-box; background: url("../images/button/btn-sitemap.png") no-repeat 50% 50%; text-indent: -9999em; }
 #header #gnb { position: relative; max-width: 1040px; padding: 0 10px; margin: 0 auto; box-sizing: border-box; }

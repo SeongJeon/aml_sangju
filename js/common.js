@@ -41,6 +41,12 @@ var gbgs = {
 				_temp = true;
 			});
 
+			depth.find("a").on("mouseenter", function(){
+				console.log("hdd")
+				$(this).closest(".depth").closest("li").addClass("on").siblings().removeClass("on");
+			})
+
+
 			gnb.on("mouseleave", function(){
 				depth.hide(0, function(){
 					gnbbtn.closest("li").removeClass("on");

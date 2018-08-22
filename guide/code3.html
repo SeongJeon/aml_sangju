@@ -1,4 +1,6 @@
 <link href="../css/ux.css" rel="stylesheet" type="text/css">
+
+
 <div class="wrap-code">
 		<div class="code-area">
 			<h2 class="tit">FORM</h2>
@@ -63,6 +65,12 @@
 	<input type="file" name="" id="">
 	<span class="txt">(최대 5MB)</span>
 </div>
+
+<br><br>
+<div class="ipt-datepicker">
+	<input type="text" class="inp-type1">
+</div>
+
 <!-- //code -->
 				</div>
 			</div>
@@ -181,6 +189,7 @@
 
 		</div>
 </div>
+<script src="/aml_sangju/js/jquery-ui-1.11.4.js"></script>
 <script>
 $(".code-box").each(function(){
 	$(this).find(".code-view").after("<div class='code-html'></div>");
@@ -188,4 +197,14 @@ $(".code-box").each(function(){
 
 	$(this).find(".code-html").html($copy);
 });
+
+$( ".ipt-datepicker input" ).datepicker({
+	showOn: "button",
+	buttonImage: "/aml_sangju/images/button/btn-datepicker.png",
+	buttonImageOnly: true,
+	buttonText: "Select date"
+});
+
+
+
 </script>

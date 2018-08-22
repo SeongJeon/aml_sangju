@@ -440,7 +440,7 @@ $(document).on("change", ".form--addfile input:file", function(){
 // DATE PICKER
 $( ".ipt-datepicker input" ).datepicker({
 	showOn: "button",
-	buttonImage: "../../images/button/btn-datepicker.png",
+	buttonImage: "/aml_sangju/images/button/btn-datepicker.png",
 	buttonImageOnly: true,
 	buttonText: "Select date"
 });

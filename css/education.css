@@ -5,17 +5,16 @@
 .education .ui--searchzone .btn-type4.gray { width: 124px; margin-left: 10px; vertical-align: top; }
 .education .txt-important { float: right; margin: 7px 0 30px; color: #f40b0b; font-size: 15px; line-height: 20px; word-break: keep-all; letter-spacing: -0.5px; }
 .education .education-lst { clear: both; }
-.education .education-lst > li { margin-top: 20px; }
-.education .education-lst > li a { display: table; position: relative; width: 100%; padding: 10px 15px 10px 9px; border: 1px solid #d6d5d5; box-sizing: border-box; }
-.education .education-lst > li a:hover { border-color: #31b758; }
-.education .education-lst > li a:hover:after { display: block; position: absolute; width: 100%; height: 100%; border: 3px solid #31b758; box-sizing: border-box; content: ""; top: 0; left: 0; }
-.education .education-lst .img { display: table-cell; overflow: hidden; width: 170px; vertical-align: top; }
+.education .education-lst > li { overflow: hidden; position: relative; width: 100%; padding: 10px 15px 10px 9px; margin-top: 20px; border: 1px solid #d6d5d5; box-sizing: border-box; table-layout: fixed; }
+.education .education-lst > li:hover { border-color: #31b758; }
+.education .education-lst > li:hover:after { display: block; position: absolute; width: 100%; height: 100%; border: 3px solid #31b758; box-sizing: border-box; content: ""; top: 0; left: 0; }
+.education .education-lst .img { float: left; overflow: hidden; width: 170px; vertical-align: top; }
 .education .education-lst .img img { width: 100%; }
-.education .education-lst .infor { display: table-cell; vertical-align: top; padding-left: 20px; }
+.education .education-lst .img .bul-submit { display: block; position: absolute; top: 9px; right: 19px; z-index: 1; width: 120px; height: 35px; line-height: 35px; text-align: center; color: #fff; font-size: 16px; background: #31b758; }
+.education .education-lst .img .bul-submit.disable { background: #535353; }
+.education .education-lst .infor { vertical-align: top; padding-left: 190px; box-sizing: border-box; }
 .education .education-lst .infor .top-area { padding-bottom: 4px; border-bottom: 2px solid #e7e7e7; }
 .education .education-lst .infor .top-area .tit { display: inline-block; overflow: hidden; max-width: 400px; font-size: 18px; font-weight: bold; text-overflow: ellipsis; white-space: nowrap; line-height: 35px; }
-.education .education-lst .infor .top-area .bul-submit { float: right; width: 120px; height: 35px; line-height: 35px; text-align: center; color: #fff; font-size: 16px; background: #31b758; }
-.education .education-lst .infor .top-area .bul-submit.disable { background: #535353; }
 .education .education-lst .infor .btm-area { margin-top: 5px; padding-left: 3px; }
 .education .education-lst .infor .btm-area .txt-hyphen > li:before { background: #22b24c; }
 
@@ -24,21 +23,20 @@
   .education .ui--searchzone .inp-type2 { width: 58% !important; }
   .education .ui--searchzone .btn-type4.gray { width: 20%; margin: 0.3rem 0 0 2%; }
   .education .txt-important { font-size: 1rem; line-height: 1.6; }
-  .education .education-lst > li { margin-top: 2rem; }
-  .education .education-lst > li a { padding: 1rem; }
-  .education .education-lst > li a:hover:after { border-width: 2px; }
-  .education .education-lst .img { overflow: hidden; width: 30%; }
-  .education .education-lst .infor { padding-left: 1rem; }
+  .education .education-lst > li { padding: 1rem; margin-top: 2rem; }
+  .education .education-lst > li:hover:after { border-width: 2px; }
+  .education .education-lst .img { overflow: hidden; }
+  .education .education-lst .img .bul-submit { right: 1rem; top: 1rem; width: 6rem; height: 2.6rem; line-height: 2.6rem; font-size: 1rem; }
   .education .education-lst .infor .top-area { padding-bottom: 0.2rem; }
   .education .education-lst .infor .top-area .tit { max-width: 75%; font-size: 1.2rem; line-height: 2.6rem; }
-  .education .education-lst .infor .top-area .bul-submit { width: 25%; height: 2.6rem; line-height: 2.6rem; font-size: 1rem; }
   .education .education-lst .infor .btm-area { margin-top: 0.5rem; padding-left: 0.2rem; } }
 @media (max-width: 768px) { .education { /* 농기계교육신청 - 목록  */ }
-  .education .txt-important { margin: 0.5rem 0 2rem; }
-  .education .education-lst > li { display: block; }
-  .education .education-lst .img { display: block; width: 100%; text-align: center; }
-  .education .education-lst .infor { display: block; margin-top: 0.3rem; padding: 0; }
+  .education .txt-important { float: none; margin: 0.5rem 0 2rem; }
+  .education .education-lst > li { margin-top: 1rem; padding: 0.5rem; }
+  .education .education-lst .img { width: 10rem; text-align: center; }
+  .education .education-lst .img .bul-submit { position: static; width: 100%; }
+  .education .education-lst .infor { padding-left: 10.7rem; }
   .education .education-lst .infor .top-area { padding-bottom: 0.2rem; }
-  .education .education-lst .infor .top-area .tit { max-width: 75%; font-size: 1.2rem; line-height: 2.6rem; }
+  .education .education-lst .infor .top-area .tit { max-width: 100%; font-size: 1.2rem; line-height: 2rem; }
   .education .education-lst .infor .top-area .bul-submit { width: 25%; height: 2.6rem; line-height: 2.6rem; font-size: 1.1rem; }
   .education .education-lst .infor .btm-area { margin-top: 0.5rem; padding-left: 0.5rem; } }

@@ -103,7 +103,7 @@
         padding: 12px 30px;
         background: #f5f9ee;
         li {
-          margin-top: 17px;
+          margin-top: 7px;
           &:first-child {
             margin-top: 0;
           }
@@ -587,7 +587,7 @@
             input {
               width: 100% !important;
               height: 43px;
-              padding-right:40px;
+              padding-right: 40px;
               line-height: 43px;
             }
           }
@@ -605,7 +605,7 @@
       .important-area {
         margin-top: 30px;
         padding: 20px 50px 0;
-        letter-spacing:-0.5px;
+        letter-spacing: -0.5px;
         border-top: 1px solid #d6d5d5;
         > div {
           position: relative;
@@ -632,7 +632,7 @@
         .btn-type5.navy {
           float: right;
           border: 0 none;
-          min-width:140px;
+          min-width: 140px;
           background: #004358;
           border-radius: 3px;
           color: #fff;
@@ -719,7 +719,7 @@
             margin-top: 10px;
             > a {
               padding-left: 1.4rem;
-              font-size:1.2rem;
+              font-size: 1.2rem;
               &:before {
                 top: 0.4rem;
                 width: 1rem;
@@ -875,7 +875,7 @@
           max-width: inherit;
           margin: 0 0 10px 0;
           padding-top: 42px;
-          font-size:1.1rem;
+          font-size: 1.1rem;
         }
         .btn-down {
           position: absolute;
@@ -884,7 +884,7 @@
           float: none;
           width: 80px;
           height: 30px;
-          font-size:1.1rem;
+          font-size: 1.1rem;
           span {
             &:after {
               margin-left: 5px;
@@ -966,9 +966,11 @@
       }
       .txt {
         font-size: 1.1rem;
-        word-break:keep-all
+        word-break: keep-all;
       }
-      .btn-submit-group {margin-top:2rem;}
+      .btn-submit-group {
+        margin-top: 2rem;
+      }
     }
     .info-box {
       .check-type1 {
@@ -981,15 +983,15 @@
         margin-top: 12px;
       }
       .ipt-textarea1 {
-        padding:1rem 1rem;
+        padding: 1rem 1rem;
         font-size: 1.1rem;
-        line-height:1.6;
+        line-height: 1.6;
       }
       .check-type1 {
         margin-top: 8px;
       }
       & + .check-type1 {
-        margin:3rem 0 -1rem;
+        margin: 3rem 0 -1rem;
       }
     }
     .txt-self {
@@ -1017,7 +1019,7 @@
         width: 115px;
         height: 24px;
         padding-left: 10px;
-        padding-bottom:2px;
+        padding-bottom: 2px;
         line-height: 22px;
         font-size: 12px;
         &:after {
@@ -1026,7 +1028,8 @@
       }
     }
     .list-important {
-      margin: 0 0 10px 0; font-size:1.1rem;
+      margin: 0 0 10px 0;
+      font-size: 1.1rem;
       > li,
       > span {
         margin-top: 8px;
@@ -1074,7 +1077,7 @@
         margin: 0 0 10px 13px;
         padding: 4px 0 6px 6rem;
         background-size: 5rem auto;
-        background-position:0 50%;
+        background-position: 0 50%;
         em {
           margin-bottom: 5px;
           font-size: 1.3rem;
@@ -1089,7 +1092,7 @@
         .txt-box {
           margin: 0 0 10px 0;
           padding: 10px 0 4px 9.5rem;
-          background-position:0.5rem 50%;
+          background-position: 0.5rem 50%;
         }
         .form-box {
           width: 80%;
@@ -1103,27 +1106,30 @@
                 width: 3rem;
                 height: 100%;
                 background-size: auto 50% !important;
-                background-position:50% 50% !important;
+                background-position: 50% 50% !important;
               }
-              input {padding:0 3rem 0 1rem; line-height:2.5rem;}
+              input {
+                padding: 0 3rem 0 1rem;
+                line-height: 2.5rem;
+              }
             }
           }
         }
         .important-area {
           margin-top: 15px;
-          padding:1rem 0 0;
+          padding: 1rem 0 0;
           .list-important {
             float: none;
             min-height: auto;
             margin-bottom: 5px;
             padding-top: 0;
-            letter-spacing:-0.5px;
+            letter-spacing: -0.5px;
             text-align: left;
-            line-height:2.7rem;
+            line-height: 2.7rem;
           }
           .btn-type5.navy {
             float: none;
-            min-width:100%;
+            min-width: 100%;
           }
         }
       }
@@ -1150,14 +1156,15 @@
           > span {
             width: 5rem;
             font-size: 1.1rem;
-            vertical-align:top; line-height:2.7rem;
+            vertical-align: top;
+            line-height: 2.7rem;
           }
         }
       }
       .btn-submit {
         width: 7rem;
         height: 4rem;
-        font-size:1.1rem;
+        font-size: 1.1rem;
       }
       .list-important {
         margin: 10px 0 0 0;

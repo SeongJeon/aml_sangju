@@ -87,67 +87,67 @@
 								<caption>임대신청내역 목록 - 번호, 신청자, 분소, 임대장비, 임대기간(임대일수), 임대료, 입금상태, 신청취소</caption>
 								<colgroup>
 									<col style="width:6%" class="pc">
-									<col style="width:8%">
-									<col style="width:8%">
+									<col style="width:8%" class="pc">
+									<col style="width:8%" class="mobile01">
 									<col>
-									<col style="width:25%">
-									<col style="width:11%">
-									<col style="width:10%">
-									<col style="width:12%">
+									<col style=" width:25%">
+									<col style="width:11%" class="mobile02">
+									<col style="width:10%" class="pc">
+									<col style="width:12%" class="mobile04 ">
 								</colgroup>
 								<thead>
 									<tr>
-										<th scope="col" class="pc">번호</th>
-										<th scope="col">신청자</th>
-										<th scope="col">분소</th>
-										<th scope="col">임대장비</th>
-										<th scope="col">임대기간(임대일수)</th>
-										<th scope="col">임대료</th>
-										<th scope="col">입금상태</th>
-										<th scope="col">신청취소</th>
+										<th scope="col " class="pc ">번호</th>
+										<th scope="col " class="pc ">신청자</th>
+										<th scope="col ">분소</th>
+										<th scope="col ">임대장비</th>
+										<th scope="col ">임대기간(임대일수)</th>
+										<th scope="col ">임대료</th>
+										<th scope="col " class="pc ">입금상태</th>
+										<th scope="col ">신청취소</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td class="pc">10</td>
-										<td>홍길동</td>
+										<td class="pc ">10</td>
+										<td class="pc ">홍길동</td>
 										<td>본소</td>
-										<td class="gear">감자수확기(밭농사)</td>
+										<td class="gear ">감자수확기(밭농사)</td>
 										<td>2018-08-01 ~ 2018-08-03 <em>3일</em></td>
 										<td>90,000원</td>
-										<td class="not">미입금</td>
+										<td class="not pc ">미입금</td>
 										<!-- 미입금 : not class 추가 / 입금완료 : not class 삭제 -->
-										<td><button type="button" class="btn-apply">신청취소</button></td>
+										<td><button type="button " class="btn-apply ">신청취소</button></td>
 									</tr>
 									<tr>
-										<td class="pc">09</td>
-										<td>홍길동</td>
+										<td class="pc ">09</td>
+										<td class="pc ">홍길동</td>
 										<td>본소</td>
-										<td class="gear">감자수확기(밭농사)</td>
+										<td class="gear ">감자수확기(밭농사)</td>
 										<td>2018-08-03 <em>3일</em></td>
 										<td>220,000원</td>
-										<td>입금완료</td>
+										<td class="pc ">입금완료</td>
 										<!-- 미입금 : not class 추가 / 입금완료 : not class 삭제 -->
-										<td><button type="button" class="btn-apply">신청취소</button></td>
+										<td><button type="button " class="btn-apply ">신청취소</button></td>
 									</tr>
 								</tbody>
 							</table>
 							<!-- //목록 -->
 
 							<!-- 페이징 -->
-							<div class="ui--paging">
+							<div class="ui--paging ">
 								<div>
-									<!-- <p class="allprev"><a href="#"><span>목록 처음으로 이동</span></a></p> -->
-									<!-- <p class="prev"><a href="#"><span>이전으로 이동</span></a></p> -->
+									<!-- <p class="allprev "><a href="# "><span>목록 처음으로 이동</span></a></p> -->
+									<!-- <p class="prev "><a href="# "><span>이전으로 이동</span></a></p> -->
 									<ol>
-										<li class="on"><a href="#"><span>1</span></a></li>
-										<li><a href="#"><span>2</span></a></li>
-										<li><a href="#"><span>3</span></a></li>
-										<li><a href="#"><span>4</span></a></li>
-										<li><a href="#"><span>5</span></a></li>
+										<li class="on "><a href="# "><span>1</span></a></li>
+										<li><a href="# "><span>2</span></a></li>
+										<li><a href="# "><span>3</span></a></li>
+										<li><a href="# "><span>4</span></a></li>
+										<li><a href="# "><span>5</span></a></li>
 									</ol>
-									<p class="allnext"><a href="#"><span>목록 마지막으로 이동</span></a></p>
-									<p class="next"><a href="#"><span>다음으로 이동</span></a></p>
+									<p class="allnext "><a href="# "><span>목록 마지막으로 이동</span></a></p>
+									<p class="next "><a href="# "><span>다음으로 이동</span></a></p>
 								</div>
 							</div>
 							<!--// 페이징 -->
@@ -155,26 +155,26 @@
 						<!-- //페이지 컨텐츠 -->
 
 						<!-- 만족도 조사 -->
-						<div class="satisfaction-zone">
-							<p class="txt">이 페이지에서 제공하는 정보에 대하여 만족하십니까?</p>
-							<ul class="ipt-lst">
-								<li class="radio-type1"><input type="radio" name="satics" id="satics1" checked="checked"><label for="satics1"><span>매우만족</span></label></li>
-								<li class="radio-type1"><input type="radio" name="satics" id="satics2"><label for="satics2"><span>만족</span></label></li>
-								<li class="radio-type1"><input type="radio" name="satics" id="satics3"><label for="satics3"><span>보통</span></label></li>
-								<li class="radio-type1"><input type="radio" name="satics" id="satics4"><label for="satics4"><span>불만족</span></label></li>
-								<li class="radio-type1"><input type="radio" name="satics" id="satics5"><label for="satics5"><span>매우불만족</span></label></li>
+						<div class="satisfaction-zone ">
+							<p class="txt ">이 페이지에서 제공하는 정보에 대하여 만족하십니까?</p>
+							<ul class="ipt-lst ">
+								<li class="radio-type1 "><input type="radio " name="satics " id="satics1 " checked="checked "><label for="satics1 "><span>매우만족</span></label></li>
+								<li class="radio-type1 "><input type="radio " name="satics " id="satics2 "><label for="satics2 "><span>만족</span></label></li>
+								<li class="radio-type1 "><input type="radio " name="satics " id="satics3 "><label for="satics3 "><span>보통</span></label></li>
+								<li class="radio-type1 "><input type="radio " name="satics " id="satics4 "><label for="satics4 "><span>불만족</span></label></li>
+								<li class="radio-type1 "><input type="radio " name="satics " id="satics5 "><label for="satics5 "><span>매우불만족</span></label></li>
 							</ul>
-							<div class="form">
-								<input type="text" name="" id="" title="페이지 의견 입력">
-								<button type="submit"><span>의견 반영하기</span></button>
+							<div class="form ">
+								<input type="text " name=" " id=" " title="페이지 의견 입력 ">
+								<button type="submit "><span>의견 반영하기</span></button>
 							</div>
-							<div class="infor-box">
-								<ul class="lst">
+							<div class="infor-box ">
+								<ul class="lst ">
 									<li>담당부서 : 담당부서</li>
 									<li>담당자 : 담당자</li>
 									<li>연락처 : 054) 123-1234</li>
 								</ul>
-								<p class="date">최종수정일 : 2018-07-23</p>
+								<p class="date ">최종수정일 : 2018-07-23</p>
 							</div>
 						</div>
 						<!-- //만족도 조사 -->
@@ -188,10 +188,10 @@
 		</footer>
 	</div><!-- //wrap -->
 
-	<script src="/aml_sangju/js/jquery-1.12.4.min.js"></script>
-	<script src="/aml_sangju/js/jquery-ui-1.11.4.js"></script>
-	<script src="/aml_sangju/js/slick.min.js"></script>
-	<script src="/aml_sangju/js/common.js"></script>
+	<script src="/aml_sangju/js/jquery-1.12.4.min.js "></script>
+	<script src="/aml_sangju/js/jquery-ui-1.11.4.js "></script>
+	<script src="/aml_sangju/js/slick.min.js "></script>
+	<script src="/aml_sangju/js/common.js "></script>
 </body>
 
 </html>

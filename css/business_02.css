@@ -1,0 +1,25 @@
+.business .ui--tab { margin: 0 0 2.5rem 0; }
+
+.business .ui--tab li { width: 14.28%; }
+
+.business .h3 { margin-bottom: 14px; }
+
+.business .lease-area { overflow: hidden; }
+
+.business .lease-area li { float: left; width: calc((100% - 32px) / 5); margin-left: 8px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.business .lease-area li:first-child { margin-left: 0; }
+
+.business .lease-area li a { display: block; border: 1px solid #d6d5d5; padding: 4px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.business .lease-area li a span { display: block; border: 1px solid #e7e7e7; }
+
+@media (max-width: 1040px) { .business .ui--tab li { width: 33.33%; }
+  .business .ui--tab li:nth-child(3n + 1) { clear: both; }
+  .business .ui--tab li:nth-child(n + 4) { border-top: 0 none; }
+  .business .ui--tab li:nth-child(3n + 1) { border-left: 1px solid #cbc8c7; }
+  .business .ui--tab li:last-child { position: relative; }
+  .business .ui--tab li:last-child:before { display: block; position: absolute; top: 0; right: -200%; width: 100%; height: 100%; border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
+  .business .ui--tab li:last-child:after { display: block; position: absolute; top: 0; right: -100%; width: 100%; height: 100%; border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; } }
+
+@media (max-width: 768px) { .business .ui--tab li:nth-of-type(6) ~ li { margin-top: 0; } }

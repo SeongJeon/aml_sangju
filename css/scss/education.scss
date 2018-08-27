@@ -10,7 +10,7 @@
 		.inp-type2 {width:234px !important;}
 		.btn-type4.gray {width:124px; margin-left:10px; vertical-align: top;}
 	}
-	.txt-important {float:right; margin:7px 0 30px; color:#f40b0b; font-size:15px; line-height: 20px; word-break:keep-all; letter-spacing:-0.5px;}
+	.content-zone > .txt-important {float:right; margin:7px 0 30px; color:#f40b0b; font-size:15px; line-height: 20px; word-break:keep-all; letter-spacing:-0.5px;}
 
 	.education-lst {
 		clear:both;
@@ -39,6 +39,59 @@
 				.txt-hyphen > li:before {background:#22b24c;  }
 			}
 		}
+	}
+
+
+	/* 신청페이지 */
+	.form-page {
+		.h3 + .tbl-form {margin-top:15px; }
+		.tbl-form + .h3 {margin-top:40px}
+		.education-cont {
+			min-height:110px;
+			.txt-important {line-height: 22px}
+		}
+		.tbl-form {
+			.inp-type1 {width: 266px; }
+			.ipt-lst {
+				margin: 7px 0 5px;
+				li {margin-right: 0; }
+				li + li {margin-left: 30px; }
+			}
+		}
+		/* 이메일  */
+		.form--email {
+			.txt {margin: 0 4px; font-size: 15px; }
+			.inp-type1:nth-of-type(1) {width: 266px; }
+			.inp-type1:nth-of-type(2) {width: 123px; }
+			.sel-type1 {display: inline-block; width: 123px; margin-left: 2px; }
+		}
+		/* 전화번호 */
+		.form--call {
+			display: inline-block;
+			.sel-type1 {display: inline-block; width: 86px; } 
+			.inp-type1 {width: 86px; }
+			& + .ipt-lst {
+				display: inline-block; margin: 0 0 0 10px; vertical-align: middle; line-height: 1;
+				li + li {margin-left: 12px; }
+			}
+		}
+		/* 주소 */
+		.form--addr {
+			.block {
+				margin-top: 4px;
+				&:nth-of-type(1) {margin-top: 0; }
+			}
+			.btn-type3 {vertical-align: top; }
+		}
+
+		/* 알림내용 */
+		.h4 {
+			font-weight: normal; margin:25px 0 5px;
+			&:before {top:2px}
+		}
+		.txt-hyphen {margin-left:23px;}
+		& > .txt-important {margin-left:40px; float:none;}
+
 	}
 
 
@@ -85,10 +138,56 @@
 		}
 	}
 }
+@media (max-width:800px) {
+	.education {
+		.form-page {
+			.tbl-form {
+				.inp-type1 {
+					width: 100%;
+					& + .inp-type1 {margin-top: 0.3rem; }
+				}
+				.ipt-lst {
+					margin: 0.3rem 0; line-height: 1;
+					li + li {margin-left: 1rem; }
+				}
+			}
+			/* 이메일  */
+			.form--email {
+				position: relative;
+				.inp-type1 {width: 100% !important; }
+				.inp-type1:nth-of-type(1) {padding-right: 2rem; margin-bottom: 0.3rem; }
+				.txt {display: inline-block; position: absolute; right: 0; top: 0; width: 2rem; margin: 0; font-size: 0.8rem; line-height: 2.7rem; text-align: center; }
+				.sel-type1 {display: block; width: 100%; margin: 0.3rem 0 0; }
+			}
+		   /* 전화번호 */
+		   .form--call {
+		      display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+		      .sel-type1 {flex: 1; }
+		      .inp-type1 {flex: 1; }
+		      .txt {margin: 0 0.3rem; line-height: 2.7rem; }
+				.ipt-lst {
+					display: block; margin: 0.3rem 0 0;
+					li + li {margin-left: 1rem; }
+				}
+		   }
+		    /* 주소 */
+			.form--addr {
+				.block {
+					margin-top: 0.3rem;
+					&:nth-of-type(1) {
+						margin-top: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+						.inp-type1 {flex: 1; }
+					}
+				}
+				.btn-type3 {margin-left: 0.3rem; vertical-align: top; }
+			}		
+		}
+	}
+}
 @media (max-width:768px) {
 	.education {
 		/* 농기계교육신청 - 목록  */
-		.txt-important {float:none; margin:0.5rem 0 2rem}
+		.content-zone > .txt-important {float:none; margin:0.5rem 0 2rem; font-size:1rem; line-height: 1.6}
 		.education-lst {
 			& > li {margin-top:1rem; padding:0.5rem;}
 			.img {
@@ -106,6 +205,12 @@
 					margin-top:0.5rem; padding-left:0.5rem;
 				}
 			}
+		}
+
+		/* 신청페이지 */
+		.form-page {
+			.h4 {margin:1.5rem 0 0.3rem}
+			.txt-hyphen {margin:0}
 		}
 	}
 }

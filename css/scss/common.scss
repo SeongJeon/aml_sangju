@@ -373,7 +373,7 @@ br.mo {display:none}
 }
 .ipt-textarea2 {
 	width:100%; min-height:102px; padding:10px; border:1px solid #c8c8c8;
-	box-sizing:border-box; resize:none; color:#575757; font-size:16px; line-height:24px; font-family:$font6;
+	box-sizing:border-box; resize:none; color:#575757; font-size:14px; line-height:24px; font-family:$font6;
 }
 .ipt-datepicker {
 	position:relative; display:inline-block; vertical-align:top;
@@ -1094,6 +1094,9 @@ p.txt-hyphen {
 	.ipt-datepicker {
 		.inp-type2 {padding-right:3rem}
 		.ui-datepicker-trigger {width:1.5rem; height:1.5rem; right:1rem; margin-top:-0.8rem;}
+	}
+	.ipt-textarea2 {
+		 font-size:1.1rem; line-height:1.6;
 	}
 
 

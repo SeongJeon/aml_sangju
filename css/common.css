@@ -283,7 +283,7 @@ br.mo { display: none; }
 
 .ipt-textarea1 { width: 100%; min-height: 250px; padding: 10px 20px; border: 1px solid #ddd; border-top: 3px solid #666666; box-sizing: border-box; resize: none; color: #a5a5a5; font-size: 15px; line-height: 24px; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 
-.ipt-textarea2 { width: 100%; min-height: 102px; padding: 10px; border: 1px solid #c8c8c8; box-sizing: border-box; resize: none; color: #575757; font-size: 16px; line-height: 24px; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.ipt-textarea2 { width: 100%; min-height: 102px; padding: 10px; border: 1px solid #c8c8c8; box-sizing: border-box; resize: none; color: #575757; font-size: 14px; line-height: 24px; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 
 .ipt-datepicker { position: relative; display: inline-block; vertical-align: top; }
 .ipt-datepicker input { width: 130px; padding: 0 35px 0 10px; box-sizing: border-box; }
@@ -647,6 +647,7 @@ p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 15px; co
   .radio-type1 input:checked + label:before { background-size: auto 100%; }
   .ipt-datepicker .inp-type2 { padding-right: 3rem; }
   .ipt-datepicker .ui-datepicker-trigger { width: 1.5rem; height: 1.5rem; right: 1rem; margin-top: -0.8rem; }
+  .ipt-textarea2 { font-size: 1.1rem; line-height: 1.6; }
   /* TABLE */
   .tbl-type1 { font-size: 0.9rem; }
   .tbl-type1 tr > * { height: 2.6rem; padding: 0 0.5rem; }

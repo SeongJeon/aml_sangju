@@ -1,9 +1,9 @@
 @charset "UTF-8";
-.education { /* 농기계교육신청 - 목록 */ }
+.education { /* 농기계교육신청 - 목록 */ /* 신청페이지 */ }
 .education .ui--searchzone .sel-type2 { width: 130px !important; }
 .education .ui--searchzone .inp-type2 { width: 234px !important; }
 .education .ui--searchzone .btn-type4.gray { width: 124px; margin-left: 10px; vertical-align: top; }
-.education .txt-important { float: right; margin: 7px 0 30px; color: #f40b0b; font-size: 15px; line-height: 20px; word-break: keep-all; letter-spacing: -0.5px; }
+.education .content-zone > .txt-important { float: right; margin: 7px 0 30px; color: #f40b0b; font-size: 15px; line-height: 20px; word-break: keep-all; letter-spacing: -0.5px; }
 .education .education-lst { clear: both; }
 .education .education-lst > li { overflow: hidden; position: relative; width: 100%; padding: 10px 15px 10px 9px; margin-top: 20px; border: 1px solid #d6d5d5; box-sizing: border-box; table-layout: fixed; }
 .education .education-lst > li:hover { border-color: #31b758; }
@@ -17,6 +17,31 @@
 .education .education-lst .infor .top-area .tit { display: inline-block; overflow: hidden; max-width: 400px; font-size: 18px; font-weight: bold; text-overflow: ellipsis; white-space: nowrap; line-height: 35px; }
 .education .education-lst .infor .btm-area { margin-top: 5px; padding-left: 3px; }
 .education .education-lst .infor .btm-area .txt-hyphen > li:before { background: #22b24c; }
+.education .form-page { /* 이메일  */ /* 전화번호 */ /* 주소 */ /* 알림내용 */ }
+.education .form-page .h3 + .tbl-form { margin-top: 15px; }
+.education .form-page .tbl-form + .h3 { margin-top: 40px; }
+.education .form-page .education-cont { min-height: 110px; }
+.education .form-page .education-cont .txt-important { line-height: 22px; }
+.education .form-page .tbl-form .inp-type1 { width: 266px; }
+.education .form-page .tbl-form .ipt-lst { margin: 7px 0 5px; }
+.education .form-page .tbl-form .ipt-lst li { margin-right: 0; }
+.education .form-page .tbl-form .ipt-lst li + li { margin-left: 30px; }
+.education .form-page .form--email .txt { margin: 0 4px; font-size: 15px; }
+.education .form-page .form--email .inp-type1:nth-of-type(1) { width: 266px; }
+.education .form-page .form--email .inp-type1:nth-of-type(2) { width: 123px; }
+.education .form-page .form--email .sel-type1 { display: inline-block; width: 123px; margin-left: 2px; }
+.education .form-page .form--call { display: inline-block; }
+.education .form-page .form--call .sel-type1 { display: inline-block; width: 86px; }
+.education .form-page .form--call .inp-type1 { width: 86px; }
+.education .form-page .form--call + .ipt-lst { display: inline-block; margin: 0 0 0 10px; vertical-align: middle; line-height: 1; }
+.education .form-page .form--call + .ipt-lst li + li { margin-left: 12px; }
+.education .form-page .form--addr .block { margin-top: 4px; }
+.education .form-page .form--addr .block:nth-of-type(1) { margin-top: 0; }
+.education .form-page .form--addr .btn-type3 { vertical-align: top; }
+.education .form-page .h4 { font-weight: normal; margin: 25px 0 5px; }
+.education .form-page .h4:before { top: 2px; }
+.education .form-page .txt-hyphen { margin-left: 23px; }
+.education .form-page > .txt-important { margin-left: 40px; float: none; }
 
 @media (max-width: 1040px) { .education { /* 농기계교육신청 - 목록 */ }
   .education .ui--searchzone .sel-type2 { width: 49% !important; }
@@ -30,8 +55,28 @@
   .education .education-lst .infor .top-area { padding-bottom: 0.2rem; }
   .education .education-lst .infor .top-area .tit { max-width: 75%; font-size: 1.2rem; line-height: 2.6rem; }
   .education .education-lst .infor .btm-area { margin-top: 0.5rem; padding-left: 0.2rem; } }
-@media (max-width: 768px) { .education { /* 농기계교육신청 - 목록  */ }
-  .education .txt-important { float: none; margin: 0.5rem 0 2rem; }
+@media (max-width: 800px) { .education .form-page { /* 이메일  */ /* 전화번호 */ /* 주소 */ }
+  .education .form-page .tbl-form .inp-type1 { width: 100%; }
+  .education .form-page .tbl-form .inp-type1 + .inp-type1 { margin-top: 0.3rem; }
+  .education .form-page .tbl-form .ipt-lst { margin: 0.3rem 0; line-height: 1; }
+  .education .form-page .tbl-form .ipt-lst li + li { margin-left: 1rem; }
+  .education .form-page .form--email { position: relative; }
+  .education .form-page .form--email .inp-type1 { width: 100% !important; }
+  .education .form-page .form--email .inp-type1:nth-of-type(1) { padding-right: 2rem; margin-bottom: 0.3rem; }
+  .education .form-page .form--email .txt { display: inline-block; position: absolute; right: 0; top: 0; width: 2rem; margin: 0; font-size: 0.8rem; line-height: 2.7rem; text-align: center; }
+  .education .form-page .form--email .sel-type1 { display: block; width: 100%; margin: 0.3rem 0 0; }
+  .education .form-page .form--call { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .education .form-page .form--call .sel-type1 { flex: 1; }
+  .education .form-page .form--call .inp-type1 { flex: 1; }
+  .education .form-page .form--call .txt { margin: 0 0.3rem; line-height: 2.7rem; }
+  .education .form-page .form--call .ipt-lst { display: block; margin: 0.3rem 0 0; }
+  .education .form-page .form--call .ipt-lst li + li { margin-left: 1rem; }
+  .education .form-page .form--addr .block { margin-top: 0.3rem; }
+  .education .form-page .form--addr .block:nth-of-type(1) { margin-top: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .education .form-page .form--addr .block:nth-of-type(1) .inp-type1 { flex: 1; }
+  .education .form-page .form--addr .btn-type3 { margin-left: 0.3rem; vertical-align: top; } }
+@media (max-width: 768px) { .education { /* 농기계교육신청 - 목록  */ /* 신청페이지 */ }
+  .education .content-zone > .txt-important { float: none; margin: 0.5rem 0 2rem; font-size: 1rem; line-height: 1.6; }
   .education .education-lst > li { margin-top: 1rem; padding: 0.5rem; }
   .education .education-lst .img { width: 10rem; text-align: center; }
   .education .education-lst .img .bul-submit { position: static; width: 100%; }
@@ -39,4 +84,6 @@
   .education .education-lst .infor .top-area { padding-bottom: 0.2rem; }
   .education .education-lst .infor .top-area .tit { max-width: 100%; font-size: 1.2rem; line-height: 2rem; }
   .education .education-lst .infor .top-area .bul-submit { width: 25%; height: 2.6rem; line-height: 2.6rem; font-size: 1.1rem; }
-  .education .education-lst .infor .btm-area { margin-top: 0.5rem; padding-left: 0.5rem; } }
+  .education .education-lst .infor .btm-area { margin-top: 0.5rem; padding-left: 0.5rem; }
+  .education .form-page .h4 { margin: 1.5rem 0 0.3rem; }
+  .education .form-page .txt-hyphen { margin: 0; } }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
-.business .ui--tab { margin: 0 0 2.5rem 0; }
+.business .ui--tab.lease { margin: 0 0 2.5rem 0; }
 
-.business .ui--tab li { width: 14.28%; }
+.business .ui--tab.lease li { width: 14.28%; }
 
 .business .h3 { margin-bottom: 14px; }
 
@@ -23,18 +23,67 @@
 
 .business .lease-area li a em { overflow: hidden; display: inline-block; width: 80%; white-space: nowrap; text-overflow: ellipsis; }
 
-@media (max-width: 1040px) { .business .ui--tab li { width: 33.33%; }
-  .business .ui--tab li:nth-child(3n + 1) { clear: both; }
-  .business .ui--tab li:nth-child(n + 4) { border-top: 0 none; }
-  .business .ui--tab li:nth-child(3n + 1) { border-left: 1px solid #cbc8c7; }
-  .business .ui--tab li:last-child { position: relative; }
-  .business .ui--tab li:last-child:before { display: block; position: absolute; top: 0; right: calc(-200% + -5px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
-  .business .ui--tab li:last-child:after { display: block; position: absolute; top: 0; right: calc(-100% + -3px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
-  .business .lease-area li a:hover:before { height: 100%; background: none; content: ""; } }
+.business .ui--tab.app { margin-bottom: 10px; }
 
-@media (max-width: 768px) { .business .ui--tab li:nth-of-type(6) ~ li { margin-top: 0; }
+.business .ui--searchapp { margin-bottom: 33px; padding: 12px 20px; background: #f5f9ee; border: 1px solid #d2d2d2; }
+
+.business .ui--searchapp .form { display: inline-block; width: 100%; vertical-align: top; }
+
+.business .ui--searchapp .form li { float: left; width: calc((100% - 36px) / 4); margin-left: 12px; }
+
+.business .ui--searchapp .form li:first-child { margin-left: 0; }
+
+.business .ui--searchapp .form li label { display: inline-block; margin-bottom: 5px; padding-left: 10px; border-left: 2px solid #22b24c; }
+
+.business .txt-reserve { margin-bottom: 25px; padding: 20px 0; background: #215347; font-size: 1rem; font-weight: bold; color: #fff; text-align: center; }
+
+.business .txt-reserve p { position: relative; display: inline-block; }
+
+.business .txt-reserve p:before { position: absolute; top: 0; left: -2.2rem; width: 2.2rem; height: 2.1rem; background: url(/aml_sangju/images/business/ico-check.png) no-repeat left top; background-size: auto; content: ""; }
+
+.business .txt-reserve p:after { position: absolute; top: 5px; right: -3.1rem; width: 2.1rem; height: 1.4rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; content: ""; }
+
+.business .txt-reserve p.on:after { top: 3px; background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; }
+
+.business .step-procedure ol { display: inline-block; }
+
+.business .step-procedure ol li { position: relative; float: left; width: 105px; margin-left: 58px; text-align: center; }
+
+.business .step-procedure ol li:before { display: block; position: absolute; right: -43px; top: 44px; width: 26px; height: 15px; background: url("/aml_sangju/images/introduce/step-procedure-arrow.gif") no-repeat; content: ""; }
+
+.business .step-procedure ol li:first-child { margin-left: 0; }
+
+.business .step-procedure ol li:last-child:before { display: none; }
+
+.business .step-procedure ol li .txt { display: block; margin-bottom: 13px; font-weight: bold; }
+
+.business .step-procedure ol li p { font-size: 13px; color: #929292; word-break: keep-all; }
+
+@media (max-width: 1040px) { .business .ui--tab.lease li { width: 33.33%; }
+  .business .ui--tab.lease li:nth-child(3n + 1) { clear: both; }
+  .business .ui--tab.lease li:nth-child(n + 4) { border-top: 0 none; }
+  .business .ui--tab.lease li:nth-child(3n + 1) { border-left: 1px solid #cbc8c7; }
+  .business .ui--tab.lease li:last-child { position: relative; }
+  .business .ui--tab.lease li:last-child:before { display: block; position: absolute; top: 0; right: calc(-200% + -5px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
+  .business .ui--tab.lease li:last-child:after { display: block; position: absolute; top: 0; right: calc(-100% + -3px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
+  .business .lease-area li a:hover:before { height: 100%; background: none; content: ""; }
+  .business .step-procedure ol { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .business .step-procedure ol li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; width: 5rem; margin-left: 1.2rem; }
+  .business .step-procedure ol li:before { top: 22px; right: -1.2rem; width: 1rem; height: 0.5rem; margin-top: -0.25rem; background-size: cover; }
+  .business .step-procedure ol li img { width: 4rem; }
+  .business .step-procedure ol li .txt { padding-left: 1.6rem; text-indent: -1.6rem; text-align: center; font-size: 0.8rem; }
+  .business .step-procedure ol li p { font-size: 0.8rem; } }
+
+@media (max-width: 768px) { .business .ui--tab.lease li:nth-of-type(6) ~ li { margin-top: 0; }
   .business .lease-area li { width: calc((100% - 4px) / 2); margin-left: 4px; }
   .business .lease-area li:nth-child(2n + 1) { margin-left: 0 !important; }
   .business .lease-area li:nth-child(5n + 1) { margin-left: 4px; }
   .business .lease-area li:nth-child(2) ~ li { margin-top: 4px; }
-  .business .lease-area li a { font-size: 1.1rem; } }
+  .business .lease-area li a { font-size: 1.1rem; }
+  .business .ui--searchapp { margin-bottom: 20px; padding: 6px 10px; }
+  .business .ui--searchapp .form li { width: calc((100% - 18px) / 4); margin-left: 6px; }
+  .business .ui--searchapp .form li:first-child { margin-left: 0; }
+  .business .txt-reserve { padding: 12px 0; }
+  .business .txt-reserve p:before { left: -2.2rem; background: url(/aml_sangju/images/business/ico-check.png) no-repeat left top; background-size: 60%; }
+  .business .txt-reserve p:after { right: -2.1rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; background-size: 60%; content: ""; }
+  .business .txt-reserve p.on:after { background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; background-size: 60%; } }

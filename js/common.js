@@ -79,7 +79,7 @@ var gbgs = {
 				gnb.hide(0, function(){
 					gnb.css({"opacity": 0});
 					openbtn.focus();
-					$("html, body").css({"overflow": "inherit"});
+					$("html, body").css({"overflow": "auto"});
 				})
 			})
 			// menu click

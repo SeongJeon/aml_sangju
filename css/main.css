@@ -23,23 +23,24 @@
 .main .main-important-menu a.goto4:before { background: url("../images/main/icon-goto4.png") no-repeat 50% 50%; }
 .main .main-important-menu a.goto5:before { background: url("../images/main/icon-goto5.png") no-repeat 50% 50%; }
 .main .main-group { overflow: hidden; position: relative; max-width: 1040px; margin: 27px auto 0; height: 215px; box-sizing: border-box; padding: 0 10px; }
-.main .main-board-zone { position: relative; width: 420px; height: 215px; padding: 10px 15px 20px; margin: 0 auto; border: 1px solid #dbdbdb; box-sizing: border-box; }
-.main .main-board-zone .tit { font-weight: bold; color: #333; font-size: 18px; letter-spacing: -1px; }
-.main .main-board-zone .tit .color1 { color: #1ca544; }
-.main .main-board-zone .tit .color2 { color: #5c5c5c; }
-.main .main-board-zone .lst { margin-top: 16px; }
+.main .main-board-zone { position: relative; width: 420px; height: 215px; padding: 0 0 20px; margin: 0 auto; border: 1px solid #dbdbdb; box-sizing: border-box; }
+.main .main-board-zone .tit-tab { overflow: hidden; border-bottom: 1px solid #dbdbdb; font-weight: bold; color: #333; font-size: 18px; letter-spacing: -1px; }
+.main .main-board-zone .tit-tab li { float: left; width: 110px; border-right: 1px solid #dbdbdb; }
+.main .main-board-zone .tit-tab a { display: block; height: 36px; line-height: 36px; text-align: center; }
+.main .main-board-zone .tit-tab .current { color: #1ca544; }
+.main .main-board-zone .lst { margin-top: 16px; padding: 0 15px; }
 .main .main-board-zone .lst li { margin-top: 9px; }
 .main .main-board-zone .lst li:first-child { margin: 0; }
 .main .main-board-zone .lst a { display: block; font-size: 13px; line-height: 19px; letter-spacing: -1px; }
+.main .main-board-zone .lst a:before { display: inline-block; position: relative; top: -1px; content: ""; width: 2px; height: 2px; margin-right: 3px; background: #303030; }
 .main .main-board-zone .lst a:hover .cont { font-weight: bold; text-decoration: underline; }
-.main .main-board-zone .lst .bul { display: inline-block; width: 61px; border: 1px solid #dddbdb; color: #5c5c5c; font-size: 12px; text-align: center; line-height: 18px; vertical-align: middle; }
-.main .main-board-zone .lst .cont { display: inline-block; max-width: 260px; overflow: hidden; vertical-align: middle; text-overflow: ellipsis; white-space: nowrap; color: #333; }
+.main .main-board-zone .lst .cont { display: inline-block; max-width: 305px; overflow: hidden; vertical-align: middle; text-overflow: ellipsis; white-space: nowrap; color: #333; }
 .main .main-board-zone .lst .date { float: right; display: inline-block; margin-top: 2px; color: #9e9e9e; }
-.main .main-board-zone .close { display: block; position: absolute; right: 6px; top: 6px; width: 30px; height: 30px; background: #12932e; text-indent: -9999em; }
-.main .main-board-zone .close:before { display: block; position: absolute; left: 15px; top: 9px; width: 1px; height: 14px; content: ""; background: #fff; }
-.main .main-board-zone .close:after { display: block; position: absolute; left: 9px; top: 15px; width: 14px; height: 1px; content: ""; background: #fff; }
+.main .main-board-zone .close { display: block; position: absolute; right: 0; top: 0; width: 36px; height: 36px; background: #fff; text-indent: -9999em; border-left: 1px solid #dbdbdb; }
+.main .main-board-zone .close:before { display: block; position: absolute; left: 18px; top: 10px; width: 1px; height: 17px; content: ""; background: #808080; }
+.main .main-board-zone .close:after { display: block; position: absolute; left: 10px; top: 18px; width: 17px; height: 1px; content: ""; background: #808080; }
 .main .main-gruid-zone { position: absolute; left: 10px; top: 0; width: 282px; height: 100%; }
-.main .main-gruid-zone .tit { padding-left: 3px; font-size: 18px; color: #fff; font-weight: bold; }
+.main .main-gruid-zone .tit { padding-left: 3px; font-size: 18px; color: #fff; font-weight: bold; text-align: left; }
 .main .main-gruid-zone .guide1 { position: relative; width: 100%; height: 126px; padding: 7px 16px 13px; background: url("../images/main/bg-guide1.jpg") no-repeat 50% 50%; background-size: 100% 100%; box-sizing: border-box; }
 .main .main-gruid-zone .guide1 .slider { height: 73px; width: 100%; margin-top: 9px; background: #fff; }
 .main .main-gruid-zone .guide1 .slick-arrow { display: none !important; }
@@ -49,8 +50,9 @@
 .main .main-gruid-zone .guide1 .slick-dots li:first-child { margin: 0; }
 .main .main-gruid-zone .guide1 .slick-dots button { width: 11px; height: 11px; background: rgba(0, 0, 0, 0.3); text-indent: -9999em; border-radius: 100px; }
 .main .main-gruid-zone .guide1 .slick-dots .slick-active button { background: #fff; }
-.main .main-gruid-zone .guide2 { width: 100%; height: 85px; margin-top: 5px; padding: 4px 16px 0; background: url("../images/main/bg-guide2.jpg") no-repeat 50% 50%; background-size: 100% 100%; box-sizing: border-box; }
-.main .main-gruid-zone .guide2 .box { padding: 3px 0 0 54px; margin-top: 4px; height: 44px; background: url("../images/main/icon-guide.png") no-repeat 12px 50%, #fff; box-sizing: border-box; }
+.main .main-gruid-zone .guide2 { width: 100%; height: 85px; margin-top: 5px; padding: 4px 16px 0; text-align: center; box-sizing: border-box; background: url("../images/main/bg-guide2.jpg") no-repeat 50% 50%; background-size: 100% 100%; }
+.main .main-gruid-zone .guide2 .box { background: #fff; margin-top: 4px; }
+.main .main-gruid-zone .guide2 .box > div { display: inline-block; padding: 3px 0 0 40px; height: 44px; background: url("../images/main/icon-guide.png") no-repeat 0 50%; box-sizing: border-box; text-align: left; }
 .main .main-gruid-zone .guide2 .box .name { font-size: 12px; color: #373737; }
 .main .main-gruid-zone .guide2 .box .num { margin-top: -2px; font-size: 17px; font-weight: bold; color: #00944a; }
 .main .main-banner-zone { overflow: hidden; position: absolute; right: 10px; top: 0; width: 282px; height: 100%; border: 1px solid #dbdbdb; box-sizing: border-box; }
@@ -92,18 +94,20 @@
   .main .main-important-menu a.goto4:before { background-size: auto 100%; }
   .main .main-important-menu a.goto5:before { background-size: auto 100%; }
   .main .main-group { margin: 1.4rem auto 0; height: auto; padding: 0 1rem; }
-  .main .main-board-zone { width: 100%; height: auto; padding: 1rem 1.2rem 1.2rem; }
-  .main .main-board-zone .tit { font-size: 1.4rem; }
-  .main .main-board-zone .lst { margin-top: 1.9rem; }
+  .main .main-board-zone { width: 100%; height: auto; padding: 0 0 1.2rem; }
+  .main .main-board-zone .tit-tab { font-size: 1.4rem; }
+  .main .main-board-zone .tit-tab li { width: 10rem; }
+  .main .main-board-zone .tit-tab a { height: 3.8rem; line-height: 3.8rem; }
+  .main .main-board-zone .lst { margin-top: 1.2rem; padding: 0 1rem; }
   .main .main-board-zone .lst li { margin-top: 0.7rem; }
   .main .main-board-zone .lst li:first-child { margin: 0; }
   .main .main-board-zone .lst a { font-size: 1rem; line-height: 1.6rem; }
   .main .main-board-zone .lst .bul { width: 4.8rem; font-size: 0.9rem; line-height: 1.5rem; padding-bottom: 0; }
   .main .main-board-zone .lst .cont { margin-left: 0.2rem; max-width: 65%; }
   .main .main-board-zone .lst .date { margin-top: 0.2rem; }
-  .main .main-board-zone .close { right: 0.5rem; top: 0.5rem; width: 2.5rem; height: 2.5rem; }
-  .main .main-board-zone .close:before { left: 1.2rem; top: 0.8rem; height: 1rem; }
-  .main .main-board-zone .close:after { left: 0.8rem; top: 1.2rem; width: 1rem; }
+  .main .main-board-zone .close { right: 0; top: 0; height: 3.8rem; width: 3.8rem; }
+  .main .main-board-zone .close:before { left: 1.8rem; top: 1.1rem; height: 1.4rem; }
+  .main .main-board-zone .close:after { left: 1.2rem; top: 1.7rem; width: 1.4rem; }
   .main .main-gruid-zone { position: static; width: 100%; height: auto; margin-top: 1.2rem; padding-right: 0.25rem; box-sizing: border-box; }
   .main .main-gruid-zone .tit { padding-left: 0.2rem; font-size: 1.4rem; }
   .main .main-gruid-zone .guide1 { height: 13.2rem; padding: 1rem 1rem 0; }
@@ -115,7 +119,8 @@
   .main .main-gruid-zone .guide1 .slick-dots li:first-child { margin: 0; }
   .main .main-gruid-zone .guide1 .slick-dots button { width: 1rem; height: 1rem; }
   .main .main-gruid-zone .guide2 { height: 10rem; margin-top: 1.2rem; padding: 1rem 1rem 0; }
-  .main .main-gruid-zone .guide2 .box { overflow: hidden; padding: 0; margin-top: 1rem; height: 5rem; background: url("../images/main/img-m-guide2.png") no-repeat 50% 50%, #fff; background-size: auto 100%; text-indent: -9999em; }
+  .main .main-gruid-zone .guide2 .box { overflow: hidden; margin-top: 1rem; }
+  .main .main-gruid-zone .guide2 .box > div { display: block; height: 5rem; padding: 0; background: url("../images/main/img-m-guide2.png") no-repeat 50% 50%, #fff; background-size: auto 100%; text-indent: -9999em; }
   .main .main-banner-zone { position: relative; right: inherit; top: inherit; width: 100%; height: 25rem; margin-top: 1.2rem; border: 0; padding-left: 0.25rem; box-sizing: border-box; }
   .main .main-banner-zone .slider { border: 1px solid #dbdbdb; }
   .main .main-banner-zone .indicator *[class*="btn-"] { width: 3.4rem; height: 3.4rem; }

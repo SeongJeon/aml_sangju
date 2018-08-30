@@ -64,23 +64,98 @@
 							<ul class="step-join">
 								<li><span>01</span> <em>임대선택</em></li>
 								<li><span>02</span> <em>작업선택,<br>임대동의</em></li>
-								<li><span>03</span> <em>임차인<br>정보입력</em></li>
-								<li class="current"><span>04</span> <em>임대완료</em></li>
+								<li class="current"><span>03</span> <em>임차인<br>정보입력</em></li>
+								<li><span>04</span> <em>임대완료</em></li>
 								<!-- 해당 순서에 current class 추가 -->
 							</ul>
 
-							<h3 class="h3">임대완료</h3>
-							<div class="complete-box">
-								<p class="point01">감자수확기(경운기)가 임대 완료되었습니다.</p>
-								<p class="txt">
-									고객님이 예약하신 농기계임대장비가 임대 완료되었습니다. <br>
-									사용날짜 전날 오후 4:00 이후부터 출고가 가능합니다.
-								</p>
+							<!-- 폼 테이블 영역 -->
+							<h3 class="h3">임차인 정보입력</h3>
+							<p class="tbl-top up"><strong class="point02">*</strong> 표시는 필수 입력사항 입니다.</p>
+							<table class="tbl-form">
+								<caption>임차인 정보 입력 - 이름, 주소, 휴대전화, 작업자명, 결제정보</caption>
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>이름</span></th>
+										<td><input type="text" name="" id="" title="이름 입력" readonly="readonly" class="inp-type1"></td>
+									</tr>
+								
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>주소</span></th>
+										<td>
+											<div class="form--addr">
+												<div class="block">
+													<input type="text" name="" id="" title="우편번호 입력" class="inp-type1" placeholder="우편번호(ex.12345)">
+													<a href="#" class="btn-type3"><span>우편번호 검색</span></a>
+												</div>
+												<div class="block">
+													<input type="text" name="" id="" title="기본주소 입력" class="inp-type1" placeholder="기본주소">
+													<input type="text" name="" id="" title="상세주소 입력" class="inp-type1" placeholder="상세주소">
+												</div>
+											</div>
+										</td>
+									</tr>
 
-								<div class="btn-submit-group">
-									<a href="#" class="btn-type2 green"><span>나의 임대신청내역</span></a>
-								</div>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>휴대전화</span></th>
+										<td>
+											<div class="form--call">
+												<div class="sel-type1">
+													<select name="" id="" title="휴대전화 앞자리 선택">
+														<option value="">010</option>
+													</select>
+												</div>
+												<span class="txt">-</span>
+												<input type="text" name="" id="" title="휴대전화 중간자리 입력" class="inp-type1">
+												<span class="txt">-</span>
+												<input type="text" name="" id="" title="휴대전화 마지막자리 입력" class="inp-type1">
+											</div>
+											<ul class="ipt-lst">
+												<li class="radio-type1"><input type="radio" name="messgeagree" id="messgeagree1" checked="checked"><label for="messgeagree1"><span>문자 수신 동의</span></label></li>
+												<li class="radio-type1"><input type="radio" name="messgeagree" id="messgeagree2"><label for="messgeagree2"><span>문자 수신 미동의</span></label></li>
+											</ul>
+										</td>
+									</tr>
+
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>작업자명</span></th>
+										<td>
+											<div class="form--person">
+												<input type="text" name="" id="" title="작업자명 입력" class="inp-type1">
+												<div class="sel-type1">
+													<select name="" id="" title="작업자 관계 선택">
+														<option value="">관계</option>
+													</select>
+												</div>
+												<p class="txt-important point02">신청자와 작업자가 다를 경우 직접 입력하시고, 농업인안전공제 Ⅱ 가입증명서, 신분증을 지참하세요. (임작업 대행자) </p>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>결제정보</span></th>
+										<td>
+											<p class='point03 bank-number'>농협 779-01-191803 농업기술센터</p>
+											<div class="form--bank">
+												<span class="txt">입금자명</span>
+												<input type="text" name="" id="" title="입금자명 입력" class="inp-type1">
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //폼 테이블 영역 -->
+
+							<!-- 하단 버튼 영역 -->
+							<div class="btn-submit-group">
+								<button type="submit" class="btn-type2"><span>뒤 로</span></button>
+								<button type="submit" class="btn-type2 green"><span>다음 단계</span></button>
 							</div>
+							<!-- //하단 버튼 영역 -->
 						</div>
 						<!-- //페이지 컨텐츠 -->
 

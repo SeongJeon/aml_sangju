@@ -39,6 +39,12 @@
 				.txt-hyphen > li:before {background:#22b24c;  }
 			}
 		}
+		.file-download {
+			position:relative; margin-top:6px; padding:4px 10px 6px; box-sizing:border-box; z-index: 10; border:1px solid #d6d5d5; 
+			.icon-file {margin-right:5px}
+			a {margin-right:10px; letter-spacing: -0.5px}
+			a:hover {text-decoration: underline;}
+		}
 	}
 
 
@@ -204,6 +210,12 @@
 				.btm-area {
 					margin-top:0.5rem; padding-left:0.5rem;
 				}
+			}
+			.file-download {
+				position:relative; padding:4px 10px 6px; box-sizing:border-box; z-index: 10; border:1px solid #d6d5d5; 
+				.icon-file {margin-right:5px}
+				a {display:block; margin:0;}
+				a:hover {text-decoration: none;}
 			}
 		}
 

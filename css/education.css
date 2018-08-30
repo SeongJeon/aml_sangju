@@ -17,6 +17,10 @@
 .education .education-lst .infor .top-area .tit { display: inline-block; overflow: hidden; max-width: 400px; font-size: 18px; font-weight: bold; text-overflow: ellipsis; white-space: nowrap; line-height: 35px; }
 .education .education-lst .infor .btm-area { margin-top: 5px; padding-left: 3px; }
 .education .education-lst .infor .btm-area .txt-hyphen > li:before { background: #22b24c; }
+.education .education-lst .file-download { position: relative; margin-top: 6px; padding: 4px 10px 6px; box-sizing: border-box; z-index: 10; border: 1px solid #d6d5d5; }
+.education .education-lst .file-download .icon-file { margin-right: 5px; }
+.education .education-lst .file-download a { margin-right: 10px; letter-spacing: -0.5px; }
+.education .education-lst .file-download a:hover { text-decoration: underline; }
 .education .form-page { /* 이메일  */ /* 전화번호 */ /* 주소 */ /* 알림내용 */ }
 .education .form-page .h3 + .tbl-form { margin-top: 15px; }
 .education .form-page .tbl-form + .h3 { margin-top: 40px; }
@@ -85,5 +89,9 @@
   .education .education-lst .infor .top-area .tit { max-width: 100%; font-size: 1.2rem; line-height: 2rem; }
   .education .education-lst .infor .top-area .bul-submit { width: 25%; height: 2.6rem; line-height: 2.6rem; font-size: 1.1rem; }
   .education .education-lst .infor .btm-area { margin-top: 0.5rem; padding-left: 0.5rem; }
+  .education .education-lst .file-download { position: relative; padding: 4px 10px 6px; box-sizing: border-box; z-index: 10; border: 1px solid #d6d5d5; }
+  .education .education-lst .file-download .icon-file { margin-right: 5px; }
+  .education .education-lst .file-download a { display: block; margin: 0; }
+  .education .education-lst .file-download a:hover { text-decoration: none; }
   .education .form-page .h4 { margin: 1.5rem 0 0.3rem; }
   .education .form-page .txt-hyphen { margin: 0; } }

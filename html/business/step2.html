@@ -63,24 +63,84 @@
 						<div class="content-zone">
 							<ul class="step-join">
 								<li><span>01</span> <em>임대선택</em></li>
-								<li><span>02</span> <em>작업선택,<br>임대동의</em></li>
+								<li class="current"><span>02</span> <em>작업선택,<br>임대동의</em></li>
 								<li><span>03</span> <em>임차인<br>정보입력</em></li>
-								<li class="current"><span>04</span> <em>임대완료</em></li>
+								<li><span>04</span> <em>임대완료</em></li>
 								<!-- 해당 순서에 current class 추가 -->
 							</ul>
 
-							<h3 class="h3">임대완료</h3>
-							<div class="complete-box">
-								<p class="point01">감자수확기(경운기)가 임대 완료되었습니다.</p>
-								<p class="txt">
-									고객님이 예약하신 농기계임대장비가 임대 완료되었습니다. <br>
-									사용날짜 전날 오후 4:00 이후부터 출고가 가능합니다.
-								</p>
+							<!-- 폼 테이블 영역 -->
+							<h3 class="h3">작업선택 및 임대동의</h3>
+							<table class="tbl-form">
+								<caption>작업선택 및 임대동의 - 작업종류, 작업량, 사용조건 및 준수사항</caption>
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><span>작업종류</span></th>
+										<td>
+											<div class="form--work">
+												<div class="sel-type1">
+													<select name="" id="" title="작업종류 선택">
+														<option value="">작업종류</option>
+													</select>
+												</div>
+												<input type="text" name="" id="" title="작업종류 입력" class="inp-type1" placeholder="작업 종류를 직접입력해주세요">
+											</div>
+										</td>
+									</tr>
+								
+									<tr>
+										<th scope="row"><span>작업량</span></th>
+										<td>
+											<div class="form--bank">
+												<span class="txt">작업량</span>
+												<input type="text" name="" id="" title="작업량 입력" class="inp-type1" >
+												<div class="sel-type1">
+													<select name="" id="" title="작업량 선택">
+														<option value="">제곱미터(㎡)</option>
+														<option value="">제곱미터제곱미터(㎡)</option>
+													</select>
+												</div>
+											</div>
+										</td>
+									</tr>
 
-								<div class="btn-submit-group">
-									<a href="#" class="btn-type2 green"><span>나의 임대신청내역</span></a>
-								</div>
+									<tr>
+										<th scope="row"><span>사용조건 및 <br>준수사항</span></th>
+										<td>
+											<ul class="txt-hyphen green">
+												<li>임차인은 농기계를 내 것처럼 아껴서 사용한다.</li>
+												<li>사용 후 보관시는 깨끗이 세척한 후 안전한 창고 내에 보관한다. (1일 이상 사용할 때)</li> 
+												<li>임차 후 발생한 고장수리비는 임차인이 부담한다.</li>
+												<li>운전미숙, 부주의 등 임차인 과실로 발생한 고장은 임차인이 책임 수리한다.</li>
+												<li>임대기간 중 소모되는 연료비는 임차인이 부담한다.</li>
+												<li>임차인이 농기계의 운반 및 사용 중 발생한 사고에 대해서는 민&middot;형사상의 모든 책임을 진다.</li>
+												<li>사용 중 농기계를 분실 또는 파손하였을 때에는 임차인이 보상한다.</li>
+												<li>임대기간 만료시에는 깨끗이 세척 후 지체없이 반납한다.</li>
+												<li>임대기간 중 농기계의 유지, 보수 및 기본운영에 필요한 소요경비(수리비, 연료비, 농작업상해공제 등)는 임차인이 부담한다.</li>
+												<li>안전사고에 대비하여 임차인은 임대농기계를 대상으로 농기계종합공제에 의무적으로 가입하여야함.(별도 안전사고 부담 각서 제출)</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //폼 테이블 영역 -->
+
+							<!-- 동의 영역 -->
+							<div class="agree-submit">
+								<span class="check-type1"><input type="checkbox" name="" id="agree"><label for="agree"><span>사용조건 및 준수사항 약관에 동의합니다.</span></label></span>
 							</div>
+							<!-- //동의 영역 -->
+
+							<!-- 하단 버튼 영역 -->
+							<div class="btn-submit-group">
+								<button type="submit" class="btn-type2"><span>뒤 로</span></button>
+								<button type="submit" class="btn-type2 green"><span>다음 단계</span></button>
+							</div>
+							<!-- //하단 버튼 영역 -->
 						</div>
 						<!-- //페이지 컨텐츠 -->
 

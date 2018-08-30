@@ -41,11 +41,11 @@
 
 .business .txt-reserve p:before { position: absolute; top: 0; left: -2.2rem; width: 2.2rem; height: 2.1rem; background: url(/aml_sangju/images/business/ico-check.png) no-repeat left top; background-size: auto; content: ""; }
 
-.business .txt-reserve p:after { position: absolute; top: 5px; right: -3.1rem; width: 2.1rem; height: 1.4rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; content: ""; }
+.business .txt-reserve p:after { position: absolute; top: 3px; right: -3.1rem; width: 2.1rem; height: 1.4rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; content: ""; }
 
 .business .txt-reserve p.on:after { top: 3px; background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; }
 
-.business .step-procedure ol { display: inline-block; }
+.business .step-procedure ol { display: inline-block; margin-bottom: 44px; }
 
 .business .step-procedure ol li { position: relative; float: left; width: 105px; margin-left: 58px; text-align: center; }
 
@@ -59,6 +59,74 @@
 
 .business .step-procedure ol li p { font-size: 13px; color: #929292; word-break: keep-all; }
 
+.business .lease-result > li { overflow: hidden; margin-top: 16px; padding: 9px; border: 1px solid #d6d5d5; }
+
+.business .lease-result > li:first-child { margin-top: 0; }
+
+.business .lease-result > li:hover { padding: 6px; border: 4px solid #31b758; }
+
+.business .lease-result > li > div { display: inline-block; }
+
+.business .lease-result .tbl-pick { width: 19.6rem; margin-bottom: 6px; }
+
+.business .lease-result .tbl-pick th:first-child { color: #f1260a; }
+
+.business .lease-result .tbl-pick th:last-child { color: #0f46c3; }
+
+.business .lease-result .tbl-pick tr:first-child td { border-top: 0 none; }
+
+.business .lease-result .tbl-pick tr:last-child td:before { padding: 0; border-bottom: 1px solid #e7e7e7; }
+
+.business .lease-result .tbl-pick td { position: relative; text-align: center; padding: 2px; border-top: 2px solid #fff; letter-spacing: -1px; }
+
+.business .lease-result .tbl-pick td:first-child { color: #f1260a; }
+
+.business .lease-result .tbl-pick td:first-child:before { position: absolute; display: block; top: 0px; left: -1px; width: 5px; height: 100%; padding-top: 3px; background: #fff; border-left: 1px solid #e7e7e7; content: ""; }
+
+.business .lease-result .tbl-pick td:last-child { color: #0f46c3; }
+
+.business .lease-result .tbl-pick td:last-child:before { position: absolute; display: block; top: 0px; right: -1px; width: 5px; height: 100%; padding-top: 3px; background: #fff; border-right: 1px solid #e7e7e7; content: ""; }
+
+.business .lease-result .tbl-pick td.possible { background: #cfe5ae; }
+
+.business .lease-result .tbl-pick td.possible.holiday { color: #f1260a; }
+
+.business .lease-result .txt-choose { margin-left: 12px; }
+
+.business .lease-result .txt-choose .color1, .business .lease-result .txt-choose .color2 { display: inline-block; position: relative; color: #212121; padding-right: 30px; }
+
+.business .lease-result .txt-choose .color1:after, .business .lease-result .txt-choose .color2:after { display: block; width: 22px; height: 23px; position: absolute; right: 0; top: 0; content: ""; }
+
+.business .lease-result .txt-choose .color1 { margin-right: 10px; }
+
+.business .lease-result .txt-choose .color1:after { background: #cfe5ae; }
+
+.business .lease-result .txt-choose .color2:after { border: 1px solid #e7e7e7; background: #fff; }
+
+.business .lease-result .lease-info { vertical-align: top; width: calc(100% - 310px); margin-left: 10px; }
+
+.business .lease-result .lease-info .app-name { overflow: hidden; margin-bottom: 6px; padding-bottom: 4px; border-bottom: 2px solid #e7e7e7; }
+
+.business .lease-result .lease-info .app-name strong { float: left; margin-top: 8px; font-size: 18px; color: #212121; }
+
+.business .lease-result .lease-info .app-name .btn-type5 { float: right; min-width: 120px; padding: 0 10px 1px; line-height: 32px; color: #fff; font-weight: bold; }
+
+.business .lease-result .lease-info .app-name .gray { background: #404040; border-color: #404040; }
+
+.business .lease-result .lease-info .txt-hyphen { margin-bottom: 5px; }
+
+.business .lease-result .lease-info .txt-dotted2 { margin-bottom: 4px; padding: 15px 17px; background: #eff2f4; }
+
+.business .lease-result .lease-info .txt-dotted2 li { margin-top: 8px; }
+
+.business .lease-result .lease-info .txt-dotted2 li:first-child { margin-top: 0; }
+
+.business .lease-result .lease-info .txt-dotted2 li:before { background: #a09d9d; }
+
+.business .lease-result .lease-info .txt-important { min-height: 84px; padding: 10px; border: 1px solid #e7e7e7; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.business .lease-result .lease-info .txt-important li { line-height: 20px; color: #868686; }
+
 @media (max-width: 1040px) { .business .ui--tab.lease li { width: 33.33%; }
   .business .ui--tab.lease li:nth-child(3n + 1) { clear: both; }
   .business .ui--tab.lease li:nth-child(n + 4) { border-top: 0 none; }
@@ -67,12 +135,13 @@
   .business .ui--tab.lease li:last-child:before { display: block; position: absolute; top: 0; right: calc(-200% + -5px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
   .business .ui--tab.lease li:last-child:after { display: block; position: absolute; top: 0; right: calc(-100% + -3px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
   .business .lease-area li a:hover:before { height: 100%; background: none; content: ""; }
-  .business .step-procedure ol { display: -webkit-box; display: -ms-flexbox; display: flex; }
-  .business .step-procedure ol li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; width: 5rem; margin-left: 1.2rem; }
-  .business .step-procedure ol li:before { top: 22px; right: -1.2rem; width: 1rem; height: 0.5rem; margin-top: -0.25rem; background-size: cover; }
-  .business .step-procedure ol li img { width: 4rem; }
-  .business .step-procedure ol li .txt { padding-left: 1.6rem; text-indent: -1.6rem; text-align: center; font-size: 0.8rem; }
-  .business .step-procedure ol li p { font-size: 0.8rem; } }
+  .business .step-procedure ol { width: 100%; margin-bottom: 0; }
+  .business .step-procedure ol li { overflow: hidden; float: none; width: 100%; margin: 0; padding: 10px 0 2rem; text-align: left; }
+  .business .step-procedure ol li:before { top: auto; bottom: 3px; left: 2rem; width: 1rem; height: 0.5rem; margin-top: 0; background-size: cover; -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+  .business .step-procedure ol li:first-child { padding-top: 0; }
+  .business .step-procedure ol li img { float: left; width: 5rem; }
+  .business .step-procedure ol li .txt { float: left; margin: 1rem 0 7px 0.5rem; text-align: left; font-size: 0.8rem; }
+  .business .step-procedure ol li p { float: left; width: calc(100% - 5rem - 5px); margin-left: 5px; font-size: 0.8rem; } }
 
 @media (max-width: 768px) { .business .ui--tab.lease li:nth-of-type(6) ~ li { margin-top: 0; }
   .business .lease-area li { width: calc((100% - 4px) / 2); margin-left: 4px; }

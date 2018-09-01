@@ -447,6 +447,15 @@
                 }
             }
         }
+        .lease-result {
+            .lease-info {
+                .app-name {
+                    strong {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -513,6 +522,38 @@
                         background-size: 60%;
                     }
                 }
+            }
+        }
+        .lease-result {
+            .reserve-info {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .tbl-pick {
+                margin: 10px auto 6px;
+            }
+            .lease-info {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .business {
+        .lease-result {
+            .lease-info {
+                .app-name {
+                    .btn-type5 {
+                        min-width: 80px;
+                    }
+                }
+            }
+            .tbl-pick {
+                width: 100%;
             }
         }
     }

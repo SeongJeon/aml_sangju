@@ -141,7 +141,8 @@
   .business .step-procedure ol li:first-child { padding-top: 0; }
   .business .step-procedure ol li img { float: left; width: 5rem; }
   .business .step-procedure ol li .txt { float: left; margin: 1rem 0 7px 0.5rem; text-align: left; font-size: 0.8rem; }
-  .business .step-procedure ol li p { float: left; width: calc(100% - 5rem - 5px); margin-left: 5px; font-size: 0.8rem; } }
+  .business .step-procedure ol li p { float: left; width: calc(100% - 5rem - 5px); margin-left: 5px; font-size: 0.8rem; }
+  .business .lease-result .lease-info .app-name strong { font-size: 1.2rem; } }
 
 @media (max-width: 768px) { .business .ui--tab.lease li:nth-of-type(6) ~ li { margin-top: 0; }
   .business .lease-area li { width: calc((100% - 4px) / 2); margin-left: 4px; }
@@ -155,4 +156,10 @@
   .business .txt-reserve { padding: 12px 0; }
   .business .txt-reserve p:before { left: -2.2rem; background: url(/aml_sangju/images/business/ico-check.png) no-repeat left top; background-size: 60%; }
   .business .txt-reserve p:after { right: -2.1rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; background-size: 60%; content: ""; }
-  .business .txt-reserve p.on:after { background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; background-size: 60%; } }
+  .business .txt-reserve p.on:after { background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; background-size: 60%; }
+  .business .lease-result .reserve-info { display: block; width: 100%; margin-bottom: 40px; text-align: center; }
+  .business .lease-result .tbl-pick { margin: 10px auto 6px; }
+  .business .lease-result .lease-info { width: 100%; margin-left: 0; } }
+
+@media (max-width: 500px) { .business .lease-result .lease-info .app-name .btn-type5 { min-width: 80px; }
+  .business .lease-result .tbl-pick { width: 100%; } }

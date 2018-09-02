@@ -132,9 +132,6 @@
     }
     .aco-area {
         &.on {
-            .step-procedure {
-                display: none;
-            }
             .btn-reserve span:after {
                 top: 3px;
                 background: url(/aml_sangju/images/business/ico-reserve-on.png)
@@ -143,6 +140,7 @@
         }
     }
     .step-procedure {
+        display: none;
         ol {
             display: inline-block;
             margin-bottom: 44px;

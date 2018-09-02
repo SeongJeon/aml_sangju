@@ -43,9 +43,9 @@
 
 .business .btn-reserve span:after { position: absolute; top: 3px; right: -3.1rem; width: 2.1rem; height: 1.4rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; content: ""; }
 
-.business .aco-area.on .step-procedure { display: none; }
-
 .business .aco-area.on .btn-reserve span:after { top: 3px; background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; }
+
+.business .step-procedure { display: none; }
 
 .business .step-procedure ol { display: inline-block; margin-bottom: 44px; }
 

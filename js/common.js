@@ -412,6 +412,20 @@ $(".js--allcheck input").on("change", function(){
 	}
 })
 
+// sns share
+var snsShare = (function(){
+	if($("#breadcrumb").length < 1) return false;
+
+	$("#breadcrumb .btn-share").on("click", function(){
+		if($(this).hasClass("on")){
+			$(this).removeClass("on").next(".group").hide();
+		}else {
+			$(this).addClass("on").next(".group").css("display", "inline-block");
+		}
+		return false;
+	})
+
+})();
 
 /* -----------------------------------------------------------------
 DOCUMENT READY

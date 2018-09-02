@@ -35,6 +35,7 @@
 .business .tbl-form .form--days .sel-type1 { display: inline-block; width: 90px; }
 .business .tbl-form .form--days .txt { margin-left: 5px; }
 .business .tbl-form .form--price .inp-type1 { width: 112px; margin: 0 5px; font-weight: bold; color: #ee0c0c; text-align: center; }
+.business .tbl-form .form--datepicker .txt-choose br { display: none; }
 .business .tbl-form .form--datepicker .txt-choose .color1, .business .tbl-form .form--datepicker .txt-choose .color2 { display: inline-block; position: relative; color: #212121; padding-right: 30px; }
 .business .tbl-form .form--datepicker .txt-choose .color1:after, .business .tbl-form .form--datepicker .txt-choose .color2:after { display: block; width: 22px; height: 23px; position: absolute; right: 0; top: 0; content: ''; }
 .business .tbl-form .form--datepicker .txt-choose .color1 { margin-right: 10px; }
@@ -44,7 +45,19 @@
 .business .tbl-form .form--datepicker .datepick .inp-type1 { width: 122px; }
 .business .agree-submit { text-align: center; margin: 45px 0 -25px; }
 .business .tbl-pick { width: 377px; margin-top: 10px; font-size: 14px; border: 1px solid #e7e7e7; }
-.business .tbl-pick th { background: #f1f3f4; font-weight: normal; height: 30px; text-align: center; }
+.business .tbl-pick th { background: #f1f3f4; font-weight: normal; height: 30px; padding-bottom: 2px; text-align: center; border-bottom: 1px solid #fff; box-sizing: border-box; }
+.business .tbl-pick th:first-child { color: #f1260a; }
+.business .tbl-pick th:last-child { color: #0f46c3; }
+.business .tbl-pick td { text-align: center; padding: 1px; }
+.business .tbl-pick td button { width: 100%; height: 22px; padding-bottom: 2px; text-align: center; color: #393939; background: #fff; border: 1px solid #cfe5ae; background: #cfe5ae; box-sizing: border-box; }
+.business .tbl-pick td:first-child button { color: #f1260a; }
+.business .tbl-pick td:last-child button { color: #0f46c3; }
+.business .tbl-pick td button.disabled { background: #fff; border-color: #e7e7e7; cursor: auto; }
+.business .tbl-pick td button.selected { background: #ec4316; border-color: #ec4316; color: #fff; }
+.business .tbl-pick td button.holiday { color: #f1260a; }
+.business .tbl-pick tr > *:first-child { padding-left: 6px; }
+.business .tbl-pick tr > *:last-child { padding-right: 6px; }
+.business .tbl-pick tbody tr:last-child > * { padding-bottom: 5px; }
 
 @media (max-width: 800px) { /* STEP2,3 - 정보입력 */
   .business .tbl-form .inp-type1 { width: 100%; }
@@ -74,7 +87,7 @@
   .business .tbl-form .form--price .inp-type1 { width: 100%; margin: 0.3rem 0; }
   .business .agree-submit { margin: 3rem 0 -1.5rem; }
   .business .tbl-pick { width: 100%; } }
-@media (max-width: 768px) { .business { /* 임대신청 - 공통 */ /* 임대신청 - STEP4 완료 */ }
+@media (max-width: 768px) { .business { /* 임대신청 - 공통 */ /* 임대신청 - STEP4 완료 */ /* 임대신청 - STEP1 완료 */ }
   .business .step-join { margin-bottom: 22px; }
   .business .step-join li { display: table; table-layout: fixed; width: calc(25% - 13px); height: 6.5rem; margin-left: 15px; line-height: 1.2; font-size: 1.2rem; padding: 0; letter-spacing: -0.5px; text-align: center; }
   .business .step-join li:before { left: -12px; font-size: 1rem; line-height: 45px; }
@@ -86,4 +99,12 @@
   .business .complete-box { padding: 27px 2rem 2.5rem; }
   .business .complete-box .point01 { margin-bottom: 11px; font-weight: bold; font-size: 15px; }
   .business .complete-box .txt { font-size: 1.1rem; word-break: keep-all; }
-  .business .complete-box .btn-submit-group { margin-top: 2rem; } }
+  .business .complete-box .btn-submit-group { margin-top: 2rem; }
+  .business .tbl-form .form--datepicker .txt-choose { font-size: 1.1rem; }
+  .business .tbl-form .form--datepicker .txt-choose br { display: inherit; }
+  .business .tbl-form .form--datepicker .txt-choose .point03 { display: block; margin-bottom: 0.4rem; }
+  .business .tbl-form .form--datepicker .txt-choose .color1:after, .business .tbl-form .form--datepicker .txt-choose .color2:after { width: 2rem; height: 2rem; }
+  .business .tbl-form .form--datepicker .datepick { font-size: 1.1rem; }
+  .business .tbl-form .form--datepicker .datepick .inp-type1 { width: 50%; margin-bottom: 0.3rem; }
+  .business .tbl-form .form--datepicker .tbl-pick { font-size: 1.1rem; }
+  .business .tbl-form .form--datepicker .tbl-pick thead span { display: none; } }

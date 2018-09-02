@@ -24,10 +24,14 @@
 .main .main-important-menu a.goto5:before { background: url("../images/main/icon-goto5.png") no-repeat 50% 50%; }
 .main .main-group { overflow: hidden; position: relative; max-width: 1040px; margin: 27px auto 0; height: 215px; box-sizing: border-box; padding: 0 10px; }
 .main .main-board-zone { position: relative; width: 420px; height: 215px; padding: 0 0 20px; margin: 0 auto; border: 1px solid #dbdbdb; box-sizing: border-box; }
-.main .main-board-zone .tit-tab { overflow: hidden; border-bottom: 1px solid #dbdbdb; font-weight: bold; color: #333; font-size: 18px; letter-spacing: -1px; }
+.main .main-board-zone .tit-tab { border-bottom: 1px solid #dbdbdb; font-weight: bold; color: #333; font-size: 18px; letter-spacing: -1px; }
+.main .main-board-zone .tit-tab:after { display: block; clear: both; content: ""; }
 .main .main-board-zone .tit-tab li { float: left; width: 110px; border-right: 1px solid #dbdbdb; }
-.main .main-board-zone .tit-tab a { display: block; height: 36px; line-height: 36px; text-align: center; }
+.main .main-board-zone .tit-tab a { display: block; position: relative; height: 36px; line-height: 36px; text-align: center; }
+.main .main-board-zone .tit-tab a:hover { color: #1ca544; }
+.main .main-board-zone .tit-tab a:hover:after { display: block; position: absolute; bottom: -1px; left: 0; width: 100%; height: 3px; background: #1ca544; content: ""; }
 .main .main-board-zone .tit-tab .current { color: #1ca544; }
+.main .main-board-zone .tit-tab .current a:after { display: block; position: absolute; bottom: -1px; left: 0; width: 100%; height: 3px; background: #1ca544; content: ""; }
 .main .main-board-zone .lst { margin-top: 16px; padding: 0 15px; }
 .main .main-board-zone .lst li { margin-top: 9px; }
 .main .main-board-zone .lst li:first-child { margin: 0; }

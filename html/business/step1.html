@@ -61,6 +61,7 @@
 
 						<!-- 페이지 컨텐츠 -->
 						<div class="content-zone">
+							<!--단계별 영역 -->
 							<ul class="step-join">
 								<li class="current"><span>01</span> <em>임대선택</em></li>
 								<li><span>02</span> <em>작업선택,<br>임대동의</em></li>
@@ -68,6 +69,7 @@
 								<li><span>04</span> <em>임대완료</em></li>
 								<!-- 해당 순서에 current class 추가 -->
 							</ul>
+							<!--//단계별 영역 -->
 
 							<!-- 폼 테이블 영역 -->
 							<h3 class="h3">임대 선택</h3>
@@ -131,7 +133,7 @@
 										<th scope="row"><span>임대예약일</span></th>
 										<td>
 											<div class="form--datepicker">
-												<p class="txt-choose"><strong class="point03">예약일자를 선택하세요.</strong> ( <strong class="color1">예약가능</strong> <strong class="color2">예약불가능</strong> )</p>
+												<p class="txt-choose"><strong class="point03">예약일자를 선택하세요.</strong>( <strong class="color1">예약가능</strong> <strong class="color2">예약불가능</strong> )</p>
 												<div class="datepick">
 													<input type="text" name="" id="" title="임대예약일 시작날짜 입력" class="inp-type1" >
 													<span class="txt">부터</span>
@@ -145,13 +147,13 @@
 													</colgroup>
 													<thead>
 														<tr>
-															<th scope="col">일요일</th>
-															<th scope="col">월요일</th>
-															<th scope="col">화요일</th>
-															<th scope="col">수요일</th>
-															<th scope="col">목요일</th>
-															<th scope="col">금요일</th>
-															<th scope="col">토요일</th>
+															<th scope="col">일<span>요일</span></th>
+															<th scope="col">월<span>요일</span></th>
+															<th scope="col">화<span>요일</span></th>
+															<th scope="col">수<span>요일</span></th>
+															<th scope="col">목<span>요일</span></th>
+															<th scope="col">금<span>요일</span></th>
+															<th scope="col">토<span>요일</span></th>
 														</tr>
 													</thead>
 													<tbody>
@@ -161,53 +163,53 @@
 															<td></td>
 															<td></td>
 															<td></td>
-															<td><button type="button">8/3</button></td>
-															<td><button type="button">8/4</button></td>
+															<td><button type="button" class="disabled">8/3 <span class="hidden">예약불가능</span></button></td>
+															<td><button type="button" class="disabled">8/4 <span class="hidden">예약불가능</span></button></td><!-- case 예약불가능 disabled 클래스추가 -->
 														</tr>
 														<tr>
-															<td><button type="button">8/5</button></td>
-															<td><button type="button">8/6</button></td>
-															<td><button type="button">8/7</button></td>
-															<td><button type="button">8/8</button></td>
-															<td><button type="button">8/9</button></td>
-															<td><button type="button">8/10</button></td>
-															<td><button type="button">8/11</button></td>
+															<td><button type="button">8/5 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button" class="selected">8/6 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button" class="selected">8/7 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/8 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/9 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/10 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/11 <span class="hidden">예약 가능</span></button></td>
 														</tr>
 														<tr>
-															<td><button type="button">8/5</button></td>
-															<td><button type="button">8/6</button></td>
-															<td><button type="button">8/7</button></td>
-															<td><button type="button">8/8</button></td>
-															<td><button type="button">8/9</button></td>
-															<td><button type="button">8/10</button></td>
-															<td><button type="button">8/11</button></td>
+															<td><button type="button">8/5 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/6 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/7 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/8 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/9 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/10 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/11 <span class="hidden">예약 가능</span></button></td>
 														</tr>
 														<tr>
-															<td><button type="button">8/12</button></td>
-															<td><button type="button">8/13</button></td>
-															<td><button type="button">8/14</button></td>
-															<td><button type="button">8/15</button></td>
-															<td><button type="button">8/16</button></td>
-															<td><button type="button">8/17</button></td>
-															<td><button type="button">8/18</button></td>
+															<td><button type="button">8/12 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/13 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/14 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button" class="holiday">8/15 <span class="hidden">예약 가능</span></button></td><!-- case 공휴일에 holiday 클래스 추가 -->
+															<td><button type="button">8/16 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/17 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/18 <span class="hidden">예약 가능</span></button></td>
 														</tr>
 														<tr>
-															<td><button type="button">8/19</button></td>
-															<td><button type="button">8/20</button></td>
-															<td><button type="button">8/21</button></td>
-															<td><button type="button">8/22</button></td>
-															<td><button type="button">8/23</button></td>
-															<td><button type="button">8/24</button></td>
-															<td><button type="button">8/25</button></td>
+															<td><button type="button">8/19 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/20 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/21 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/22 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/23 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/24 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/25 <span class="hidden">예약 가능</span></button></td>
 														</tr>
 														<tr>
-															<td><button type="button">8/26</button></td>
-															<td><button type="button">8/27</button></td>
-															<td><button type="button">8/28</button></td>
-															<td><button type="button">8/29</button></td>
-															<td><button type="button">8/30</button></td>
-															<td><button type="button">9/1</button></td>
-															<td><button type="button">9/2</button></td>
+															<td><button type="button">8/26 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/27 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/28 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/29 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button">8/30 <span class="hidden">예약 가능</span></button></td>
+															<td><button type="button" class="disabled">9/1<span class="hidden">예약 불가능</span></button></td>
+															<td><button type="button" class="disabled">9/2<span class="hidden">예약 불가능</span></button></td>
 														</tr>
 													</tbody>
 												</table>

@@ -94,7 +94,9 @@
             }
         }
     }
-    .txt-reserve {
+    .btn-reserve {
+        display: block;
+        width: 100%;
         margin-bottom: 25px;
         padding: 20px 0;
         background: #215347;
@@ -102,7 +104,7 @@
         font-weight: bold;
         color: #fff;
         text-align: center;
-        p {
+        span {
             position: relative;
             display: inline-block;
             &:before {
@@ -126,12 +128,17 @@
                     no-repeat right top;
                 content: "";
             }
-            &.on {
-                &:after {
-                    top: 3px;
-                    background: url(/aml_sangju/images/business/ico-reserve-on.png)
-                        no-repeat right top;
-                }
+        }
+    }
+    .aco-area {
+        &.on {
+            .step-procedure {
+                display: none;
+            }
+            .btn-reserve span:after {
+                top: 3px;
+                background: url(/aml_sangju/images/business/ico-reserve-on.png)
+                    no-repeat right top;
             }
         }
     }
@@ -269,7 +276,7 @@
                 display: inline-block;
                 position: relative;
                 color: #212121;
-                padding-right: 30px;
+                padding: 4px 30px 0 0;
                 &:after {
                     display: block;
                     width: 22px;
@@ -436,13 +443,13 @@
                         float: left;
                         margin: 1rem 0 7px 0.5rem;
                         text-align: left;
-                        font-size: 0.8rem;
+                        font-size: 1rem;
                     }
                     p {
                         float: left;
-                        width: calc(100% - 5rem - 5px);
-                        margin-left: 5px;
-                        font-size: 0.8rem;
+                        width: calc(100% - 5rem - 0.5rem);
+                        margin-left: 0.5rem;
+                        font-size: 0.9rem;
                     }
                 }
             }
@@ -453,6 +460,9 @@
                     strong {
                         font-size: 1.2rem;
                     }
+                }
+                .txt-dotted2 > li {
+                    font-size: 1.1rem;
                 }
             }
         }
@@ -499,9 +509,9 @@
                 }
             }
         }
-        .txt-reserve {
+        .btn-reserve {
             padding: 12px 0;
-            p {
+            span {
                 &:before {
                     left: -2.2rem;
                     background: url(/aml_sangju/images/business/ico-check.png)
@@ -537,6 +547,11 @@
             .lease-info {
                 width: 100%;
                 margin-left: 0;
+                .app-name {
+                    .btn-type5 {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
@@ -549,6 +564,7 @@
                 .app-name {
                     .btn-type5 {
                         min-width: 80px;
+                        font-size: 1.2rem;
                     }
                 }
             }

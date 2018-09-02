@@ -156,64 +156,6 @@ var gbgs = {
 		});
 	},
 
-	asideEvent : function(){
-		// if
-		if($("#container").hasClass("main")) $("#aside").css({"top":"720px"});
-
-		// var
-		var aside = $("#aside"), btn = aside.find("#btn-top"), top = aside.offset().top;
-
-		// default
-		if($(window).width() > 1329) { pcEvent(); }
-		else { moEvent(); }
-
-		// resize
-		$(window).resize(function(){
-			if($(window).width() > 1329) {
-				// console.log("pc");
-				pcEvent();
-			}else {
-				// conso/le.log("m");
-				moEvent();
-			}
-		})
-
-		function moEvent(){
-			//default
-			$(window).off("scroll");
-			if($(window).scrollTop() > 30) btn.fadeIn(300);
-			else btn.hide();
-			// scroll
-			$(window).on('scroll', function(){
-				if($(window).scrollTop() > 30) btn.fadeIn(300);
-				else btn.fadeOut(300);
-			});
-		}
-		function pcEvent(){
-			//default
-			$(window).off("scroll");
-			btn.show();
-			if($(window).scrollTop() >= top - 20){aside.css({"position": "fixed", "top": "20px"}); }
-			else{aside.css({"position": "absolute", "top": top+"px"}); }
-
-			// scroll
-			$(window).on('scroll', function(){
-				if($(this).scrollTop() >= top - 20){
-					aside.css({"position": "fixed", "top": "20px"});
-				}else{
-					aside.css({"position": "absolute", "top": top+"px"});
-				}
-			});
-		}
-
-		// Top button click
-		btn.on("click", function(){
-			$("html,body").animate({"scrollTop": 0},300);
-			$("#header .outlnk-group .btn-home").focus();
-			return false;
-		});
-	},
-
 	// TAB SHOW / HIDE
 	tabEvent : function(tabName, hasClassName, contName, liName){
 		if($(tabName).length < 1) return false;

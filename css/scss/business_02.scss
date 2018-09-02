@@ -525,13 +525,13 @@
                     background-size: 60%;
                     content: "";
                 }
-                &.on {
-                    &:after {
-                        background: url(/aml_sangju/images/business/ico-reserve-on.png)
-                            no-repeat right top;
-                        background-size: 60%;
-                    }
-                }
+            }
+        }
+        .aco-area.on {
+            .btn-reserve span:after {
+                background: url(/aml_sangju/images/business/ico-reserve-on.png)
+                    no-repeat right top;
+                background-size: 60%;
             }
         }
         .lease-result {

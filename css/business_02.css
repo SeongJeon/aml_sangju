@@ -159,7 +159,7 @@
   .business .btn-reserve { padding: 12px 0; }
   .business .btn-reserve span:before { left: -2.2rem; background: url(/aml_sangju/images/business/ico-check.png) no-repeat left top; background-size: 60%; }
   .business .btn-reserve span:after { right: -2.1rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; background-size: 60%; content: ""; }
-  .business .btn-reserve span.on:after { background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; background-size: 60%; }
+  .business .aco-area.on .btn-reserve span:after { background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; background-size: 60%; }
   .business .lease-result .reserve-info { display: block; width: 100%; margin-bottom: 40px; text-align: center; }
   .business .lease-result .tbl-pick { margin: 10px auto 6px; }
   .business .lease-result .lease-info { width: 100%; margin-left: 0; }

@@ -241,6 +241,10 @@ var gbgs = {
 		if($(accordionName).length < 1) return false;
 		var spd = 300;
 
+		//default
+		if($(accordionName).hasClass(openClass)) $(accordionName).find(aName).show();
+
+		// click 
 		$(accordionName).find(qName).on("click", function(){
 			var _this = $(this).closest(accordionName);
 			if(_this.hasClass(openClass)){ _this.find(aName).slideUp(spd); }
@@ -485,15 +489,11 @@ $(window).load(function(){
 	$("footer").load('/aml_sangju/html/include/footer.html', function(){
 		gbgs.footerEvent();
 	});
-	$("aside").load('/aml_sangju/html/include/aside.html', function(){
-		gbgs.asideEvent();
-	});
 	// ------------------------------------------개발시 삭제
 
 
 	// 개발시 위 코드 삭제 후, 아래 코드 활성화 하시기 바랍니다.
 	// gbgs.gnbEvent(); // gnb animation js
 	// gbgs.footerEvent(); // footer js
-	// gbgs.asideEvent(); // aside js
 
 })

@@ -118,6 +118,7 @@
 									<button type="button" class="btn-reserve">
 										<span>이렇게 임대예약하세요!</span>
 									</button>
+									<!-- ajax로 검색 후, 버튼 trigger("click") -->
 
 									<div class="step-procedure">
 										<ol>
@@ -140,7 +141,7 @@
 										</ol>
 									</div>
 
-									<ul class="lease-result" style="display:none">
+									<ul class="lease-result">
 										<li>
 											<div class="reserve-info">
 												<img src="/aml_sangju/images/business/img-app01.jpg" alt="감자수확기(경운기)">
@@ -350,6 +351,22 @@
 									</ul>
 								</div>
 							</div>
+
+							<div class="ui--paging">
+								<div>
+									<p class="allprev"><a href="#"><span>목록 처음으로 이동</span></a></p>
+									<p class="prev"><a href="#"><span>이전으로 이동</span></a></p>
+									<ol>
+										<li class="on"><a href="#"><span>1</span></a></li>
+										<li><a href="#"><span>2</span></a></li>
+										<li><a href="#"><span>3</span></a></li>
+										<li><a href="#"><span>4</span></a></li>
+										<li><a href="#"><span>5</span></a></li>
+									</ol>
+									<p class="allnext"><a href="#"><span>목록 마지막으로 이동</span></a></p>
+									<p class="next"><a href="#"><span>다음으로 이동</span></a></p>
+								</div>
+							</div>
 						</div>
 						<!-- //페이지 컨텐츠 -->
 
@@ -393,7 +410,7 @@
 	<script src="/aml_sangju/js/common.js"></script>
 	<script>
 		$(document).ready(function () {
-			gbgs.accordionEvent('.aco-area', '.btn-reserve', '.lease-result', 'on', '.js-acco')
+			gbgs.accordionEvent('.aco-area', '.btn-reserve', '.step-procedure', 'on', '.js-acco')
 		})
 	</script>
 </body>

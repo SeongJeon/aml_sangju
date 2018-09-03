@@ -1,132 +1,70 @@
 @charset "UTF-8";
 .business .ui--tab.lease { margin: 0 0 2.5rem 0; }
-
 .business .ui--tab.lease li { width: 14.28%; }
-
 .business .h3 { margin-bottom: 14px; }
-
 .business .lease-area { overflow: hidden; }
-
-.business .lease-area li { position: relative; float: left; width: calc((100% - 32px) / 5); margin-left: 8px; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+.business .lease-area li { position: relative; float: left; width: calc((100% - 32px) / 5); margin-left: 8px; box-sizing: border-box; }
 .business .lease-area li:first-child { margin-left: 0; }
-
 .business .lease-area li:nth-child(5n + 1) { margin-left: 0; }
-
 .business .lease-area li:nth-child(5) ~ li { margin-top: 8px; }
-
-.business .lease-area li a { display: block; border: 1px solid #d6d5d5; padding: 4px; font-size: 14px; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.business .lease-area li a:hover:before { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding-top: 82px; background: rgba(0, 0, 0, 0.7) url(/aml_sangju/images/business/ico-hover.png) no-repeat center 35%; font-size: 15px; text-align: center; color: #fff; font-weight: bold; -webkit-box-sizing: border-box; box-sizing: border-box; content: "임대신청"; }
-
+.business .lease-area li a { display: block; border: 1px solid #d6d5d5; padding: 4px; font-size: 14px; text-align: center; box-sizing: border-box; }
+.business .lease-area li a:hover:before { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding-top: 82px; background: rgba(0, 0, 0, 0.7) url(/aml_sangju/images/business/ico-hover.png) no-repeat center 35%; font-size: 15px; text-align: center; color: #fff; font-weight: bold; box-sizing: border-box; content: "임대신청"; }
 .business .lease-area li a span { display: block; height: 86px; margin-bottom: 4px; border: 1px solid #e7e7e7; }
-
 .business .lease-area li a em { overflow: hidden; display: inline-block; width: 80%; white-space: nowrap; text-overflow: ellipsis; }
-
 .business .ui--tab.app { margin-bottom: 10px; }
-
 .business .ui--searchapp { margin-bottom: 33px; padding: 12px 20px; background: #f5f9ee; border: 1px solid #d2d2d2; }
-
 .business .ui--searchapp .form { display: inline-block; width: 100%; vertical-align: top; }
-
-.business .ui--searchapp .form li { float: left; width: calc((100% - 36px) / 4); margin-left: 12px; }
-
+.business .ui--searchapp .form li { float: left; margin-left: 12px; width: calc((100% - 36px) / 4); }
 .business .ui--searchapp .form li:first-child { margin-left: 0; }
-
 .business .ui--searchapp .form li label { display: inline-block; margin-bottom: 5px; padding-left: 10px; border-left: 2px solid #22b24c; }
-
+.business .ui--searchapp .form li:first-child:nth-last-of-type(3), .business .ui--searchapp .form li:first-child:nth-last-of-type(3) ~ li { width: calc((100% - 24px) / 3); }
+.business .ui--searchapp .form li:first-child:nth-last-of-type(5), .business .ui--searchapp .form li:first-child:nth-last-of-type(5) ~ li { width: calc((100% - 48px) / 5); }
 .business .btn-reserve { display: block; width: 100%; margin-bottom: 25px; padding: 20px 0; background: #215347; font-size: 1rem; font-weight: bold; color: #fff; text-align: center; }
-
 .business .btn-reserve span { position: relative; display: inline-block; }
-
 .business .btn-reserve span:before { position: absolute; top: 0; left: -2.2rem; width: 2.2rem; height: 2.1rem; background: url(/aml_sangju/images/business/ico-check.png) no-repeat left top; background-size: auto; content: ""; }
-
 .business .btn-reserve span:after { position: absolute; top: 3px; right: -3.1rem; width: 2.1rem; height: 1.4rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; content: ""; }
-
 .business .aco-area.on .btn-reserve span:after { top: 3px; background: url(/aml_sangju/images/business/ico-reserve-on.png) no-repeat right top; }
-
 .business .step-procedure { display: none; }
-
 .business .step-procedure ol { display: inline-block; margin-bottom: 44px; }
-
 .business .step-procedure ol li { position: relative; float: left; width: 105px; margin-left: 58px; text-align: center; }
-
 .business .step-procedure ol li:before { display: block; position: absolute; right: -43px; top: 44px; width: 26px; height: 15px; background: url("/aml_sangju/images/introduce/step-procedure-arrow.gif") no-repeat; content: ""; }
-
 .business .step-procedure ol li:first-child { margin-left: 0; }
-
 .business .step-procedure ol li:last-child:before { display: none; }
-
 .business .step-procedure ol li .txt { display: block; margin-bottom: 13px; font-weight: bold; }
-
 .business .step-procedure ol li p { font-size: 13px; color: #929292; word-break: keep-all; }
-
 .business .lease-result > li { overflow: hidden; margin-top: 16px; padding: 9px; border: 1px solid #d6d5d5; }
-
 .business .lease-result > li:first-child { margin-top: 0; }
-
 .business .lease-result > li:hover { padding: 6px; border: 4px solid #31b758; }
-
 .business .lease-result > li > div { display: inline-block; }
-
 .business .lease-result .tbl-pick { width: 19.6rem; margin-bottom: 6px; }
-
 .business .lease-result .tbl-pick th:first-child { color: #f1260a; }
-
 .business .lease-result .tbl-pick th:last-child { color: #0f46c3; }
-
 .business .lease-result .tbl-pick tr:first-child td { border-top: 0 none; }
-
 .business .lease-result .tbl-pick tr:last-child td:before { padding: 0; border-bottom: 1px solid #e7e7e7; }
-
 .business .lease-result .tbl-pick td { position: relative; text-align: center; padding: 2px; border-top: 2px solid #fff; letter-spacing: -1px; }
-
 .business .lease-result .tbl-pick td:first-child { color: #f1260a; }
-
 .business .lease-result .tbl-pick td:first-child:before { position: absolute; display: block; top: 0px; left: -1px; width: 5px; height: 100%; padding-top: 3px; background: #fff; border-left: 1px solid #e7e7e7; content: ""; }
-
 .business .lease-result .tbl-pick td:last-child { color: #0f46c3; }
-
 .business .lease-result .tbl-pick td:last-child:before { position: absolute; display: block; top: 0px; right: -1px; width: 5px; height: 100%; padding-top: 3px; background: #fff; border-right: 1px solid #e7e7e7; content: ""; }
-
 .business .lease-result .tbl-pick td.possible { background: #cfe5ae; }
-
 .business .lease-result .tbl-pick td.possible.holiday { color: #f1260a; }
-
 .business .lease-result .txt-choose { margin-left: 12px; }
-
 .business .lease-result .txt-choose .color1, .business .lease-result .txt-choose .color2 { display: inline-block; position: relative; color: #212121; padding: 4px 30px 0 0; }
-
 .business .lease-result .txt-choose .color1:after, .business .lease-result .txt-choose .color2:after { display: block; width: 22px; height: 23px; position: absolute; right: 0; top: 0; content: ""; }
-
 .business .lease-result .txt-choose .color1 { margin-right: 10px; }
-
 .business .lease-result .txt-choose .color1:after { background: #cfe5ae; }
-
 .business .lease-result .txt-choose .color2:after { border: 1px solid #e7e7e7; background: #fff; }
-
 .business .lease-result .lease-info { vertical-align: top; width: calc(100% - 310px); margin-left: 10px; }
-
 .business .lease-result .lease-info .app-name { overflow: hidden; margin-bottom: 6px; padding-bottom: 4px; border-bottom: 2px solid #e7e7e7; }
-
 .business .lease-result .lease-info .app-name strong { float: left; margin-top: 8px; font-size: 18px; color: #212121; }
-
 .business .lease-result .lease-info .app-name .btn-type5 { float: right; min-width: 120px; padding: 0 10px 1px; line-height: 32px; color: #fff; font-weight: bold; }
-
 .business .lease-result .lease-info .app-name .gray { background: #404040; border-color: #404040; }
-
 .business .lease-result .lease-info .txt-hyphen { margin-bottom: 5px; }
-
 .business .lease-result .lease-info .txt-dotted2 { margin-bottom: 4px; padding: 15px 17px; background: #eff2f4; }
-
 .business .lease-result .lease-info .txt-dotted2 li { margin-top: 8px; }
-
 .business .lease-result .lease-info .txt-dotted2 li:first-child { margin-top: 0; }
-
 .business .lease-result .lease-info .txt-dotted2 li:before { background: #a09d9d; }
-
-.business .lease-result .lease-info .txt-important { min-height: 84px; padding: 10px; border: 1px solid #e7e7e7; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+.business .lease-result .lease-info .txt-important { min-height: 84px; padding: 10px; border: 1px solid #e7e7e7; box-sizing: border-box; }
 .business .lease-result .lease-info .txt-important li { line-height: 20px; color: #868686; }
 
 @media (max-width: 1040px) { .business .ui--tab.lease li { width: 33.33%; }
@@ -134,19 +72,18 @@
   .business .ui--tab.lease li:nth-child(n + 4) { border-top: 0 none; }
   .business .ui--tab.lease li:nth-child(3n + 1) { border-left: 1px solid #cbc8c7; }
   .business .ui--tab.lease li:last-child { position: relative; }
-  .business .ui--tab.lease li:last-child:before { display: block; position: absolute; top: 0; right: calc(-200% + -5px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
-  .business .ui--tab.lease li:last-child:after { display: block; position: absolute; top: 0; right: calc(-100% + -3px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; -webkit-box-sizing: border-box; box-sizing: border-box; content: ""; }
+  .business .ui--tab.lease li:last-child:before { display: block; position: absolute; top: 0; right: calc(-200% + -5px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; box-sizing: border-box; content: ""; }
+  .business .ui--tab.lease li:last-child:after { display: block; position: absolute; top: 0; right: calc(-100% + -3px); width: calc(100% + 2px); height: calc(100% + 1px); border-right: 1px solid #cbc8c7; border-bottom: 1px solid #cbc8c7; box-sizing: border-box; content: ""; }
   .business .lease-area li a:hover:before { height: 100%; background: none; content: ""; }
   .business .step-procedure ol { width: 100%; margin-bottom: 0; }
   .business .step-procedure ol li { overflow: hidden; float: none; width: 100%; margin: 0; padding: 10px 0 2rem; text-align: left; }
-  .business .step-procedure ol li:before { top: auto; bottom: 3px; left: 2rem; width: 1rem; height: 0.5rem; margin-top: 0; background-size: cover; -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+  .business .step-procedure ol li:before { top: auto; bottom: 3px; left: 2rem; width: 1rem; height: 0.5rem; margin-top: 0; background-size: cover; transform: rotate(90deg); }
   .business .step-procedure ol li:first-child { padding-top: 0; }
   .business .step-procedure ol li img { float: left; width: 5rem; }
   .business .step-procedure ol li .txt { float: left; margin: 1rem 0 7px 0.5rem; text-align: left; font-size: 1rem; }
   .business .step-procedure ol li p { float: left; width: calc(100% - 5rem - 0.5rem); margin-left: 0.5rem; font-size: 0.9rem; }
   .business .lease-result .lease-info .app-name strong { font-size: 1.2rem; }
   .business .lease-result .lease-info .txt-dotted2 > li { font-size: 1.1rem; } }
-
 @media (max-width: 768px) { .business .ui--tab.lease li:nth-of-type(6) ~ li { margin-top: 0; }
   .business .lease-area li { width: calc((100% - 4px) / 2); margin-left: 4px; }
   .business .lease-area li:nth-child(2n + 1) { margin-left: 0 !important; }
@@ -156,6 +93,8 @@
   .business .ui--searchapp { margin-bottom: 20px; padding: 6px 10px; }
   .business .ui--searchapp .form li { width: calc((100% - 18px) / 4); margin-left: 6px; }
   .business .ui--searchapp .form li:first-child { margin-left: 0; }
+  .business .ui--searchapp .form li:first-child:nth-last-of-type(3), .business .ui--searchapp .form li:first-child:nth-last-of-type(3) ~ li { width: calc((100% - 12px) / 3); }
+  .business .ui--searchapp .form li:first-child:nth-last-of-type(5), .business .ui--searchapp .form li:first-child:nth-last-of-type(5) ~ li { width: calc((100% - 24px) / 5); }
   .business .btn-reserve { padding: 12px 0; }
   .business .btn-reserve span:before { left: -2.2rem; background: url(/aml_sangju/images/business/ico-check.png) no-repeat left top; background-size: 60%; }
   .business .btn-reserve span:after { right: -2.1rem; background: url(/aml_sangju/images/business/ico-reserve-off.png) no-repeat right top; background-size: 60%; content: ""; }
@@ -164,6 +103,7 @@
   .business .lease-result .tbl-pick { margin: 10px auto 6px; }
   .business .lease-result .lease-info { width: 100%; margin-left: 0; }
   .business .lease-result .lease-info .app-name .btn-type5 { font-size: 1rem; } }
-
 @media (max-width: 500px) { .business .lease-result .lease-info .app-name .btn-type5 { min-width: 80px; font-size: 1.2rem; }
-  .business .lease-result .tbl-pick { width: 100%; } }
+  .business .lease-result .tbl-pick { width: 100%; }
+  .business .ui--searchapp .form li { width: 100% !important; margin: 0.5rem 0 0; }
+  .business .ui--searchapp .form li:first-child { margin: 0; } }
